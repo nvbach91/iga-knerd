@@ -1,0 +1,96 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage{array}
+
+\usepackage{longtable}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{fancyvrb,newverbs}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+
+\newenvironment{compactitemize}
+{ \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{itemize}  }
+
+\restylefloat{table}
+
+\definecolor{cverbbg}{gray}{0.93}
+
+\newenvironment{lcverbatim}
+ {\SaveVerbatim{cverb}}
+ {\endSaveVerbatim
+  \flushleft\fboxrule=0pt\fboxsep=.5em
+  \colorbox{cverbbg}{%
+    \makebox[\dimexpr\linewidth-2\fboxsep][l]{\BUseVerbatim{cverb}}%
+  }
+  \endflushleft
+}
+
+\newcommand{\ctexttt}[1]{\colorbox{cverbbg}{\texttt{#1}}}
+\newverbcommand{\cverb}
+  {\setbox\verbbox\hbox\bgroup}
+  {\egroup\colorbox{cverbbg}{\box\verbbox}}
+
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+
+\title{Ontologies Supporting Research-related Information Foraging Using Knowledge Graphs: Literature Survey and Holistic Model Mapping
+%\thanks{This project is supported by the CSF under 98-12345S}
+}
+%
+\titlerunning{Research-related Ontologies Survey and Holistic Model Mapping}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{
+    Viet Bach Nguyen\inst{1}\orcidID{0000-0003-2709-3297} \and 
+    Vojt\v{e}ch Sv\'{a}tek\inst{1}\orcidID{0000-0002-2256-2982} \and 
+    Gollam Rabby\inst{1}\orcidID{0000-0002-1212-0101} \and
+    Oscar Corcho\inst{2}\orcidID{0000-0002-9260-0753}
+}
+%\email{ocorcho@fi.upm.es}
+%\email{nguv03@vse.cz}
+%\email{svatek@vse.cz}
+%\email{rabg00@vse.cz}
+\authorrunning{V.B. Nguyen, V. Sv\'{a}tek, G. Rabby, O. Corcho}
+
+\institute{University of Economics, Prague, Czech Republic \\ \email{\{nguv03,svatek,rabg00\}@vse.cz} \and Ontology Engineering Group, Universidad Politécnica de Madrid, Spain \\ \email{ocorcho@fi.upm.es}}
+
+\maketitle              
+
+\input{section-00-abstract-keywords}
+
+\input{section-01-intro}
+
+\input{section-02-survey}
+
+\input{section-03-constructing}
+
+\input{section-04-mapping}
+
+\input{section-05-conclusion}
+
+\bibliographystyle{splncs04}
+\bibliography{bib}
+\end{document}

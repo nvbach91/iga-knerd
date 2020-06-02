@@ -1,0 +1,214 @@
+\section{Literature survey methodology and results}
+\label{section:2}
+
+The first step of our survey was to obtain a list of candidate ontologies that could potentially include entities related to researcher information needs and its context.
+%The purpose of this search is to find which domain parts have been addressed in which context and what has not been addressed yet. In this section, we describe our literature review process for finding relevant artifacts for further analysis.
+%
+Given the fact that most ontologies and relevant projects are %potentially 
+%documented 
+reported in %research articles 
+papers, %and presented at  conference or published in a journal within the Semantic Web area, one of the best ways to find such articles is to search in online abstract and citation databases with bibliographic information on computer science publications. Portals that have high computer science article coverage include 
+a major source to be searched were high-coverage bibliographic/citation databases, of which we considered \emph{Scopus},\footnote{\url{https://www.scopus.com/}}
+\emph{Web of Science}\footnote{\url{https://webofknowledge.com}}
+%, DBLP%\footnote{\url{https://dblp.org/}}
+%, IEEE%\footnote{\url{https://ieeexplore.ieee.org/}}
+%, and the ACM Digital Library%\footnote{\url{https://dl.acm.org/}}
+%. The second tier of resourceful tools are search engines such 
+and \emph{Google} Scholar.\footnote{\url{https://scholar.google.com/}}
+%, Microsoft Academic%\footnote{\url{https://academic.microsoft.com/home}}
+%, ScienceDirect%\footnote{\url{https://www.sciencedirect.com/}}
+%, CORE%\footnote{\url{https://core.ac.uk/}} 
+Additionally, we also directly asked the generic \emph{Google search engine}, to also cater for ontologies not accompanied with a paper for some reason.
+The different resources are complemenary.
+While the (top) Google/Scholar search should lead to popular resources with many inlinks/citations, the traditional bibliographic databases primarily return respectful academic publications (even those with lower citation response) and can be searched using more sophisticated means, thus reducing the amount of noice for the subsequent manual scan of results.
+While there are, obviously, a number of other possible databases to consider (such as DBLP, or the IEEE/ACM libraries), we assumed that sufficient coverage can already be obtained via the four we chose.
+Finally, for directly retrieving ontologies, an obvious choice was the \emph{Linked Open Vocabularies} (LOV) portal\footnote{\url{https://lov.linkeddata.es/}} 
+
+%For obvious reasons, Google was our first bet. 
+Using Google as the initial baseline,
+%With this lax and quite naive approach 
+we 
+%managed to find a good amount of relevant ontologies using simple terms such as
+searched for the most obvious phrases only, to keep the precision acceptable: \textit{scholar/ly ontology}, \textit{academic ontology}, \textit{research/er ontology}, and \textit{bibliography/ic ontology}.
+%, \textit{conference ontology}
+For each Google query, we examined the first 10 pages of results, 
+%(approx. 160 results). sorted by relevance. Google results represented a list of mixed resources 
+which consisted in a mix of publications, projects, and actual ontology documentations. %Nevertheless, over 80\% of the listed Google results were irrelevant or duplicated based on the result title. This approach apparently requires a lot of manual evaluation and is time-consuming but the results are acceptable. In this first iteration, 
+Overall we identified, this way, a total of 9 relevant ontologies. 
+%which, by their titles and description, indicate high relevancy.
+
+%\begin{itemize}
+%    \item Scholarly Ontology (SO)
+%    \item Scholarly Event Description Ontology (SEDE)
+%    \item FOAF-Academic Ontology
+%    \item Researcher Profile Ontology for Academic Environment
+%    \item Ontology for Academic Program Accredication (ABET)
+%    \item Academic Institution Internal Structure Ontology (AIISO)
+%    \item Curriculum, Course, and Syllabus Ontology (CCSO)
+%    \item SPAR Ontologies
+%    \item VIVO-ISF Ontology
+    %\item Informatics Research Artifact Ontology
+%\end{itemize}
+
+We then used the Google Scholar search engine with the same search terms. 
+%This time we expected a significant increase in the relevancy of the search results. 
+Google Scholar returned, in all cases, publications, from which %such as articles and books. Search results were enhanced with bibliographic data such as authors, publication year, venue, citations, and related articles. Among the first ten pages of Google Scholar results (approx. 160 results), the relevancy was still very low topic-wise%, but almost all results were publications
+%and there was still a lot of manual checking, reading the titles and abstracts. This time, 
+we  collected 5 further relevant ontologies.
+
+%\begin{itemize}
+%    \item AcademIS Ontology
+%    \item Computer Science Ontology (CSO)
+%    \item BIBO Ontology
+%    \item CiTO Ontology
+%    \item Semantic Web for Research Communities Ontology (SWRC)
+%\end{itemize}
+
+Next, we used the Scopus bibliographic database.
+%, launched in 2004. is a high-quality and easy-to-use database that covers an enormous amount of bibliographic records from a large number publishers including peer-reviewed journals. 
+The advantage of searching in a specialized database was the higher degree of relevance 
+%and completeness because the search is focused solely on scientific publications that have mandatory indicative data used for indexing. Another advantage in searching online is that it also, in some cases, provide the user with related articles with high relevancy and citation exports. This makes it much easier and faster to find projects that make use of the mentioned ontologies.  %Keyword-based search is better compared to general-purpose search on Google because the search terms is compared against multiple meta information of the publication such as title, keywords and abstract, which are indexed. %
+To make a better use of the search tools provided by Scopus, we used our search terms to search for papers by titles and keywords, while limiting the scope to the Computer Science and Engineering fields. The following snippet represents our Scopus search query, which we used for searching in the title; analogous queries were applied on the abstract and keywords:
+%\begin{Verbatim}[fontsize=\small]
+%    TITLE ((academic OR scholarly OR researcher OR bibliography) 
+%        AND  ontology) AND (SUBJAREA("COMP") OR  SUBJAREA("ENGI")) 
+%\end{Verbatim}
+
+\begin{lcverbatim}
+TITLE ((academic OR scholarly OR researcher OR bibliography) 
+    AND  ontology) AND (SUBJAREA("COMP") OR  SUBJAREA("ENGI")) 
+\end{lcverbatim}
+
+The search in the titles (TITLE) yielded 57 results, the search in abstracts (ABS) yielded 2829 results, and the search in keywords (KEY) yielded 279 results, all sorted by relevance. In the case of abstract-related results, we browsed the first 10 pages (approx. 100 results). Among these results, we found a total of 22 additional ontologies.
+%The following list includes several more relevant ontologies for our research:
+
+%\begin{itemize}
+%    \item Ontology for Linked Open University Data (OLOUD)
+%    \item Education Standards Ontology (ESO)
+%    \item Education Application Ontology (EAO)
+%    \item Funding, Research Administration and Projects Ontology (FRAPO)
+%    \item PLET4Thesis
+%    \item Open Research Knowledge Graph Ontology (ORKG)
+%    \item Ontology for Academic Department
+%    \item Academic Evaluation Ontology
+%    \item Ontology for Academic Context Reasoning
+%    \item FRBR-aligned Bibliographic Ontology (FaBIO)
+%    \item Bibliographic Reference Ontology (BiRO)
+%    \item Citation Counting and Context Characterisation Ontology (C4O)
+%    \item Document Components Ontology (DoCO)
+%    \item Publishing Status Ontology (PSO)
+%    \item Publishing Roles Ontology (PRO)
+%    \item Publishing Workflow Ontology (PWO)
+%    \item Scholarly Contributions and Roles Ontology (SCoRO)
+%    \item DataCite Ontology
+%    \item Bibliometric Data Ontology (BiDO)
+%    \item FAIR* Reviews Ontology (FR)
+%    \item Five Stars of Online Research Articles Ontology
+%    \item OpenCitations (OC)
+%\end{itemize}
+
+Our last bibliographic database of choice was the Web of Science.  First, we searched for each term one by one. The term \textit{scholarly ontology} yielded 32 results, the term \textit{academic ontology} yielded 87 results, the term \textit{researcher ontology} yielded 182 results (all with the refinement to the `article' document type and to the `computer science and information systems' category). Next, we used a query equivalent to the one used on Scopus, for searching in the title (and, analogously, in the topic) as follows:
+%\begin{verbatim}
+%    TI = ((academic OR scholarly OR researcher OR bibliography) 
+%        AND ontology) AND SU = (Computer Science OR Engineering)
+%\end{verbatim}
+\begin{lcverbatim}
+TI = ((academic OR scholarly OR researcher OR bibliography) 
+    AND ontology) AND SU = (Computer Science OR Engineering)
+\end{lcverbatim}
+This query returned 22 results for the title filter (TI) and 423 results for the topic (TS) filter. Among these results, we found 2 additional ontologies.% were found.
+
+
+%\begin{itemize}
+%    \item UniGrad (FOAF+SIOC extension)
+%    \item Extension of the BiDO Ontology to Represent Scientific Production (BSBM)
+%\end{itemize}
+
+% http://www.scholarlydata.org/sparql/
+
+
+%After a couple of search , we quickly realized that, in most cases, the resulting publications were overlapping and the number of new results was decreasing. The number of collected results each time depends on the order of chosen tools and thus does not reflect the true resourcefulness of the databases. %For that reason we did not search further on IEEE, ACM DL, Microsoft Academic, Science Direct and CORE.
+
+Aside the keyword-based search, we also benefited from the availability of \emph{citation links} in Google Scholar, Scopus and Web of Science. 
+We followed some promising incoming citation links to the papers on ontologies found so far. 
+%for more papers involving ontologies that we missed during the keyword-based search. 
+Using this technique, we identified 3 further ontologies.
+
+For each ontology found through a paper reporting on it, we as much information as possible, including its metadata, source code and full texts of the referencing papers (when available). 
+
+%\begin{itemize}
+%    \item SemSur: Core Ontology for the Semantic Representation of Research Findings
+%    \item Ontology for describing academic mental states
+%    \item KISTI Reference \& Academic Ontology
+%\end{itemize}
+
+
+%Although our scope of focus is not too large, the search results could still be overwhelming in number which need proper filtering and narrowing down. 
+
+% On the other hand, the keyword-based search might not be complete due to synonymy etc. 
+
+Last, 
+%because there is a good chance these 
+we directly searched for ontologies  %listed 
+on the LOV portal. We %did a thorough search on this portal and 
+found a considerable amount of relevant resources using the keywords \textit{research}, \textit{academic}, \textit{scholar} and \textit{bibliography}, of which most had already been
+covered by the previous bibliographic database or Google results.  
+However, two new relevant ontologies were still found this way. % probably because of too generic naming:
+
+We then used the LOV results as a referencing resource to find related literature that described them (and  possibly escaped the previous literature search), projects that used them,
+%\begin{itemize}
+%    \item Research Object Ontology (RO)
+%    \item Common European Research Information Format Ontology (CERIF)
+%\end{itemize}
+as well as to complete the missing information such as the namespaces and links to the source code. 
+
+%To reduce future problems related to both imprecision and incompleteness of a naive keyword search
+To facilitate running a similar process in the future, we briefly summarize our literature search protocol for finding state-of-the-art ontology data:
+
+\begin{enumerate}
+    \item determine search engines and relevant online databases, %(based on search samples from multiple portals, results were often overlapping, so we recommend to use only Scopus which has the best tools for filtering),
+    \item define search criteria for optional filtering which include the top-level field, topic or domain, and keywords including their combinations,
+    \item execute initial search and iterate through an adequate amount of results,
+    \item exclude duplicate articles among the initial results,
+    \item manually include relevant articles based on title, keywords and abstract,
+    %\item exclude articles that introduce work that are in early phase of development such as poster papers, PhD papers
+    %\item exclude articles that do not mainly introduce an ontology or its usage in an applied project, [provide at least 2 examples which where excluded]
+    \item since search by keyword can miss some papers, try reverse citation tracking, even if paper is weak (has not been cited many times), forward tracing, reverse tracking of citations, since a later work could include a comparison of such papers,
+    \item look for ontologies in online specialized catalogs such as LOV.
+\end{enumerate}
+
+In Figure \ref{literature-review}, we provide an overview of this literature survey procedure.
+\begin{figure}
+\centering
+\includegraphics[width=9cm]{figures/literature-review.eps}
+\caption{
+    %Conceptual model for exploring literature, 
+    Procedure for retrieving ontology related resources.} \label{literature-review}
+\end{figure}
+
+%The following is the list of keywords used in both literature search and LOV.
+%\begin{itemize}
+%    \item scholar/ly ontology,
+%    \item academy/ic ontology,
+%    \item research/er ontology,
+    % \item publishing ontology,
+    % \item referencing ontology, 
+    % \item ontology for describing bibliographic resources and citations, 
+    % \item ontology for describing bibliography, 
+    %\item citations ontology, 
+%    \item bibliography/ic ontology, 
+%\end{itemize}
+
+The result of our survey was a comprehensive table of metadata related to the ontologies. 
+However, there were still some incomplete records due to unavailable or missing information.
+%The next step is to examine the discovered ontologies at the 
+Content-level analysis also revealed some ontologies that were likely irrelevant for practical information search, e.g., an `Ontology for describing academic mental state'. 
+From the totality of 43 ontologies found, we thus eventually chose 34 for which 1) we deemed the availability of source code and/or metadata sufficient for effective reuse, and 2) the ontology content was indeed relevant to researcher information needs.
+Table \ref{tab:research-related-ontologies}
+%and \ref{tab:research-bib-related-ontologies} 
+shows the final list of ontologies\footnote{Some acronyms in this table are unofficial, e.g. OAD or RPO, and are only introduced for convenient referencing within this research.} used in our subsequent analysis.
+
+\input{table-ontologies}
+
+
+% \input{table-ontology-descriptions}

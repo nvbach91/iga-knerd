@@ -1,0 +1,86 @@
+
+\section{Mapping the ontologies to the holistic model}
+\label{section:4}
+
+
+Our high-level conceptual model consists of concepts and relationships that hold between them. It can be broken down into individual elements and fragments of concepts. This is needed to map existing ontologies onto the model and to identify their coverage. For this reason, we created a spreadsheet listing concepts, their subtypes and entity-relationship paths in the first column. Then, for each examined ontology, we noted down which concept is (at least, partially) covered by which entities in those ontologies. The detailed (manual) steps can be approximately described in the form of an algorithm:
+
+\begin{algorithm}[H]
+    \caption{Ontology coverage}
+    \SetKwInOut{Input}{input}
+    \SetKwInOut{Output}{output}
+    \SetAlgoLined
+    \KwResult{Coverage table}
+    \Input{Latest versions of ontologies}
+    \Output{Entities}
+    \ForEach{Ontology}{
+        \uIf{Ontology documentation exists}{
+            Check documentation\;
+            \uIf{Ontology documentation has descriptive figures}{
+                Use entities in figures\;
+            }\uElse{
+                Use entities listed in documentation\;
+            }
+        }
+        \uElseIf{Ontology source code exists}{
+            Use entities described in source code\;
+        }
+        \uElseIf{Paper has entity descriptions}{
+            Use entities described in the paper\;
+        }
+    }
+    \ForEach{Entity} {
+        Keep only classes, their instances, object properties and datatype properties within the ontology namespace\;
+    }
+    \Input{Model elements}
+    \Input{Entities}
+    \Output{Coverage records}
+    \ForEach{Entity} {
+        %Match with our concepts and fragments\;
+        If it is a property then also check its domain and range\;
+        When in doubt, check the comments, definition or description\;
+        Record the matching entities in the column of the ontology\;
+    }
+\end{algorithm}
+
+In Table \ref{tab:coverage}, we show a fragment of our coverage table results. Numerical values in row \textbf{Terms covered by} indicate how many concepts or relationship paths in the model are covered by the given ontology. Numeric values in column \textbf{C} indicate how many ontologies have 
+%non-zero 
+positive coverage for the given term from the model. Positive coverage means such that it corresponds to the naming and context providing a similar or same semantics. In many cases, the coverage was not apparent and some manual approximation had to be made. For example, in this table, the model term \emph{Research Group} was considered to be covered by \emph{Group} in the Scholarly Ontology despite its specificity. Other cases include relationships being covered by classes, such as \emph{Researcher -- Position} vs. \emph{vivo:contributionRole}. The full coverage table of 73 model concepts and 34 ontologies can be found in our research repository, which also contains the set of CQs and other relevant resources.\footnote{\url{https://github.com/nvbach91/iga-knerd}}
+
+\input{table-coverage}
+
+% New text by VS:
+The coverage table indicates that even if the roles played by researchers during their career, and the associated CQs, are numerous, the relevant concepts and relationships are mostly well covered by available ontologies.
+%Our analysis took into account 34 ontologies.
+Presumably, a proper (but still relatively large) subset of them might be found that would still cover all considered CQs.
+For such a set of ontologies, the abstract concept-relationship paths could be instantiated by constellations of OWL entities that could become part of \emph{guidelines} for researcher data publishers. 
+Possibly several alternative ontologies can be recommended for the parts of the domain where multiple of them \emph{overlap}; these are, for example, the parts dealing with publications or organizations.
+More detailed criteria describing these choices in terms of ontology design patterns and their impact should be formulated.
+
+As a likely gap in the existing ontology eco-system, we perceive, for example, the sub-domain of \emph{spin-offs}.
+(In fact, even beyond the scope of the current survey, we were unable to find any ontology devoted to start-ups in general.)
+Underdeveloped also seems to be the conceptualization of, e.g., \emph{funding programs} or some forms of \emph{assessment}.
+In some cases, notions belonging to one `bag' are dispersed across several ontologies, lacking a unifying super-concept, e.g. a \emph{reusable artifact}.
+
+% End of new text by VS:
+
+%The result table gave us a comprehensive overview of related ontologies and allowed us to identify  coverage overlaps and gaps. Examples of overlaps include rows that have a value higher than 1 in column \textbf{C}. Likewise, gaps are identified based on value 0 in the same column. For each concept there can be 3 cases: (1) the concept is not covered, which is the least, (2) there is only one coverage count, and (3) there are multiple overlaps of ontologies describing essentially the same thing. If a concept in the target model is not covered, it is necessary to introduce it as a new one and connect it to the existing network if necessary. If there is only one coverage for a particular term, we need to consider whether it is an exact match or not, and then decide whether to extend it or use it as-is. The obvious problem with multiple coverage overlaps is that the selection process of the concepts for re-use will be more complicated and so proper analysis of term context and its usage purpose should be considered. Furthermore, this analysis result could be useful for identifying concepts with the same or similar semantics or context in order to link them with appropriate properties. % and use them interchangeably. 
+
+
+
+%In case of identifying the same or very similar semantics for terms that are defined multiple times across different ontologies, it would be convenient to mark them with 
+
+%TODO: PROPERLY FORMULATE THIS
+
+%- Firstly, sort the ontologies by the number of covered terms and relationships descendingly, and analyze one by one to pick the best option for reuse, also considering reuse from multiple ontologies, if they complement each other well.
+
+
+%- results show that there are many gaps and overlaps, this is how to deal with them:
+
+%there are 3 cases
+
+%1) the concept is not covered = gap, solve by proposing a new concept, example: ...
+
+%2) there is only one coverage count, solve by analyzing that ontology and evaluate its usability. example: ...
+
+%3) there are overlaps (more than one coverage count), solve by choosing the best option based on several criterias ..., example:

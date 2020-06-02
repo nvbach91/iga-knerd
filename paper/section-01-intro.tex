@@ -1,0 +1,39 @@
+\section{Introduction}
+
+On a daily basis, researchers find themselves in situations when they need to acquire %research-related
+information from resources on the Web. 
+The nature of such information needs differs based on the specific academic role of the researcher at the given moment, such as  that of a paper writer, event organizer, scientific evaluator, advisor of other %more junior
+researchers, or %research 
+project coordinator. 
+Yet, many of these needs revolve around a small set of generic entity types and their relationships on which information is sought, such as people, institutions, publications, scientific venues, projects, topics, problems, arguments, or research artifacts. 
+This common basis is relatively generic across research fields and makes it possible to proceed from textual search to the exploitation of structured databases on the web. 
+Further, the rise of RDF-based knowledge graphs (KGs) may help overcome the rigidity of traditional database schemas; %heterogeneous 
+information from independent resources could nowadays be integrated and searched with less overhead. 
+%
+%Generally, whatever the domain is, perhaps the greatest hindrance to wide adoption of RDF-based KG is currently their low data quality. A part of the quality issues follows from the heterogeneity of their source structures -- whether at the level of whole datasets, which may be semantically incoherent, or at the level of fine-grained knowledge items, which is typical for graphs based on crowdsourced resources such as Wikipedia.
+%Another part is owing to imperfections of the transformation (ETL) process, which generates additional errors.
+%Making decisions with far-reaching consequences based on such public KGs might thus still be impossible in the near future.
+%However, even if we still suffer from this low data quality, such KGs can serve, in our opinion: 
+%\begin{itemize}
+%    \item as a first cheap (both in terms of effort and money) approximation, to be later complemented by focused analyses carried out through specialized databases with their dedicated interfaces, and
+%    \item as a means of curating these specialized databases through revealing their mutual inconsistencies, which only appear when the content of such `silos' interacts within a unified KG.
+%\end{itemize}
+%
+Yet, academic KGs spanning over many different entity types are still scarce; most published RDF datasets are only restricted to a few of these entity types, e.g., publications and their authors, paper citations, or projects and the institutions involved. Researchers who look for research-related information thus still have to either deal with multiple %structured 
+databases or delve into unstructured textual search. If holistic academic KGs are to be developed to address such needs in an integrated manner, it is important to understand the currently available `eco-system' of reusable, well documented ontologies that could underlie such KGs, and point out the overlaps and %uncovered areas 
+gaps in this system. While the existence of overlaps implies the need of some decision support in the choice among the overlapping ontologies, the gaps, in turn, ask for the development of new ontologies. 
+
+Many papers published in the last two decades contained some surveys of existing scholarly ontologies, whether standalone or in comparison with a newly introduced model.
+We are however unaware of either a survey or a comprehensive ontology aiming to cover the concepts referenced by the \emph{daily activities} of an (especially, senior) researcher. For such activities, a researcher takes on multiple `hats' (roles), including such that directly relate to research -- for example, not just to undergraduate education or to the general course of a working contract valid for any position and organization.
+Most previous papers and models restrict the analyzed activities to `doing research' proper (methods, experiments, tools, etc.) and/or to attributes of research publications.
+This is the case, e.g., for the previous standalone survey by Ruiz \& Corcho \cite{Ruiz}, focused on modeling scientific documents. 
+%\cite{DBLP:journals/biomedsem/Shotton10} There are many RDF datasets on scholarly topics.... cf. Gollam's dataset survey
+Similarly, the recent requirements analysis for an Open Research KG by Brack et al. \cite{Brack} is confined to the `literature-oriented' tasks of scientists.
+Even the Scholarly Ontology \cite{DBLP:journals/jodl/PertsasC17}, which  comprehensively covers `scholarly practices' (using thorough modeling with the help of foundational ontologies) including entities such as projects, courses, or information resources, focuses on a use case related to scientific activities tied to experiments and paper writing.
+
+In this paper we aim not only at updating the previous scholarly/research ontology surveys by covering some newly developed models, but, in particular, at  aligning them with a systematic analysis of information needs triggered by \emph{different research-related roles} played by researchers.
+%A further distinctive feature of our research is the examination of the coverage of the proposed high-level concepts, derived from competency questions pertaining to different researcher roles, by existing ontologies, especially of those available on the web.
+The information needs are expressed using \emph{high-level competency questions}, giving rise to entity type paths from which a \emph{holistic conceptual graph} was eventually built.
+Entities and relationships from the graph were approximately (manually, in a lightweight manner) \emph{matched} with those of the surveyed ontologies, thus providing insights into what is covered and what is not, as well as where the overlaps are the strongest.
+
+The main content of this paper is structured in the following way. Section \ref{section:2} describes the process of literature search through which the relevant ontologies were identified and selected. Section \ref{section:3} explains how the competency questions were formulated and  the corresponding high-level model constructed. Section \ref{section:4} presents the alignment between the model and the surveyed ontologies. Last, section  \ref{section:5} wraps up and outlines the directions for future research.
