@@ -1,0 +1,897 @@
+ID	Ontology Name	Authors	Institution	Country	Published	Links to papers	Full-text	Notes	Use cases	Used in		Analysis notes	Listed in LOV repo	Link to the actual ontology source/doc	Other Link	BibTex
+0	Researcher Profile Ontology for Academic Environment	"Maricela Claudia Bravo, 
+José A. Reyes, 
+Isabel Cruz"	Metropolitan Autonomous University	Mexico	2019-2020	"https://www.youtube.com/watch?v=yBaNB-tSnNs
+
+https://www.researchgate.net/publication/332623179_Researcher_Profile_Ontology_for_Academic_Environment"	Full-text requested by Bach		"Basic meta data about researchers
+Collaborations between researchers
+Stats about publications
+Scientific productivity of a department 
+Basic researcher segmentation...
+Good expressivity & suitable for querying"	•		Search sometimes depends on literals, meaning no code list used	NO, too new	"N/A No mentioning of any source code in the papers
+DOI: 10.1007/978-3-030-17795-9_60"		"@inproceedings{DBLP:conf/cvc/BravoRC19,
+  author    = {Maricela Bravo and
+               Jos{\'{e}} Alejandro Reyes{-}Ortiz and
+               Isabel Cruz{-}Ruiz},
+  editor    = {Kohei Arai and
+               Supriya Kapoor},
+  title     = {Researcher Profile Ontology for Academic Environment},
+  booktitle = {Advances in Computer Vision - Proceedings of the 2019 Computer Vision
+               Conference, {CVC} 2019, Las Vegas, Nevada, USA, 25-26 April 2019,
+               Volume 1},
+  series    = {Advances in Intelligent Systems and Computing},
+  volume    = {943},
+  pages     = {799--817},
+  publisher = {Springer},
+  year      = {2019},
+  url       = {https://doi.org/10.1007/978-3-030-17795-9\_60},
+  doi       = {10.1007/978-3-030-17795-9\_60},
+  timestamp = {Wed, 22 Jan 2020 09:22:31 +0100},
+  biburl    = {https://dblp.org/rec/conf/cvc/BravoRC19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+1	OLOUD	"Fleiner, R., 
+Szasz, B., 
+Micsik, A."	various	Hungary	2016-2017	https://www.researchgate.net/publication/323475615_OLOUD_-_an_ontology_for_linked_open_university_data	Full-text available		"• University subject composition in hungary
+• Personal timetable assembly, avoid course conflicts, considering personal preferences and requirements, dependencies. Daily scheduling.
+• Dependency graph for courses = prerequisites
+• Course availability in each semester
+• Course planning, study simulation, roadmap, recommended number of courses, recommended course to take based  on achievments, ...
+• University resources (rooms, equiment) = booking courses, booking exams, course location management,
+"	•		"a nice review of edu onto. https://docs.google.com/document/d/1Aqp-x1j1Vzoo3d3tPateL8DBiByCnbhBsJ4r1hTdZgg/edit#
+
+https://blogs.pjjk.net/phil/a-short-project-on-linking-course-data/"	No	"http://lod.nik.uni-obuda.hu/oloud-indoor.owl# 
+http://lod.nik.uni-obuda.hu/oloud-base.owl# 
+"		"@article{article,
+author = {Fleiner, Rita and Szász, Barnabás and Micsik, András},
+year = {2017},
+month = {01},
+pages = {63-82},
+title = {OLOUD - an ontology for linked open university data},
+volume = {14},
+journal = {Acta Polytechnica Hungarica},
+doi = {10.12700/APH.14.4.2017.4.4}
+}"
+2	PWO	"Gangemi, A., 
+Peroni, S., 
+Shotton, D.M., 
+Vitali, F."	University of Bologna	Italy	2016-2017	http://www.semantic-web-journal.net/system/files/swj1301.pdf	Full-text available		"• Describes publishing processes for such as articles and journals
+• Academic publishing & legislative domains.
+• Is used in combination with PSO (publishing status ontology)
+• Detailed description of each event / step from submission until revision
+• Suitable for querying & search, ordering, aggregation
+• Also is used incombination with time-related vocabs
+• Is generic enough to use in other workflows"	•			Yes	"http://purl.org/spar/pwo
+
+https://github.com/SPAROntologies/pwo/blob/master/docs/2017-06-01/pwo.owl"		"@article{DBLP:journals/semweb/GangemiPSV17,
+  author    = {Aldo Gangemi and
+               Silvio Peroni and
+               David M. Shotton and
+               Fabio Vitali},
+  title     = {The Publishing Workflow Ontology {(PWO)}},
+  journal   = {Semantic Web},
+  volume    = {8},
+  number    = {5},
+  pages     = {703--718},
+  year      = {2017},
+  url       = {https://doi.org/10.3233/SW-160230},
+  doi       = {10.3233/SW-160230},
+  timestamp = {Wed, 14 Nov 2018 10:33:52 +0100},
+  biburl    = {https://dblp.org/rec/journals/semweb/GangemiPSV17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+3	VIVO	"Katy Borner, 
+Michael Conlon, 
+Jon Corson-Rikert, 
+Ying Ding"	various	USA	2012-2013	https://www.researchgate.net/publication/236834347_VIVO_A_Semantic_Approach_to_Scholarly_Networking_and_Discovery	Full-text available		"• Faceted search - narrow down results by automatically applying filters from classifications of the term
+• Information routing to relevant users
+• Semantically enabled collaboration tools 
+• CV, biosketch
+• Bibliography management
+• Faculty reporting
+• Grant submission + management
+• Course management
+• Search for relevant expertise for acaemic collabs
+• Opportunity alerts
+• Attribution for academics - credits for academic activities"	"• University of Colorado Boulder - Faculty demographics and reporting tools
+• Weill Cornell medical College - Legacy Researcher Profiling system, NOTABLE: SPARQL Query Builder
+• Lens: : A faceted browser for research networking platforms DOI: 10.1109/eScience.2013.54"			Yes	http://vivoweb.org/ontology/core		"@book{DBLP:series/synthesis/2012Borner,
+  author    = {Katy B{\""{o}}rner and
+               Michael Conlon and
+               Jon Corson{-}Rikert and
+               Ying Ding},
+  title     = {{VIVO:} {A} Semantic Approach to Scholarly Networking and Discovery},
+  series    = {Synthesis Lectures on the Semantic Web},
+  publisher = {Morgan {\&} Claypool Publishers},
+  year      = {2012},
+  url       = {https://doi.org/10.2200/S00428ED1V01Y201207WBE002},
+  doi       = {10.2200/S00428ED1V01Y201207WBE002},
+  timestamp = {Sun, 02 Jun 2019 20:42:17 +0200},
+  biburl    = {https://dblp.org/rec/series/synthesis/2012Borner.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+4	SWRC	"York Sure-Vetter,
+Stephan Bloehdorn,
+Peter Haase,
+Jens Hartmann,
+Daniel Oberle"	Karlsruhe + commercial	Germany	2005-2006	https://www.researchgate.net/publication/220773756_The_SWRC_Ontology_-_Semantic_Web_for_Research_Communities	Full-text available		"• General model for typical research communities
+• Model key entities in research
+• Publications, activities, mutual interrelations
+• Has been mostly extended for specific use, this is therefore a core module
+"	"• SEmantic portAL
+• Bibster - p2p sharing bib metadata in bibtex
+• COIN community ontology - extension to SWRC - to model any community of interest
+"			Yes	http://swrc.ontoware.org/ontology#
+		"@inproceedings{DBLP:conf/epia/SureBHHO05,
+  author    = {York Sure and
+               Stephan Bloehdorn and
+               Peter Haase and
+               Jens Hartmann and
+               Daniel Oberle},
+  editor    = {Carlos Bento and
+               Am{\'{\i}}lcar Cardoso and
+               Ga{\""{e}}l Dias},
+  title     = {The {SWRC} Ontology - Semantic Web for Research Communities},
+  booktitle = {Progress in Artificial Intelligence, 12th Portuguese Conference on
+               Artificial Intelligence, {EPIA} 2005, Covilh{\~{a}}, Portugal, December
+               5-8, 2005, Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {3808},
+  pages     = {218--231},
+  publisher = {Springer},
+  year      = {2005},
+  url       = {https://doi.org/10.1007/11595014\_22},
+  doi       = {10.1007/11595014\_22},
+  timestamp = {Tue, 14 May 2019 10:00:41 +0200},
+  biburl    = {https://dblp.org/rec/conf/epia/SureBHHO05.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+5	Ontology for Academic Program Accreditation	Jehad Sabri	Taif University, KSA	Saudi Arabia	2016-2017	https://www.researchgate.net/publication/305818745_Ontology_for_Academic_Program_Accreditation	Full-text available		"• Mapping of student assessment activities to course learning outcomes to evaluate student outcomes.
+• Avoid over mapping or under mapping of student outcomes
+• To improve accreditation processes, improve student outcomes, improve ""návaznost"" study results
+• Aimed for Accreditation Board for Engineering and Technology (ABET)
+• Visualization of student outcomes
+• Implemented as Protege plugin..."	• ABETS Program Evaluators			No	"source code N/A
+https://www.researchgate.net/publication/305818745_Ontology_for_Academic_Program_Accreditation"		"@article{article,
+author = {Sabri, Jehad},
+year = {2016},
+month = {07},
+pages = {},
+title = {Ontology for Academic Program Accreditation},
+volume = {7},
+journal = {International Journal of Advanced Computer Science and Applications},
+doi = {10.14569/IJACSA.2016.070717}
+}"
+6	CCSO	Evangelos Katis, Haridimos Kondylakis, Giannis Agathangelos, Kostas Vassilakis	TEI Crete, Heraklion	Greece	2017-2018	https://2018.eswc-conferences.org/files/posters-demos/paper_246.pdf	Full-text available		"• Course-oriented ontology
+• Curriculum management
+• Describe and annotate syllabi across universities, edu systems and disciplines
+• for: semantic search, matching, interlinking, recommendation of courses ...
+• Aimed at higher education curriculum"			So far, there has always been an entity called Person	no	"http://xworks.gr/ontologies/ccso.owl
+"		"@inproceedings{DBLP:conf/esws/KatisKAV18,
+  author    = {Evangelos Katis and
+               Haridimos Kondylakis and
+               Giannis Agathangelos and
+               Kostas Vassilakis},
+  editor    = {Aldo Gangemi and
+               Anna Lisa Gentile and
+               Andrea Giovanni Nuzzolese and
+               Sebastian Rudolph and
+               Maria Maleshkova and
+               Heiko Paulheim and
+               Jeff Z. Pan and
+               Mehwish Alam},
+  title     = {Developing an Ontology for Curriculum and Syllabus},
+  booktitle = {The Semantic Web: {ESWC} 2018 Satellite Events - {ESWC} 2018 Satellite
+               Events, Heraklion, Crete, Greece, June 3-7, 2018, Revised Selected
+               Papers},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11155},
+  pages     = {55--59},
+  publisher = {Springer},
+  year      = {2018},
+  url       = {https://doi.org/10.1007/978-3-319-98192-5\_11},
+  doi       = {10.1007/978-3-319-98192-5\_11},
+  timestamp = {Wed, 25 Sep 2019 18:19:48 +0200},
+  biburl    = {https://dblp.org/rec/conf/esws/KatisKAV18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+7	FOAF-Academic Ontology: A Vocabulary for the Academic Community	"Edlira Kalemi,
+Edlira Martiri"	University of Surrey	UK	2011-2012	"https://www.researchgate.net/publication/220783175_FOAF-Academic_Ontology_A_Vocabulary_for_the_Academic_Community
+
+https://www.semanticscholar.org/paper/FOAF-Academic-Ontology%3A-A-Vocabulary-for-the-Kalemi-Martiri/bbe40c40ee1fd2deb5a879d99ed31ff00037eae5/figure/5"	Full-text requested by Bach	• paper not retrieved	"• Built on top of FOAF vocabulary by restricting the target audience as only academic communities.
+"	http://doi.org/10.11591/ijece.v9i5.pp4302-4310			No, only foaf	"source code N/A, 
+https://www.researchgate.net/publication/220783175_FOAF-Academic_Ontology_A_Vocabulary_for_the_Academic_Community"		"@inproceedings{DBLP:conf/incos/KalemiM11,
+  author    = {Edlira Kalemi and
+               Edlira Martiri},
+  editor    = {Fatos Xhafa and
+               Leonard Barolli and
+               Mario K{\""{o}}ppen},
+  title     = {FOAF-Academic Ontology: {A} Vocabulary for the Academic Community},
+  booktitle = {2011 Third International Conference on Intelligent Networking and
+               Collaborative Systems (INCoS), Fukuoka, Japan, November 30 - Dec.
+               2, 2011},
+  pages     = {440--445},
+  publisher = {{IEEE} Computer Society},
+  year      = {2011},
+  url       = {https://doi.org/10.1109/INCoS.2011.94},
+  doi       = {10.1109/INCoS.2011.94},
+  timestamp = {Wed, 16 Oct 2019 14:14:53 +0200},
+  biburl    = {https://dblp.org/rec/conf/incos/KalemiM11.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+8	AIISO (Academic Institution Internal Structure Ontology)	"Rob Styles,
+Nadeem Shabir"	University College Dublin	Ireland	2008-2009	"https://vocab.org/aiiso/
+
+https://www.researchgate.net/publication/321662292_Ontology-Based_EducationIndustry_Collaboration_System
+
+https://www.researchgate.net/publication/309417557_A_Case_Study_on_Linked_Data_for_University_Courses
+
+https://www.researchgate.net/publication/304888283_Agent_model_development_by_using_ontology_in_university's_archiving"	Full-text not available?		"• Similar purpose as VIVO
+• describes organizational structire of academic institutions"	http://doi.org/10.11591/ijece.v9i5.pp4302-4310			Yes https://lov.linkeddata.es/dataset/lov/vocabs/aiiso	"https://vocab.org/aiiso/
+"		"no article
+http://purl.org/vocab/aiiso/schema"
+9	CCSS (Generated from Common Core English Language Arts)	"Sabbir M. Rashid
+Deborah L. McGuinness
+"	Rensselaer Polytechnic Institute, Troy, NY	USA	2018-2019	http://ceur-ws.org/Vol-2182/paper_7.pdf	Full-text available	"https://archive.org/services/purl/purl/ontology/edu/
+
+https://github.com/tetherless-world/education-standards-ontology/blob/master/ont/eso.ttl"	"• a method to generate an ontology from web content of Common Core Website (from its HTML structure, which is not semantically annotated)
+• help students align their knowledge with standards in the Common Core, which is a standard that describes how to learn.
+• support for education: different types of learning: personalized learning (learning pace, preferences, ...), e-learning resources, virtual classrooms"			One interesting mention about derivation of SPARQL from Natural language sentences. Ontology-enabled envs can help improve query formation and result integration	No	"
+https://github.com/tetherless-world/education-standards-ontology/blob/master/ont/eso.ttl"		"@inproceedings{DBLP:conf/semweb/RashidM18,
+  author    = {Sabbir M. Rashid and
+               Deborah L. McGuinness},
+  editor    = {K. Krasnow Waterman},
+  title     = {Creating and Using an Education Standards Ontology to Improve Education},
+  booktitle = {Proceedings of the Workshop on Semantic Web for Social Good co-located
+               with 17th International Semantic Web Conference, SW4SG@ISWC 2018,
+               Monterey, California, USA, October 9, 2018., Monterey, California,
+               USA, October 9, 2018},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2182},
+  publisher = {CEUR-WS.org},
+  year      = {2018},
+  url       = {http://ceur-ws.org/Vol-2182/paper\_5.pdf},
+  timestamp = {Wed, 12 Feb 2020 16:44:50 +0100},
+  biburl    = {https://dblp.org/rec/conf/semweb/RashidM18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+10	Academic Evaluation Ontology	"Siti Aminah 
+Iis Afriyanti 
+Adila Krisnadhi"	Universitas Padjajaran	Indonesia	2017-2018	"https://ieeexplore.ieee.org/document/7930126
+
+https://www.computer.org/csdl/proceedings-article/icde/2017/6543b569/12OmNAq3hQV
+
+https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/6543b569/pdf?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjc2RsX2FwaSIsImF1ZCI6ImNzZGxfYXBpX2Rvd25sb2FkX3Rva2VuIiwic3ViIjoiYW5vbnltb3VzQGNvbXB1dGVyLm9yZyIsImVtYWlsIjoiYW5vbnltb3VzQGNvbXB1dGVyLm9yZyIsImV4cCI6MTU4MjIyMjUyOH0.ASrn60t0zds0_Yo5_avfCvq6sUXtlWrpeAEHKF8AKaE"	Full-text available	full text not available	-				No	"closed access paper, source code N/A, 
+DOI: 10.1109/ICDE.2017.229"		"@inproceedings{DBLP:conf/icde/AminahAK17,
+  author    = {Siti Aminah and
+               Iis Afriyanti and
+               Adila Krisnadhi},
+  title     = {Ontology-Based Approach for Academic Evaluation System},
+  booktitle = {33rd {IEEE} International Conference on Data Engineering, {ICDE} 2017,
+               San Diego, CA, USA, April 19-22, 2017},
+  pages     = {1569--1574},
+  publisher = {{IEEE} Computer Society},
+  year      = {2017},
+  url       = {https://doi.org/10.1109/ICDE.2017.229},
+  doi       = {10.1109/ICDE.2017.229},
+  timestamp = {Wed, 16 Oct 2019 14:14:56 +0200},
+  biburl    = {https://dblp.org/rec/conf/icde/AminahAK17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+11	FRAPO (Funding, Research Administration and Projects Ontology)	David Shotton	University of Oxford: Oxford, Oxfordshire	UK	2017-2018	"http://www.sparontologies.net/ontologies/frapo
+
+https://sparontologies.github.io/frapo/current/frapo.html"	Full-text available		"• used to describe research project
+administrative information
+• describe grant applications, funding bodies, budget management, projects, project partners
+• also suitable to desribe other types of projects
+• uses foaf"				https://lov.linkeddata.es/dataset/lov/vocabs/frapo	"http://purl.org/cerif/frapo/
+"		"@inproceedings{DBLP:conf/semweb/PeroniS18,
+  author    = {Silvio Peroni and
+               David M. Shotton},
+  editor    = {Denny Vrandecic and
+               Kalina Bontcheva and
+               Mari Carmen Su{\'{a}}rez{-}Figueroa and
+               Valentina Presutti and
+               Irene Celino and
+               Marta Sabou and
+               Lucie{-}Aim{\'{e}}e Kaffee and
+               Elena Simperl},
+  title     = {The {SPAR} Ontologies},
+  booktitle = {The Semantic Web - {ISWC} 2018 - 17th International Semantic Web Conference,
+               Monterey, CA, USA, October 8-12, 2018, Proceedings, Part {II}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {11137},
+  pages     = {119--136},
+  publisher = {Springer},
+  year      = {2018},
+  url       = {https://doi.org/10.1007/978-3-030-00668-6\_8},
+  doi       = {10.1007/978-3-030-00668-6\_8},
+  timestamp = {Wed, 25 Sep 2019 18:15:07 +0200},
+  biburl    = {https://dblp.org/rec/conf/semweb/PeroniS18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+12	UniGrad (FOAF+SIOC extension)	Moharram Challenger 
+	Islamic Azad University	Iran	2011-2012	https://pdfs.semanticscholar.org/85d6/cbab2b83c1253e7632d8c4e9e4a11f288304.pdf	Full-text available		"• can model a person’s education,
+work experience, research interests, and publications
+• can capture change of e.g. jobs in time (meaning it can hold series of jobs in a sequence) by introducing an ""experience"" concept and start/end date props
+• imports DBLP ontology
+• to create an Academic Social Network that allow the integration of multiple data sources and inference of implicit knowledge (co-authors, reseach interests)"			A very good example of workflow for iRAO	"No, but part of it 
+https://lov.linkeddata.es/dataset/lov/vocabs/sioc"	"source code N/A, 
+https://www.researchgate.net/publication/266502970_The_Ontology_and_Architecture_for_an_Academic_Social_Network"		-
+13	Ontology for the personal learning environments in the development of thesis projects	"Mariela Tapia-Leon
+Teresa Mirian Santamaria Lòpez
+Janneth Chicaiza
+Sergio Luján-Mora"	Universidad de Guayaquil (UG)	Ecuador	2017-2018	https://www.researchgate.net/publication/319449170_Ontology_for_the_personal_learning_environments_in_the_development_of_thesis_projects	Full-text available		"• ""solution"" to infoxication
+• organize the process of thesis development via PLE (Personal Learning Enviroments)
+• create inference rules-based recommendations of technological, informational and human resources for thesis development
+• infer recommendations (field expert can help student working on a topic)
+• infer recommendations of tools for each phases"				No	"source code N/A, 
+DOI: 10.1145/3175536.3175555
+"		"@inproceedings{DBLP:conf/icetc/Tapia-LeonSCL17,
+  author    = {Mariela Tapia{-}Le{\'{o}}n and
+               Teresa Santamar{\'{\i}}a and
+               Janneth Chicaiza and
+               Sergio Luj{\'{a}}n{-}Mora},
+  title     = {Ontology of personal learning environments in the development of thesis
+               project},
+  booktitle = {Proceedings of the 9th International Conference on Education Technology
+               and Computers, {ICETC} 2017, Barcelona, Spain, December 20-22, 2017},
+  pages     = {183--187},
+  publisher = {{ACM}},
+  year      = {2017},
+  url       = {https://doi.org/10.1145/3175536.3175555},
+  doi       = {10.1145/3175536.3175555},
+  timestamp = {Tue, 06 Nov 2018 16:58:26 +0100},
+  biburl    = {https://dblp.org/rec/conf/icetc/Tapia-LeonSCL17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+14	"ORKG, used for Comparing Research Contributions in a Scholarly Knowledge
+Graph
+"	"Allard Oelen, 
+Mohaman Yaser Jaradeh,
+Kheir Eddine Farfar,
+Markus Stocker,
+Soren Auer"	"University of Hannover
+TIB"	Germany	2019	http://ceur-ws.org/Vol-2526/paper3.pdf	Full-text available	https://gitlab.com/TIBHannover/orkg/orkg-ontology/-/blob/master/orkg-core.ttl	"• finding similar contributions
+• mapping properties
+• visualization of comparison of contributions
+• automatically compare related literature for literature review
+• the idea is to compare resources that share the same or similar set of properties (predicates)
+• also take into account that propertieswith different labels can be equivalent, use word embedding to determine the similarity of properties and group them together"			"• interesting referenced resource: Alina Petrova, Evgeny Sherkhonov, Bernardo Cuenca Grau, and Ian Horrocks.
+2017. Entity comparison in RDF graphs LNCS
+
+https://iswc2017.semanticweb.org/wp-content/uploads/papers/MainProceedings/237.pdf"	No, too new	https://gitlab.com/TIBHannover/orkg/orkg-ontology/-/blob/master/orkg-core.ttl		"@inproceedings{DBLP:conf/kcap/OelenJFSA19,
+  author    = {Allard Oelen and
+               Mohamad Yaser Jaradeh and
+               Kheir Eddine Farfar and
+               Markus Stocker and
+               S{\""{o}}ren Auer},
+  editor    = {Daniel Garijo and
+               Milan Markovic and
+               Paul Groth and
+               Idafen Santana{-}P{\'{e}}rez and
+               Khalid Belhajjame},
+  title     = {Comparing Research Contributions in a Scholarly Knowledge Graph},
+  booktitle = {Proceedings of the Third International Workshop on Capturing Scientific
+               Knowledge co-located with the 10th International Conference on Knowledge
+               Capture {(K-CAP} 2019), Marina del Rey, California , November 19th,
+               2019},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2526},
+  pages     = {21--26},
+  publisher = {CEUR-WS.org},
+  year      = {2019},
+  url       = {http://ceur-ws.org/Vol-2526/paper3.pdf},
+  timestamp = {Wed, 12 Feb 2020 16:44:30 +0100},
+  biburl    = {https://dblp.org/rec/conf/kcap/OelenJFSA19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+15	ScholOnto: An ontology-based digital library server for research documents and discourse	"Simon Buckingham Shum,
+Enrico Motta,
+John Domingue"	University of Technology Sydney	Australia, UK	2000-2001	https://www.researchgate.net/publication/227274191_ScholOnto_An_ontology-based_digital_library_server_for_research_documents_and_discourse	Full-text available		"• digital library services
+• citations
+• expressing a document's semantics, like who is the author, what he did (different types of activities in his project)
+• scholarly contribution activities include: 
+- - addresses a problem
+- - analyses a data, idea
+- - uses-applies analysis, approach, ... see picture to the right"				No, too old	"Not an ontology
+DOI: 10.1007/s007990000034
+modeled in OCML
+No source code
+https://www.researchgate.net/publication/227274191_ScholOnto_An_ontology-based_digital_library_server_for_research_documents_and_discourse"		"@article{DBLP:journals/jodl/ShumMD00,
+  author    = {Simon Buckingham Shum and
+               Enrico Motta and
+               John Domingue},
+  title     = {ScholOnto: an ontology-based digital library server for research documents
+               and discourse},
+  journal   = {Int. J. on Digital Libraries},
+  volume    = {3},
+  number    = {3},
+  pages     = {237--248},
+  year      = {2000},
+  url       = {https://doi.org/10.1007/s007990000034},
+  doi       = {10.1007/s007990000034},
+  timestamp = {Sat, 19 Oct 2019 19:55:55 +0200},
+  biburl    = {https://dblp.org/rec/journals/jodl/ShumMD00.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+16	"An Ontology of Scientific Experiments
+(EXPO)"	"Larisa Soldatova,
+Ross Donald King"	University of London	UK	2006-2007	https://www.researchgate.net/publication/6780382_An_Ontology_of_Scientific_Experiments	Full-text available		"• formalizes generic knowledge about experimental design, methodology and results representation, since all the sciences follow the same experimental principles
+• can be used to describe a variety of scientific experiments, physics, computational,
+• includes enumerations of types of experiments, their hypotheses, data, factors,  observations, results, conclusion, ..."				No, too irrelevant			"@article{article,
+author = {Soldatova, Larisa and King, Ross},
+year = {2007},
+month = {01},
+pages = {795-803},
+title = {An Ontology of Scientific Experiments},
+volume = {3},
+journal = {Journal of the Royal Society, Interface / the Royal Society},
+doi = {10.1098/rsif.2006.0134}
+}"
+17	KISTI Reference & Academic Ontology	"Hanmin Jung, 
+Seungwoo Lee, 
+Pyung Kim, 
+Mi-Kyoung Lee, 
+Beom-Jong You, and 
+Won-Kyung Sung"	KISTI	Korea	2008-2010	"https://link.springer.com/chapter/10.1007/978-3-642-13489-0_32
+https://www.w3.org/2001/sw/sweo/public/UseCases/OntoFrame/#tech
+"	Full-text available		"• research entities (people and institutions)
+• accomplishments (products like articles)
+• locations, geo-data, topics,
+• connection of researchers to affiliations through accomplishment"	OntoFrame, no longer available			no	"No source code, probably too old
+https://www.w3.org/2001/sw/sweo/public/UseCases/OntoFrame/#tech"		"@inproceedings{DBLP:conf/esws/LeeLKJS10,
+  author    = {Seungwoo Lee and
+               Mikyoung Lee and
+               Pyung Kim and
+               Hanmin Jung and
+               Won{-}Kyung Sung},
+  editor    = {Lora Aroyo and
+               Grigoris Antoniou and
+               Eero Hyv{\""{o}}nen and
+               Annette ten Teije and
+               Heiner Stuckenschmidt and
+               Liliana Cabral and
+               Tania Tudorache},
+  title     = {OntoFrame {S3:} Semantic Web-Based Academic Research Information Portal
+               Service Empowered by {STAR-WIN}},
+  booktitle = {The Semantic Web: Research and Applications, 7th Extended Semantic
+               Web Conference, {ESWC} 2010, Heraklion, Crete, Greece, May 30 - June
+               3, 2010, Proceedings, Part {II}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {6089},
+  pages     = {401--405},
+  publisher = {Springer},
+  year      = {2010},
+  url       = {https://doi.org/10.1007/978-3-642-13489-0\_32},
+  doi       = {10.1007/978-3-642-13489-0\_32},
+  timestamp = {Tue, 14 May 2019 10:00:44 +0200},
+  biburl    = {https://dblp.org/rec/conf/esws/LeeLKJS10.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+18	Ontology for describing academic mental states	"Keiichi Muramatsu, 
+Eiichirou Tanaka, 
+Keiichi Watanuki & 
+Tatsunori Matsui "	Saitama University	Japan	2016-2017	"https://telrp.springeropen.com/articles/10.1186/s41039-016-0029-1
+
+https://www.researchgate.net/publication/315319764_Ontological_descriptions_of_receiver_states_for_sharing_knowledge_in_learning_service_design"	Full-text available	based on top-level Yet Another More Advanced Top-level Ontology (YAMATO)	"• To identify learner’s mental states, the ontology operates on the basis of the theoretical and data-driven knowledge of emotions.
+• formalizes the academic boredom scale (ABS) and classifies several feelings
+• “want something else,” “tired of activity,” “impatient,” “frustrated/annoyed,” “apathetic,” “nothing to do,” “activity dull,” “repetitive,” “wonder why doing this,” and “useless/unimportant.”"	 		paper doesn't describe the ontology in detail	no	"Developed in hozo.jp, no source code
+https://www.researchgate.net/publication/315319764_Ontological_descriptions_of_receiver_states_for_sharing_knowledge_in_learning_service_design"		"@article{article,
+author = {MURAMATSU, Keiichi and Kimita, Koji and Ishii, Takatoshi and Nemoto, Yutaro and TANAKA, Eiichirou and WATANUKI, Keiichi and MATSUI, Tatsunori and Shimomura, Yoshiki},
+year = {2017},
+month = {03},
+pages = {JAMDSM0008-JAMDSM0008},
+title = {Ontological descriptions of receiver states for sharing knowledge in learning service design},
+volume = {11},
+journal = {Journal of Advanced Mechanical Design, Systems, and Manufacturing},
+doi = {10.1299/jamdsm.2017jamdsm0008}
+}"
+19	Ontology for Academic Context Reasoning
+	"Bravo, M., 
+Reyes-Ortiz, J.A., 
+Cruz-Ruiz, I., 
+Gutiérrez-Rosales, A., 
+Padilla-Cuevas, J."	Metropolitan Autonomous University	Mexico	2020	https://www.researchgate.net/publication/328754830_Ontology_for_Academic_Context_Reasoning	Full-text available		"• addresses the user ""context"" 
+• representation and management of contexts and events in the university environment addressing particularly
+academic issues
+• persons, physical space, sensor networks, events, etc. among other entities that exist in the academic environment
+• concept for context: User, Device, application, Physical Environment, Resource, Network, Location, and Activity"				no	"N/A No mentioning of any source code in the papers
+DOI: 10.1016/j.procs.2018.10.165"		"@inproceedings{DBLP:conf/euspn/BravoRCGP18,
+  author    = {Maricela Bravo and
+               Jos{\'{e}} Alejandro Reyes{-}Ortiz and
+               Isabel Cruz{-}Ruiz and
+               Ariadna Guti{\'{e}}rrez{-}Rosales and
+               Josu{\'{e}} Padilla{-}Cuevas},
+  editor    = {Elhadi M. Shakshuki and
+               Ansar{-}Ul{-}Haque Yasar},
+  title     = {Ontology for Academic Context Reasoning},
+  booktitle = {The 9th International Conference on Emerging Ubiquitous Systems and
+               Pervasive Networks {(EUSPN} 2018) / The 8th International Conference
+               on Current and Future Trends of Information and Communication Technologies
+               in Healthcare {(ICTH-2018)} / Affiliated Workshops, November 5-8,
+               2018, Leuven, Belgium},
+  series    = {Procedia Computer Science},
+  volume    = {141},
+  pages     = {175--182},
+  publisher = {Elsevier},
+  year      = {2018},
+  url       = {https://doi.org/10.1016/j.procs.2018.10.165},
+  doi       = {10.1016/j.procs.2018.10.165},
+  timestamp = {Wed, 22 Jan 2020 09:22:30 +0100},
+  biburl    = {https://dblp.org/rec/conf/euspn/BravoRCGP18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+20	Constructing and mining a semantic-based academic social network	"Duong, Trong Hai
+ Nguyen, Ngoc Thanh 
+ Jo, Geun Sik"	"Inha University, Korea
+Wroclaw University of Technology, Poland"	Korea/Poland	2010	https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs00451	not available						no	"N/A
+DOI: 10.1299/jamdsm.2017jamdsm0008"		"@article{DBLP:journals/jifs/DuongNJ10,
+  author    = {Trong Hai Duong and
+               Ngoc Thanh Nguyen and
+               GeunSik Jo},
+  title     = {Constructing and mining a semantic-based academic social network},
+  journal   = {J. Intell. Fuzzy Syst.},
+  volume    = {21},
+  number    = {3},
+  pages     = {197--207},
+  year      = {2010},
+  url       = {https://doi.org/10.3233/IFS-2010-0451},
+  doi       = {10.3233/IFS-2010-0451},
+  timestamp = {Sat, 25 Apr 2020 13:53:19 +0200},
+  biburl    = {https://dblp.org/rec/journals/jifs/DuongNJ10.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+21	Informatics Research Artifact Ontology	"Nguyen, Viet Bach,
+Svátek, Vojtěch"	University of Economics, Prague	Czech Republic	2020	N/A	N/A		"• conference resource tracks
+• reivew recommendation
+• post-graduate research recommendations"				no	https://w3id.org/def/InformaticsResearchArtifactsOntology		-
+22	Scholarly Ontology	Vayianos Pertsas, Panos Constantopoulos	Athens University of Economics and Business,A	Greece	2017	https://s3.amazonaws.com/academia.edu.documents/47224755/ScholarlyOntology_PertsasConstantopoulos_IJDL.pdf?response-content-disposition=inline%3B%20filename%3DScholarly_Ontology_Modelling_Scholarly_P.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATUSBJ6BADFXPRKOL%2F20200530%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200530T170313Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEK%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGr%2BEoYUuqPrsiMpk1JEQMlzH%2FQ3NLAw44ZXcdJFa1lBAiEA3vWezRoUvcIxmo3dC8p51c9Wd9DWDG90EBof3hrOi9cqtAMIFxAAGgwyNTAzMTg4MTEyMDAiDEzpMDX8SkmAD68nbSqRA4ryaGQS%2Fe6oL7Qx2i%2FwBMSrdUVm0tUl0FFhPebKnwM6i1Mna90I6zfGfPhFurwHXvwtWfsB86NHOrAwqmEX9lxTPyC3uEAjSt8PEs4dt4RoqAZZINOwdrqhfqPbfJEBI8NNVMyTwVCMarehY4J0pBOsakGg6kEgyVwkFsftOZvWTIXK0hBe13JJkk5TOqarQilJSuIt44JIErdU1zgGbdN2bl4ZFMdxgGXAD0EwvE23%2FM7t4f31kdvFkh%2BZd9R6l5iDxAC4B0BKW9l446OuB%2FhBtexFMiY1skHQX1E9TxNokUV2bV1DztXm1z1uJyoFd1cDq1%2BrNkr5O6DDDJLzbWfDLxjZGbvtA6Q36awX%2FPnsyCpbk7vj2L1pRWr%2BiDfbDdb1a30orCxoxLSvAtfPxTeNe%2BAoXmPjf%2FPW6JUdS%2FocQifI71LcHFAayRHLYJKLsy6IOKO%2B0xOl2LvZCo5RzlOjfH81EkBdOiaZElvkwBaQNTbfv6ksZ8LwfFW7glYTIx8%2Fijev9F3czEEysSYx7qsEMN7PyfYFOusBMkWfGVylqkYvHb%2FJrMcyPCehD7dTDU2rLxjYM6kFKVzs0PgZ8kkEkaOdGHy28ANOAe33n4oJd%2BKn6HEK9m45w3tzZ4SqUBbvP%2Fu4RQwnerYW82KmGPmVFakCx%2FA2nGYP7xsfRapgFMEfb8NNMXuWIMnQK63kgYpAtUlOFp8bleDDVb6zUxpUb1s2vZMXaY8Q93i3Fijqtnv5Y6%2FcpXUGEaZpx1pBBZjGr9TWHSeYtHX8XUtn1lj8Uybn%2BRo7ftizZnZx0n27nR0HQlgw5ayxBqqHchl2GTO2IL3%2Be1x0Uxz%2BYkT4XGaOYIdhfQ%3D%3D&X-Amz-Signature=d3d06a5046d0b27ab3275010e22fddce6419f1bd251fc65cd453368eea941d82	Full-text available							http://isdb.cs.aueb.gr/scholarlyontology/ScholarlyOntology		"@article{DBLP:journals/jodl/PertsasC17,
+  author    = {Vayianos Pertsas and
+               Panos Constantopoulos},
+  title     = {Scholarly Ontology: modelling scholarly practices},
+  journal   = {Int. J. on Digital Libraries},
+  volume    = {18},
+  number    = {3},
+  pages     = {173--190},
+  year      = {2017},
+  url       = {https://doi.org/10.1007/s00799-016-0169-3},
+  doi       = {10.1007/s00799-016-0169-3},
+  timestamp = {Tue, 22 Aug 2017 17:02:38 +0200},
+  biburl    = {https://dblp.org/rec/journals/jodl/PertsasC17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+23	CERIF	"Iván Ruiz Rube, 
+Keith G Jeffery, 
+Jan Dvorak, 
+Brigitte Joerg, 
+Geert van Grootel, 
+Miguel Ángel Sicilia"	euroCRIS	Netherlands	2013	-	N/A							https://www.eurocris.org/ontologies/cerif/		
+24	SemSur	"Said Fathalla
+Sören Auer
+Christoph Lange"		Germany	2018	https://www.researchgate.net/publication/323167072_SemSur_A_Core_Ontology_for_the_Semantic_Representation_of_Research_Findings	N/A							https://saidfathalla.github.io/SemSur/doc/		"@inproceedings{DBLP:conf/i-semantics/FathallaVA018,
+  author    = {Said Fathalla and
+               Sahar Vahdati and
+               S{\""{o}}ren Auer and
+               Christoph Lange},
+  editor    = {Anna Fensel and
+               Victor de Boer and
+               Tassilo Pellegrini and
+               Elmar Kiesling and
+               Bernhard Haslhofer and
+               Laura Hollink and
+               Alexander Schindler},
+  title     = {SemSur: {A} Core Ontology for the Semantic Representation of Research
+               Findings},
+  booktitle = {Proceedings of the 14th International Conference on Semantic Systems,
+               {SEMANTICS} 2018, Vienna, Austria, September 10-13, 2018},
+  series    = {Procedia Computer Science},
+  volume    = {137},
+  pages     = {151--162},
+  publisher = {Elsevier},
+  year      = {2018},
+  url       = {https://doi.org/10.1016/j.procs.2018.09.015},
+  doi       = {10.1016/j.procs.2018.09.015},
+  timestamp = {Thu, 01 Nov 2018 18:40:31 +0100},
+  biburl    = {https://dblp.org/rec/conf/i-semantics/FathallaVA018.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+25	SEDE	"Senator Jeong
+Hong-Gee Kim"		Korea	2009	https://www.researchgate.net/publication/200704228_SEDE_An_ontology_for_scholarly_event_description	Full-text available							https://www.researchgate.net/publication/200704228_SEDE_An_ontology_for_scholarly_event_description		"@article{DBLP:journals/jis/JeongK10,
+  author    = {Senator Jeong and
+               Hong{-}Gee Kim},
+  title     = {{SEDE:} An ontology for scholarly event description},
+  journal   = {J. Inf. Sci.},
+  volume    = {36},
+  number    = {2},
+  pages     = {209--227},
+  year      = {2010},
+  url       = {https://doi.org/10.1177/0165551509358487},
+  doi       = {10.1177/0165551509358487},
+  timestamp = {Thu, 06 Jun 2019 17:27:47 +0200},
+  biburl    = {https://dblp.org/rec/journals/jis/JeongK10.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+26	AcademIS	"Evangelia Triperina
+C. Sgouropoulou
+A. Tsolakidis"		Greece	2013	https://kopernio.com/viewer?doi=10.1145%2F2491845.2491884&token=WzI0MDgxNDIsIjEwLjExNDUvMjQ5MTg0NS4yNDkxODg0Il0.4_tDo-1HwCggGolS2XTubglnTbA	Full-text available							https://kopernio.com/viewer?doi=10.1145%2F2491845.2491884&token=WzI0MDgxNDIsIjEwLjExNDUvMjQ5MTg0NS4yNDkxODg0Il0.4_tDo-1HwCggGolS2XTubglnTbA		"@inproceedings{DBLP:conf/pci/TriperinaST13,
+  author    = {Evangelia Triperina and
+               Cleo Sgouropoulou and
+               Anastasios Tsolakidis},
+  editor    = {Panayiotis H. Ketikidis and
+               Konstantinos G. Margaritis and
+               Ioannis P. Vlahavas and
+               Alexander Chatzigeorgiou and
+               George Eleftherakis and
+               Ioannis Stamelos},
+  title     = {AcademIS: an ontology for representing academic activity and collaborations
+               within HEIs},
+  booktitle = {17th Panhellenic Conference on Informatics, {PCI} 2013, Thessaloniki,
+               Greece - September 19 - 21, 2013},
+  pages     = {264--271},
+  publisher = {{ACM}},
+  year      = {2013},
+  url       = {https://doi.org/10.1145/2491845.2491884},
+  doi       = {10.1145/2491845.2491884},
+  timestamp = {Tue, 06 Nov 2018 11:06:43 +0100},
+  biburl    = {https://dblp.org/rec/conf/pci/TriperinaST13.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+																
+1	FaBiO	Silvio Peroni, David Shotton	"University of Bologna, 
+University of Oxford"	Italy, UK	2012	http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf	Full-text available		"1. It is an ontology for describing entities that are published or potentially publishable (e.g., journal articles, conference papers, books), and that contain or are referred to by bibliographic references.
+2. They also include blogs, web pages, datasets, computer algorithms, experimental protocols, formal specifications and vocabularies, legal records, governmental papers, technical and commercial reports, and similar publications, and also anthologies, catalogs, and similar collections.
+3. FaBiO has been developed so to limit any restriction to its classes as well as the domains and ranges of its properties. This flexibility has the great advantage of allowing FaBiO to be used together with other models."				Yes https://lov.linkeddata.es/dataset/lov/vocabs/fabio	http://purl.org/spar/fabio		"@article{DBLP:journals/ws/PeroniS12,
+  author    = {Silvio Peroni and
+               David M. Shotton},
+  title     = {FaBiO and CiTO: Ontologies for describing bibliographic resources
+               and citations},
+  journal   = {J. Web Semant.},
+  volume    = {17},
+  pages     = {33--43},
+  year      = {2012},
+  url       = {https://doi.org/10.1016/j.websem.2012.08.001},
+  doi       = {10.1016/j.websem.2012.08.001},
+  timestamp = {Tue, 29 Jan 2019 12:27:04 +0100},
+  biburl    = {https://dblp.org/rec/journals/ws/PeroniS12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+2	Citation Typing Ontology (CiTO)	Silvio Peroni, David Shotton	"University of Bologna, 
+University of Oxford"	Italy, UK	2012	http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf	Full-text available		"1. It is an ontology that enables characterization of the nature or type of citations, both factually and rhetorically.
+2. All these properties (and, consequently, their inverses) may be classified as rhetorical and/or factual, with the rhetorical properties being grouped in three sets depending on their connotation: positive, informative (or neutral) or negative.
+3. All the domain and range constraints from the object properties are not defined, so that this ontology could be easily integrated with other models, e.g., FaBiO.
+4. Two other ontologies have been defined for explicitly describing specific aspects of CiTO (1. Functions of Citations Ontology (FOCO), 2. CiTO to Wordnet Ontology (C2W)).
+"				Yes https://lov.linkeddata.es/dataset/lov/vocabs/cito	http://purl.org/spar/cito		"@article{DBLP:journals/biomedsem/Shotton10,
+  author    = {David M. Shotton},
+  title     = {CiTO, the Citation Typing Ontology},
+  journal   = {J. Biomedical Semantics},
+  volume    = {1},
+  number    = {{S-1}},
+  pages     = {S6},
+  year      = {2010},
+  url       = {http://www.jbiomedsem.com/content/1/S1/S6},
+  timestamp = {Tue, 23 May 2017 14:37:25 +0200},
+  biburl    = {https://dblp.org/rec/journals/biomedsem/Shotton10.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+3	Bibliographic Reference Ontology (BiRO)	"Angelo Di Iorio, Andrea Giovanni Nuzzolese, Silvio Peroni,
+David Shotton, and Fabio Vitali"	University of Bologna (Italy), Consiglio Nazionale delle Ricerche (Italy), University of Oxford (UK)	Italy, UK	2014	http://ceur-ws.org/Vol-1155/paper-05.pdf	Full-text available		"1. This is an ontology meant to define bibliographic records, bibliographic references, and their compilation into bibliographic collections and bibliographic lists, respectively.
+2. BiRO uses an OWL-based definition of the FRBR model to define bibliographic references and their compilation into ordered bibliographic lists, by means of the Collections Ontology.
+"				Yes https://lov.linkeddata.es/dataset/lov/vocabs/biro	http://purl.org/spar/biro		"@inproceedings{DBLP:conf/esws/IorioNPSV14,
+  author    = {Angelo Di Iorio and
+               Andrea Giovanni Nuzzolese and
+               Silvio Peroni and
+               David M. Shotton and
+               Fabio Vitali},
+  editor    = {Alexander Garc{\'{\i}}a Castro and
+               Christoph Lange and
+               Phillip W. Lord and
+               Robert Stevens},
+  title     = {Describing bibliographic references in {RDF}},
+  booktitle = {Proceedings of the 4th Workshop on Semantic Publishing co-located
+               with the 11th Extended Semantic Web Conference {(ESWC} 2014), Anissaras,
+               Greece, May 25th, 2014},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {1155},
+  publisher = {CEUR-WS.org},
+  year      = {2014},
+  url       = {http://ceur-ws.org/Vol-1155/paper-05.pdf},
+  timestamp = {Wed, 12 Feb 2020 16:45:12 +0100},
+  biburl    = {https://dblp.org/rec/conf/esws/IorioNPSV14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+4	Citation Counting and Context Characterisation Ontology (C4O)	"Angelo Di Iorio, Andrea Giovanni Nuzzolese, Silvio Peroni,
+David Shotton, and Fabio Vitali"	University of Bologna (Italy), Consiglio Nazionale delle Ricerche (Italy), University of Oxford (UK)	Italy, UK	2014	http://ceur-ws.org/Vol-1155/paper-05.pdf	Full-text available		"1. This is an ontology that permits the number of in-text citations of a cited source to be recorded, together with their textual citation contexts, along with the number of citations a cited entity has received globally on a particular date.
+2. It is also useful to describe how these references are used in the citing paper.
+3.C4O provides the ontological structures which allow one to record the number of in-text citations i.e., the number of in-text reference pointers to a single reference in the reference list of the citing article."				Yes https://lov.linkeddata.es/dataset/lov/vocabs/c4o	http://purl.org/spar/c4o		"@inproceedings{DBLP:conf/semweb/OsbornePM14,
+  author    = {Francesco Osborne and
+               Silvio Peroni and
+               Enrico Motta},
+  editor    = {Jun Zhao and
+               Marieke van Erp and
+               Carsten Ke{\ss}ler and
+               Tomi Kauppinen and
+               Jacco van Ossenbruggen and
+               Willem Robert van Hage},
+  title     = {Clustering Citation Distributions for Semantic Categorization and
+               Citation Prediction},
+  booktitle = {Proceedings of the 4th Workshop on Linked Science 2014 - Making Sense
+               Out of Data {(LISC2014)} co-located with the 13th International Semantic
+               Web Conference {(ISWC} 2014), Riva del Garda, Italy, October 19, 2014},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {1282},
+  pages     = {24--35},
+  publisher = {CEUR-WS.org},
+  year      = {2014},
+  url       = {http://ceur-ws.org/Vol-1282/lisc2014\_submission\_9.pdf},
+  timestamp = {Wed, 12 Feb 2020 16:44:52 +0100},
+  biburl    = {https://dblp.org/rec/conf/semweb/OsbornePM14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+5	Document Components Ontology (DoCO)	Alexandru Constantin, Silvio Peroni, Steve Pettifer, David Shotton, Fabio Vitali	École Polytechnique Fédérale de Lausanne, University of Bologna, Institute of Cognitive Sciences and Technologies (National Research Council), University of Manchester, University of Oxford 	Switzerland, Italy, Italy, UK, UK	2016	https://content.iospress.com/articles/semantic-web/sw177	Full-text available		"1. This is an ontology that provides a structured vocabulary written of document components, both structural (e.g., block, inline, paragraph, section, chapter) and rhetorical (e.g., introduction, discussion, acknowledgments, reference list, figure, appendix).
+2. DoCO imports the Pattern Ontology that describes structural patterns (introduced in the paper entitled ""Dealing with structural patterns of XML documents""), and the Discourse Element Ontology (DEO), which was developed with DoCO and describes rhetorical components.
+3. It also defines hybrid classes describing elements that are both structural and rhetorical in nature, such as paragraph, section or list. DoCO is also aligned with the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB)."				Yes https://lov.linkeddata.es/dataset/lov/vocabs/doco	http://purl.org/spar/doco		"@article{DBLP:journals/semweb/ConstantinPPSV16,
+  author    = {Alexandru Constantin and
+               Silvio Peroni and
+               Steve Pettifer and
+               David M. Shotton and
+               Fabio Vitali},
+  title     = {The Document Components Ontology (DoCO)},
+  journal   = {Semantic Web},
+  volume    = {7},
+  number    = {2},
+  pages     = {167--181},
+  year      = {2016},
+  url       = {https://doi.org/10.3233/SW-150177},
+  doi       = {10.3233/SW-150177},
+  timestamp = {Wed, 25 Sep 2019 17:53:41 +0200},
+  biburl    = {https://dblp.org/rec/journals/semweb/ConstantinPPSV16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+6	Publishing Status Ontology (PSO)	Silvio Peroni, David Shotton, Fabio Vitali	University of Bologna, University of Oxford, University of Bologna	Italy, UK, Italy	2012	http://speroni.web.cs.unibo.it/publications/peroni-2012-scholarly-publishing-linked.pdf	Full-text available		"1. This is an ontology designed to characterize the publication status of documents at each stage of the publishing process (draft, submitted, under review, etc.).
+2. Documents can hold a particular status at a certain time as a direct consequence of a particular event.
+3. Pre Existing ontologies describing the status of documents (e.g., BIBO, the Project Documents Ontology, and the Document Status Ontology), relay for this on specific property links but this approach prevents a proper description of scenarios that require a temporal duration for each status.
+4. PSO, the Publishing Status Ontology, has been developed in order to address these issues in a more satisfactory manner.
+5. with PRO, PSO was developed following the TVC pattern, i.e., a model for describing scenarios in which something has value during a particular time and for a particular context. "				Yes https://lov.linkeddata.es/dataset/lov/vocabs/pso	http://purl.org/spar/pso		"@inproceedings{DBLP:conf/i-semantics/PeroniSV12,
+  author    = {Silvio Peroni and
+               David M. Shotton and
+               Fabio Vitali},
+  editor    = {Valentina Presutti and
+               Helena Sofia Pinto},
+  title     = {Scholarly publishing and linked data: describing roles, statuses,
+               temporal and contextual extents},
+  booktitle = {{I-SEMANTICS} 2012 - 8th International Conference on Semantic Systems,
+               {I-SEMANTICS} '12, Graz, Austria, September 5-7, 2012},
+  pages     = {9--16},
+  publisher = {{ACM}},
+  year      = {2012},
+  url       = {https://doi.org/10.1145/2362499.2362502},
+  doi       = {10.1145/2362499.2362502},
+  timestamp = {Wed, 14 Nov 2018 10:55:56 +0100},
+  biburl    = {https://dblp.org/rec/conf/i-semantics/PeroniSV12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+7	Publishing Roles Ontology (PRO)	Silvio Peroni, David Shotton, Fabio Vitali	University of Bologna, University of Oxford, University of Bologna	Italy, UK, Italy	2012	http://speroni.web.cs.unibo.it/publications/peroni-2012-scholarly-publishing-linked.pdf	Full-text available		"1. PRO is an ontology for the characterization of the roles of agents – people, corporate bodies and computational agents in the publication process. These agents can be, e.g. authors, editors, reviewers, publishers or librarians.
+2. Define publishing roles is crucial for providing a complete description of a scholarly resource such as a paper or a dataset.
+3. Using TVC pattern – i.e., a model for describing scenarios in which something has value during a particular time and for a particular context – as the basis, they have implemented PRO, the Publishing Roles Ontology. "				Yes https://lov.linkeddata.es/dataset/lov/vocabs/pro	http://purl.org/spar/pro		"@inproceedings{DBLP:conf/i-semantics/PeroniSV12,
+  author    = {Silvio Peroni and
+               David M. Shotton and
+               Fabio Vitali},
+  editor    = {Valentina Presutti and
+               Helena Sofia Pinto},
+  title     = {Scholarly publishing and linked data: describing roles, statuses,
+               temporal and contextual extents},
+  booktitle = {{I-SEMANTICS} 2012 - 8th International Conference on Semantic Systems,
+               {I-SEMANTICS} '12, Graz, Austria, September 5-7, 2012},
+  pages     = {9--16},
+  publisher = {{ACM}},
+  year      = {2012},
+  url       = {https://doi.org/10.1145/2362499.2362502},
+  doi       = {10.1145/2362499.2362502},
+  timestamp = {Wed, 14 Nov 2018 10:55:56 +0100},
+  biburl    = {https://dblp.org/rec/conf/i-semantics/PeroniSV12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+8	Publishing Workflow Ontology (PWO)	Aldo Gangemi, Silvio Peroni, David Shotton, Fabio Vitali 	Consiglio Nazionale delle Ricerche , Université Paris 13, University of Bologna,  University of Oxford, University of Bologna	Italy, France, Italy, UK, Italy	2014	http://www.semantic-web-journal.net/system/files/swj1301.pdf	Full-text available		"1. This is a simple ontology for describing the steps in the workflow associated with the publication of a document or other publication entity.
+2. PWO works based on two main classes Workflow and Step."				Yes https://lov.linkeddata.es/dataset/lov/vocabs/pwo	http://purl.org/spar/pwo		"@article{DBLP:journals/semweb/GangemiPSV17,
+  author    = {Aldo Gangemi and
+               Silvio Peroni and
+               David M. Shotton and
+               Fabio Vitali},
+  title     = {The Publishing Workflow Ontology {(PWO)}},
+  journal   = {Semantic Web},
+  volume    = {8},
+  number    = {5},
+  pages     = {703--718},
+  year      = {2017},
+  url       = {https://doi.org/10.3233/SW-160230},
+  doi       = {10.3233/SW-160230},
+  timestamp = {Wed, 14 Nov 2018 10:33:52 +0100},
+  biburl    = {https://dblp.org/rec/journals/semweb/GangemiPSV17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+9	Scholarly Contributions and Roles Ontology (SCoRO)	David Shotton, Silvio Peroni		Italy, France 		https://semanticpublishing.wordpress.com/2013/04/19/scorf/	Blog		1. SCoRO is the Scholarly Contributions, and Roles Ontology is a CERIF-compliant ontology for use by authors, publishers, and research administrators, for describe the contributions and roles of scholars, and the organizations of which they are members, with respect to projects, research investigations, and other academic activities, and to the scholarly journal articles and other outputs that result from them. 				Yes https://lov.linkeddata.es/dataset/lov/vocabs/scoro	http://purl.org/spar/scoro/		"@online{Scoro,
+    author = ""David Shotton, Silvio Peroni"",
+    title = ""SCoRO, the Scholarly Contributions and Roles Ontology"",
+    url  = ""https://sparontologies.github.io/scoro/current/scoro.html"",
+    addendum = ""(accessed: 13.05.2020)"",
+    keywords = ""SCoRO""
+}"
+10	Funding, Research Administration and Projects Ontology (FRAPO) 	David Shotton, Silvio Peroni			2017	https://sparontologies.github.io/frapo/current/frapo.html	Blog		"1. FRAPO is the Funding, Research Administration and Projects Ontology, which is a CERIF-compliant ontology for describing administrative information relating to grant funding and research projects.
+2. It can be used for the characterization of grant applications, funding bodies, research projects, project partners, etc., in other words, the sort of information stored in Current Research Information Systems (CRIS).
+3. It can also be used to describe other types of projects, for example, building projects and educational projects.
+4. Imports FOAF for characterizing people."				Yes https://lov.linkeddata.es/dataset/lov/vocabs/frapo	http://purl.org/cerif/frapo/		"@online{Frapo,
+    author = ""David Shotton, Silvio Peroni"",
+    title = ""FRAPO, the Funding, Research Administration and Projects Ontology"",
+    url  = ""https://sparontologies.github.io/frapo/current/frapo.html"",
+    addendum = ""(accessed: 13.05.2020)"",
+    keywords = ""FRAPO""
+}"
+11	DataCite Ontology (DataCite)	David Shotton, Silvio Peroni, Amy J. Barton, Egbert Gramsbergen, Jan Ashton, Marie-Christine Jacquemot			2018	https://sparontologies.github.io/datacite/current/datacite.html	Blog		"1. The main intent of the DataCite Ontology is to provide a flexible mechanism to define the identifier for bibliographic resources (e.g., papers and datasets) and related entities (e.g., authors). 
+2.  It is also possible to provide a link between a resource, such as a dataset, and the document describing its metadata by means of CiTO, using the property cito: citesAsMetadataDocument, and FaBiO, by means of the class fabio: MetadataDocument.
+3. In addition to these entities, the DataCite Ontology provides appropriate classes and properties to specify the particular scheme followed for creating the resource metadata exemplified in the metadata document."				No	http://purl.org/spar/datacite	https://sparontologies.github.io/datacite/current/datacite.html	"@online{DataCite_Ontology,
+    author = ""David Shotton, Silvio Peroni, Amy J. Barton, Egbert Gramsbergen, Jan Ashton, Marie-Christine Jacquemot"",
+    title = ""The DataCite Ontology"",
+    url  = ""https://sparontologies.github.io/datacite/current/datacite.html"",
+    addendum = ""(accessed: 13.05.2020)"",
+    keywords = ""DataCite Ontology""
+}"
+12	Bibliometric Data Ontology (BiDO)	Francesco Osborne, Silvio Peroni, Enrico Motta	The Open University, University of Bologna, Institute of Cognitive Sciences and Technologies	UK, Italy, Italy	2014	http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf	Full-text available		"1. BiDO developed a well-known model for enabling the classification of authors and journals according to bibliometric data is crucial to allow one to query, share and reuse such data in a different context, e.g., for providing smart visualization of bibliometric data for sense-making activities and for enabling automatic reasoning on them. 
+2. The core module of the ontology allows us to describe any entity and the related bibliometric data at a certain time and according to a certain agent.
+3. BiDO is composed of three different modules and those are 1. Standard bibliometric measures, 2. Research career categories, 3. Review measures."				NO	http://purl.org/spar/bido	https://sparontologies.github.io/bido/current/bido.html	"@inproceedings{tapia2019extension,
+  title={Extension of the BiDO Ontology to Represent Scientific Production},
+  author={Tapia-Leon, Mariela and Santana-Perez, Idafen and Poveda-Villal{\'o}n, Mar{\'\i}a and Espinoza-Arias, Paola and Chicaiza, Janneth and Corcho, Oscar},
+  booktitle={Proceedings of the 2019 8th International Conference on Educational and Information Technology},
+  pages={166--172},
+  year={2019}
+}"
+13	Five Stars of Online Research Articles Ontology (FiveStars) 	David Shotton	University of Oxford	UK	2012	http://www.dlib.org/dlib/january12/shotton/01shotton.html	Full-text available		"1. Peer review, open access, enriched content, available datasets, and machine-readable metadata are the core components of the Five Stars of Online Journal Articles, a constellation of five independent criteria within a multi-dimensional publishing universe against which online journal articles can be evaluated, to see how well they match up with current visions for enhanced research communications. 
+2. These Five Stars of Online Journal Articles provide a conceptual framework by which to judge the degree to which any article achieves or falls short of the ideal, which should be useful to authors, editors, and publishers."				No	http://purl.org/spar/fivestars	https://sparontologies.github.io/fivestars/current/fivestars.html	"@article{DBLP:journals/dlib/Shotton12,
+  author    = {David M. Shotton},
+  title     = {The Five Stars of Online Journal Articles - a Framework for Article
+               Evaluation},
+  journal   = {D-Lib Mag.},
+  volume    = {18},
+  number    = {1/2},
+  year      = {2012},
+  url       = {https://doi.org/10.1045/january2012-shotton},
+  doi       = {10.1045/january2012-shotton},
+  timestamp = {Thu, 06 Jun 2019 19:03:57 +0200},
+  biburl    = {https://dblp.org/rec/journals/dlib/Shotton12.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"
+14	FAIR* Reviews Ontology (FR)	"Idafen Santana-Pérez,
+María Poveda-Villalón"	University of Las Palmas de Gran Canaria, University of Las Palmas de Gran Canaria	Spain	2017	http://fairreviews.linkeddata.es/def/core/index.html	Blog	ongoing project	1. FAIR* is a review Ontology (FR) that defines a set of classes, properties, and axioms, for describing research reviews as semantic objects, reusing standard existing vocabularies using ontology engineering techniques.				No	http://purl.org/spar/fr	http://fairreviews.linkeddata.es/def/core/index.html 	"@online{Fair,
+    author = ""Idafen Santana-Pérez María Poveda-Villalón"",
+    title = ""FAIR* Reviews ontology"",
+    url  = ""http://fairreviews.linkeddata.es/def/core/index.html"",
+    addendum = ""(accessed: 13.05.2020)"",
+    keywords = ""FAIR""
+}"
+15	Extension of the BiDO Ontology to Represent Scientific Production	"Mariela Tapia-León, Idafen Santana Pérez,
+María Poveda-Villalón, Paola  Espinoza-Arias,
+Janneth  Chicaiza, Óscar Corcho
+ "	Universidad de Guayaquil, Universidad Politécnica de Madrid, Universidad Politécnica de Madrid, Universidad Politécnica de Madrid, Universidad de Guayaquil, Universidad Politécnica de Madrid	Ecuador, Spain	2019	https://dl.acm.org/doi/10.1145/3318396.3318422	Full-text available		"1. They proposed an extension to the BiDO Ontology, particularly to BiDO Standard Bibliometric Measures.
+"				No	http://purl.org/spar/bido-standard-bibliometric-measures	New	"@inproceedings{tapia2019extension,
+  title={Extension of the BiDO Ontology to Represent Scientific Production},
+  author={Tapia-Leon, Mariela and Santana-Perez, Idafen and Poveda-Villal{\'o}n, Mar{\'\i}a and Espinoza-Arias, Paola and Chicaiza, Janneth and Corcho, Oscar},
+  booktitle={Proceedings of the 2019 8th International Conference on Educational and Information Technology},
+  pages={166--172},
+  year={2019}
+}"
+16	OpenCitations	 David Shotton	University of Oxford	UK	2013	https://www.nature.com/news/publishing-open-citations-1.13937	Full-text available		"1. The OpenCitations Data Model (OCDM) is the metadata model used for the data stored in all the OpenCitations' datasets. 
+2. The OCDM allows one to record information about: 1. published bibliographic resources, 2. possible resource embodiments, 3. bibliographic references, 4.responsible agents, 5. roles, 6. citations, 7.external identifiers.
+"				No	https://opencitations.net/	http://opencitations.net/	"@article{DBLP:journals/corr/abs-1906-11964,
+  author    = {Silvio Peroni and
+               David M. Shotton},
+  title     = {OpenCitations},
+  journal   = {CoRR},
+  volume    = {abs/1906.11964},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1906.11964},
+  archivePrefix = {arXiv},
+  eprint    = {1906.11964},
+  timestamp = {Mon, 01 Jul 2019 13:00:07 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1906-11964.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}"

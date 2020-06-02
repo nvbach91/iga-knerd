@@ -1,0 +1,109 @@
+@prefix : <http://purl.org/spar/bido/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+:author-citation-count a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom foaf:Person ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "author citation count" ;
+    rdfs:comment "It is the count of all the citation received by all the papers of a certain author." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures> .
+
+:e-index a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom foaf:Person ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "e-index" ;
+    rdfs:comment "The e-index is aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is a necessary h-index complement, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures> .
+
+:h-index a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom foaf:Person ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "h-index" ;
+    rdfs:comment "The h-index is an index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures> .
+
+:journal-impact-factor a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom fabio:Journal ;
+                            owl:onProperty [ owl:inverseOf :holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf :withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf :hasMeasure ] ],
+        :BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "journal impact factor" ;
+    rdfs:comment "The impact factor of an academic journal is a measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures> .
+
+owl:Thing a owl:Class .
+
+fabio:Journal a owl:Class .
+
+foaf:Person a owl:Class .
+
+<http://purl.org/spar/bido-standard-bibliometric-measures> a owl:Ontology ;
+    rdfs:label "BiDO-Standard-Bibliometric-Measures" ;
+    dc:creator "Enrico Motta",
+        "Francesco Osborne",
+        "Silvio Peroni" ;
+    dc:date "2015-07-15" ;
+    dc:description "This module of BiDO describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count."@en ;
+    dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)." ;
+    dc:title "BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures)" ;
+    rdfs:comment """The BiDO Standard Bibliometric Measures module (BiDO-Standard-Bibliometric-Measures) describes a list of possible bibliometric measures tha can be used to define bibliometric data of publication-related entities.
+
+**URL:** http://purl.org/spar/bido-standard-bibliometric-measures
+
+**Creators**: [Enrico Motta](https://orcid.org/0000-0003-0015-1952), [Francesco Osborne](https://orcid.org/0000-0001-6557-3131), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/bido
+
+**Cite as:** Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf""" ;
+    owl:imports <http://purl.org/spar/bido-core> ;
+    owl:priorVersion <https://svn.code.sf.net/p/sempublishing/code/BiDO/bido-sbm-2014-07-14_1-0.owl> ;
+    owl:versionIRI <http://purl.org/spar/bido-standard-bibliometric-measures/2015-07-15> ;
+    owl:versionInfo "1.1"^^xsd:string .
+
+:BibliometricMeasure a owl:Class .
+
+:hasMeasure a owl:ObjectProperty .
+
+:holdsBibliometricDataInTime a owl:ObjectProperty .
+
+:withBibliometricData a owl:ObjectProperty .
+

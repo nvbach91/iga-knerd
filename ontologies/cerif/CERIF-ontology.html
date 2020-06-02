@@ -1,0 +1,2099 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0059)https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cerif="http://eurocris.org/ontology/cerif#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" typeof="bibo:Document" about="http://eurocris.org/ontology/cerif/index.html" version="XHTML+RDFa 1.0"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EuroCRIS Web Site</title>
+<meta name="description" content="Tigra Menu Gold is a cross browser Javascript Menu navigation component for web sites offering most complete feature set">
+<meta name="keywords" content="JavaScript menu, DHTML menu, tree menu, pop-up, drop down, client side menu, site navigation, client side, netscape, explorer, IE, opera, cross browser, frames, target, relative, alignment, static, context menu, download">
+<meta name="robots" content="index,follow">
+<style>
+	a, A:link, a:visited, a:active
+		{color: blue; text-decoration: none; font-family: Tahoma, Verdana; font-size: 11px}
+	A:hover
+		{color: blue; text-decoration: none; font-family: Tahoma, Verdana; font-size: 11px}
+	 td
+		{color: #000000; font-family: Tahoma, Verdana; font-size: 11px}
+		
+	.header1, h1
+		{color: #ffffff; background: #4682B4; font-weight: bold; font-family: Tahoma, Verdana; font-size: 13px; margin: 0px; padding: 2px;}
+	.header2, h2
+		{color: #000000; background: #DBEAF5; font-weight: bold; font-family: Tahoma, Verdana; font-size: 12px;}
+	.intd
+		{color: #000000; font-family: Tahoma, Verdana; font-size: 11px; padding-left: 15px;}
+	.btn
+		{color: #000066; font-family: Tahoma, Verdana; font-size: 13px; background: #D6E7EF; border-bottom: 1px solid #104A7B; border-right: 1px solid #104A7B; border-left: 1px solid #AFC4D5; border-top: 1px solid #AFC4D5; text-decoration:none; cursor: hand;}
+
+
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #270A09;
+}
+
+
+.bgleftcolumn {
+	background-color: #F1F1F1; 
+	background-image:   url(../../Images/Left_column_bg.gif);
+	background-repeat : no-repeat;
+}
+
+.maincolumn {
+	background-color: #F1F1F1; 
+	background-image:   url(../../Images/main_column_bg.gif);
+	background-repeat : no-repeat;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #270A09;
+	padding: 10px;
+}
+
+.separator {
+	background-image:   url(../../Images/vertical_dots.gif);
+	background-repeat : repeat-y;
+	background-position: left;
+	background-color: #FFFFFF; 
+
+}
+.headtitle {
+	background-color: #BADEF8; 
+}
+
+
+.bglogin {
+
+	background-image:   url(../../Images/bg_login.gif);
+	background-repeat : no-repeat;
+	background-position: center;
+}
+
+
+.bgdiscussion {
+	background-image:   url(../../Images/bg_right_elements.jpg);
+	background-repeat : repeat-x;
+	height: 155px;
+	width: 185px;
+}
+
+.bgcontact {
+	background-image:   url(../../Images/bg_right_elements.jpg);
+	background-repeat : repeat-x;
+	height: 140px;
+	width: 185px;
+}
+
+.bgproducts {
+	background-image:   url(../../Images/bg_right_elements.jpg);
+	background-repeat : repeat-x;
+
+	height: 120px;
+	width: 185px;
+}
+
+.bgpvideos {
+	background-image:   url(../../Images/bg_right_elements.jpg);
+	background-repeat : repeat-x;
+
+	height: 100px;
+	width: 185px;
+}
+
+
+.main_table {
+	background-image:   url(../../Images/Earth_logo2.jpg);
+	background-repeat : no-repeat;
+}
+
+
+.discussionhead{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: black;
+	color: maroon;
+	line-height: 20px;
+	background-color: #E2E3E5;
+}
+
+.fainttext{
+	color: #808080;
+}
+
+
+.redtext{
+	color: maroon;
+	background-color:#ccffff;
+}
+
+
+.navytext{
+	color: navy;
+	background-color:#ffffd5;
+}
+
+.discussiontext{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: black;
+	line-height: 20px;
+	background-color: #E6EFF6;
+}
+
+.contacttext{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: black;
+	line-height: 20px;
+	background-color: #E6EFF6;
+}
+.logintext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: black;
+	line-height: 15px;
+	background-image:  url(../../Images/bg_login.gif);
+}
+
+.contacttext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: black;
+	line-height: 15px;
+	background-color: #E6EEF5;
+}
+
+.bottomtext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: black;
+}
+
+
+.productstext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: black;
+	line-height: 20px;
+	background-color: #E6EEF5;
+}
+
+.smalltext {color: #000000; text-decoration: none; font-family: Tahoma, Verdana; font-size: 11px}
+
+
+.maintext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #270A09;
+	padding: 10px;
+}
+
+
+.maintext_home {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #270A09;
+	padding: 10px;
+    background-image:  url(../../Images/Homepage_title.gif);
+	background-repeat:no-repeat;
+	background-position: 10px 10px;
+}
+
+
+
+.title1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #0099CC;
+}
+
+</style>
+<link rel="stylesheet" href="./CERIF-ontology_files/menu.css" type="text/css">
+<script type="text/javascript" async="" src="./CERIF-ontology_files/ga.js.download"></script><script type="text/javascript" src="./CERIF-ontology_files/stscode.js.download"></script>
+<script type="text/javascript" src="./CERIF-ontology_files/stlib.js.download"></script>
+<script type="text/javascript" src="./CERIF-ontology_files/stmenu.js.download"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34010651-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body background="./CERIF-ontology_files/Site_background.jpg" topmargin="10px" data-gr-c-s-loaded="true">
+<!-- Below start of the all-encompasing table -->
+<table width="70%" cellpadding="0" cellspacing="0" border="1" align="center" bordercolor="#999999" class="main_table">
+  <tbody><tr> 
+    <td> 
+      <!-- Next: the header table -->
+      <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" bgcolor="#DEE7EF" class="main_table">
+        <tbody><tr height="100"> 
+          <td><img src="./CERIF-ontology_files/trans.gif"></td>
+          <td><img src="./CERIF-ontology_files/Top_logo.gif"></td>
+          <td><img src="./CERIF-ontology_files/trans.gif" width="5"></td>
+          <td align="right"><img src="./CERIF-ontology_files/Top_center.gif"></td>
+          <td><img src="./CERIF-ontology_files/trans.gif" width="20"></td>
+          <td align="right"><img src="./CERIF-ontology_files/Top_right3.gif"></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#950274" colspan="6" align="right"> <span><a href="http://www.dhtml-menu-builder.com/" style="display:none;visibility:hidden;">Javascript DHTML Drop Down Menu Powered by dhtml-menu-builder.com</a>
+<script type="text/javascript">
+<!--
+stm_bm(["menu4b6c",940,"topmenu/images","blank.gif",0,"","",0,0,250,0,1000,1,0,0,"","",0,0,1,2,"hand","hand","",1,25],this);
+stm_bp("p0",[0,4,0,0,1,0,1,7,100,"",-2,"",-2,50,0,0,"#999999","#950274","",3,0,0,"#000000"]);
+stm_ai("p0i0",[0,"  HOME","","",-1,-1,0,"http://www.eurocris.org/","_self","","Home Page","","",0,0,0,"","",7,7,0,0,1,"#E6EFF9",1,"#E5EEF5",1,"","",3,3,0,0,"#E6EFF9","#000000","#E5EEF5","#000000","bold 11px Verdana","bold 11px Verdana",0,0,"","","","",0,0,0],40,16);
+stm_bpx("p1","p0",[1,4,0,0,0,0,0,0,100,"stEffect(\"slip\")",-2,"stEffect(\"slip\")",-2,100,0,0,"#999999","#E5EEF5"]);
+stm_ai("p1i0",[6,1,"#999999","",-1,-1,0]);
+stm_ep();
+stm_aix("p0i1","p0i0",[0,"","","",-1,-1,0,"","_self","","","","",1,1,0,"","",0,0,0,1,1,"#E6EFF9",1,"#E5EEF5",1,"","",3,3,0,0,"#E6EFF9","#000000","#E5EEF5","#950274"],270,16);
+stm_aix("p0i2","p0i1",[0,"euroCRIS at a glance","","",-1,-1,0,"Index.php?page=hometext&t=1","_self","","","","",0,0,0,"","",0,0,0,1,1,"#E6EFF9",1,"#E5EEF5",0],200,16);
+stm_aix("p0i3","p1i0",[]);
+stm_aix("p0i4","p0i2",[0,"News","","",-1,-1,0,"#","_self","","","","",0,0,0,"","",7,7],80,16);
+stm_bp("p2",[1,4,0,0,0,0,13,0,100,"stEffect(\"slip\")",-2,"stEffect(\"slip\")",-2,100,0,0,"#999999","#E5EEF5","",3,1,1,"#999999"]);
+stm_aix("p2i0","p0i0",[0,"Newsflash","","",-1,-1,0,"Index.php?page=newsflash&t=1","_self","","","","",13,10,0,"","",0,0,0,0,1,"#E5EEF5",0,"#950274",0,"","",3,3,0,0,"#E6EFF9","#000000","#950274","#E5EEF5"],110,16);
+stm_ep();
+stm_aix("p0i5","p1i0",[]);
+stm_aix("p0i6","p0i4",[0,"Task Groups","","",-1,-1,0,"#","_self","","","","",1,1],120,16);
+stm_bpx("p3","p0",[1,4,0,0,0,0,15,7,100,"stEffect(\"slip\")",-2,"stEffect(\"slip\")",-2,100,0,0,"#999999","#E5EEF5","",3,1,1]);
+stm_aix("p3i0","p2i0",[0,"Architecture","","",-1,-1,0,"#","_self","","","","",15,11],110,16);
+stm_aix("p3i1","p2i0",[0,"Best Practice / DRIS","","",-1,-1,0,"#","_self","","","","",0,0,0,"","",7,7],110,16);
+stm_bpx("p4","p3",[1,2,0,0,0,0,13,0,100,"stEffect(\"slip\")",-2,"stEffect(\"slip\")",-2,100,0,0,"#999999","#CCCCCC"]);
+stm_aix("p4i0","p2i0",[0,"BP - Documents","","",-1,-1,0,"Index.php?page=BP_internaldocs&t=1"],170,0);
+stm_aix("p4i1","p2i0",[0,"DRIS - Documents","","",-1,-1,0,"Index.php?page=DRIS_internaldocs&t=1"],170,0);
+stm_ep();
+stm_aix("p3i2","p0i0",[0,"CERIF","","",-1,-1,0,"#","_self","","","","",1,1,0,"","",7,7,0,0,1,"#E5EEF5",0,"#950274",0,"","",3,3,0,0,"#E6EFF9","#000000","#950274","#E5EEF5","bold 10px Verdana","bold 10px Verdana"],110,16);
+stm_bpx("p5","p4",[]);
+stm_aix("p5i0","p2i0",[0,"Introducton to CERIF","","",-1,-1,0,"Index.php?page=CERIFintroduction&t=1"],170,16);
+stm_aix("p5i1","p2i0",[0,"Tutorial","","",-1,-1,0,"Index.php?page=CERIFtutorial&t=1","_self","","","","",0,0],170,16);
+stm_aix("p5i2","p5i1",[0,"Releases","","",-1,-1,0,"Index.php?page=CERIFreleases&t=1"],170,16);
+stm_ep();
+stm_aix("p3i3","p3i2",[0,"CRIS-IR"],110,16);
+stm_bpx("p6","p4",[]);
+stm_aix("p6i0","p2i0",[0,"Workplan","","",-1,-1,0,"Index.php?page=CRIS-IR_workplan&t=1"],90,16);
+stm_ep();
+stm_aix("p3i4","p3i1",[0,"Projects"],110,16);
+stm_bpx("p7","p4",[]);
+stm_aix("p7i0","p2i0",[0,"Archive","","",-1,-1,0,"Index.php?page=PROJECTS_archive&t=1"],90,0);
+stm_aix("p7i1","p2i0",[0,"Documents","","",-1,-1,0,"Index.php?page=PROJECTS_internaldocs&t=1"],90,0);
+stm_ep();
+stm_ep();
+stm_aix("p0i7","p1i0",[]);
+stm_aix("p0i8","p0i6",[0,"Events"],100,16);
+stm_bpx("p8","p3",[1,4,0,0,0,0,13]);
+stm_aix("p8i0","p3i1",[0,"Conferences","","",-1,-1,0,"#","_self","","","","",13,10],170,16);
+stm_bpx("p9","p4",[1,2,0,0,0,0,13,7]);
+stm_aix("p9i0","p8i0",[0,"CRIS 2010 - Aalborg","","",-1,-1,0,""],170,16);
+stm_bpx("p10","p4",[]);
+stm_aix("p10i0","p2i0",[0,"Papers/Presentations","","",-1,-1,0,"Index.php?page=cris2010_papers&t=1"],170,0);
+stm_ep();
+stm_aix("p9i1","p2i0",[0,"CRIS 2008 - Maribor","","",-1,-1,0,"Index.php?page=cris2008&t=1"],170,0);
+stm_aix("p9i2","p2i0",[0,"All Conferences","","",-1,-1,0,"Index.php?page=conferences&t=1"],170,16);
+stm_ep();
+stm_aix("p8i1","p2i0",[0,"Seminars","","",-1,-1,0,"Index.php?page=seminars&t=1"],170,16);
+stm_aix("p8i2","p2i0",[0,"Membership Meetings","","",-1,-1,0,"Index.php?page=members_meetings&t=1"],170,16);
+stm_aix("p8i3","p2i0",[0,"Workshops","","",-1,-1,0,"Index.php?page=workshops&t=1"],170,16);
+stm_ep();
+stm_aix("p0i9","p1i0",[]);
+stm_aix("p0i10","p0i6",[0,"Join euroCRIS"],120,16);
+stm_bpx("p11","p3",[1,4,0,0,0,0,13,0]);
+stm_aix("p11i0","p2i0",[0,"Types of Membership","","",-1,-1,0,"Index.php?page=joinEurCRIS&t=1"],170,16);
+stm_aix("p11i1","p2i0",[0,"Application Form","","",-1,-1,0,"Members_Add_Member.php"],170,16);
+stm_ep();
+stm_aix("p0i11","p1i0",[]);
+stm_aix("p0i12","p0i2",[0,"Login","","",-1,-1,0,"Index.php?login","_self","","","","",1,1],60,16);
+stm_ep();
+stm_em();
+//-->
+</script>
+            </span> </td>
+
+        </tr>
+      </tbody></table>
+      <!-- BELOW THE MAIN TABLE BENEATH THE HORIZONTAL MENU -->
+      <table border="0" width="100%" align="center" bgcolor="#F1F1F1" cellpadding="0" cellspacing="0">
+        <tbody><tr> 
+          <td> 
+<!--?xml version="1.0" encoding="UTF-8" standalone="no" ?-->
+
+
+
+  <title about="http://eurocris.org/ontology/cerif/index.html" property="dc:title">The Common European Research Information Format (CERIF) Ontology Specification</title>
+  
+<!-- <base href="http://eurocris.org/ontology/cerif/index.html" /> -->
+  <link href="./CERIF-ontology_files/xmlns-style.css" rel="stylesheet" type="text/css">
+  <link about="http://eurocris.org/ontology/cerif#" typeof="owl:Ontology" rel="dc:creator" href="http://eurocris.org/">
+  <link about="http://eurocris.org/ontology/cerif#" rel="dc:creator" href="http://foaf.me/ruizrube#me">
+  <link about="http://eurocris.org/ontology/cerif/index.html" rel="dc:creator" href="http://foaf.me/ruizrube#me">
+  <link about="http://eurocris.org/ontology/cerif/index.html" rel="foaf:primaryTopic" rev="foaf:isPrimaryTopicOf" href="http://eurocris.org/ontology/cerif#">
+  <link href="./CERIF-ontology_files/style.css" rel="stylesheet" type="text/css">
+  <link about="http://eurocris.org/ontology/cerif/index.html" href="http://eurocris.org/ontology/cerif/cerif.rdf" rel="alternate dcterms:hasFormat" type="application/rdf+xml">
+
+
+
+  <h1><span about="http://eurocris.org/ontology/cerif#" property="dc:title">The Common European Research Information Format Ontology<br> <b>CERIF Ontology</b></span> <span about="http://eurocris.org/ontology/cerif#" property="owl:versionInfo" datatype="xsd:decimal">0.2</span></h1>
+
+  <h2>Namespace Document <span about="http://eurocris.org/ontology/cerif#" property="dc:date" content="2013-02-01T12:00:00+01:00" datatype="xsd:dateTime">01 February</span></h2>
+  <h3>Vocabulary based on <em>CERIF Model 1.3</em></h3>
+    
+ <table class="header" border="0">
+  <tbody><tr>
+    <td>
+		<dl about="http://eurocris.org/ontology/cerif/index.html">
+			<dt>This version:</dt>
+			<dd><a rel="dc:hasVersion" rev="dc:isVersionOf" href="http://eurocris.org/ontology/cerif/20130201/index.html">http://eurocris.org/ontology/cerif/20130201/index.html</a> (<a href="http://eurocris.org/ontology/cerif/20130201/cerif.rdf">RDF</a>)</dd>
+
+			<dt>Latest version:</dt>
+			<dd><a href="http://eurocris.org/ontology/cerif/index.html">http://eurocris.org/ontology/cerif/index.html</a> (<a href="http://eurocris.org/ontology/cerif/cerif.rdf">RDF</a>)</dd>
+
+			<dt>Previous version:</dt>
+			<dd><a href="http://spi-fm.uca.es/neologism/cerif">http://spi-fm.uca.es/neologism/cerif</a> (<a href="http://spi-fm.uca.es/neologism/cerif.rdf">RDF</a>)</dd>
+
+			<dt>Authors:</dt>
+			<dd><a rel="rdfs:seeAlso" href="http://www.linkedin.com/in/msicilia">Miguel-Ángel Sicilia</a> (on behalf of Open Data Task Group in <a rel="rdfs:seeAlso" href="http://eurocris.org/">EuroCRIS</a>)</dd>
+		</dl>
+
+		<p class="copyright"><span about="http://eurocris.org/ontology/cerif#" property="dc:rights">Copyright © 2013 EuroCRIS</span></p>
+	</td>
+    <td align="right">
+		<table class="infobox">
+			<tbody><tr>
+				<td rowspan="2">
+					<img src="./CERIF-ontology_files/Top_logo(1).gif" width="150" alt="EuroCRIS">
+				</td>
+				<td align="center">
+					<b>EuroCRIS: The European Organization for International Research Information</b>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<a href="http://eurocris.org/">Announcements, descriptions, use cases, ...</a>
+				</td>
+			</tr><tr>
+				<td rowspan="2">
+					<img src="./CERIF-ontology_files/code_logo.gif" width="150" alt="GoogleCode">
+				</td>
+				<td align="center">
+					<b>Common European Research Information Format (CERIF) Ontology repository</b>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<a href="http://code.google.com/p/cerif-linked-data/">Source code, reference implementation, guidelines, ...</a>
+				</td>
+			</tr>
+			
+		</tbody></table>
+	</td>
+  </tr>
+</tbody></table>
+
+  <div about="http://eurocris.org/ontology/index.html" rel="dc:conformsTo" resource="http://www.w3.org/TR/rdfa-syntax"></div>
+  <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img style="border: 0; float: right; padding: 5px;" src="./CERIF-ontology_files/valid-xhtml-rdfa" alt="Valid XHTML + RDFa" height="31" width="88"></a>
+
+  <!-- Creative Commons License -->
+   <a href="http://creativecommons.org/licenses/by/1.0/"><img alt="Creative Commons License" style="border: 0; float: right; padding: 5px;" src="./CERIF-ontology_files/88x31.png"></a> This work is licensed under a <a about="http://eurocris.org/ontology/index.html" rel="license dc:license" href="http://creativecommons.org/licenses/by-nd/3.0/" title="Creative Commons
+  Attribution License">Creative Commons Attribution-NoDerivs 3.0 Unported License</a>. This copyright applies to the <em>Common European Research Information Format (CERIF) Ontology Specification</em> 
+  and accompanying documentation in RDF. Permissions beyond the scope of this license may be available at http://www.eurocris.org
+ Regarding underlying technology, the <em>Common European Research Information Format (CERIF) Ontology</em> uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an
+  open Web standard that can be freely used by anyone.</p>
+  
+  <hr>
+
+
+<h2 id="sec-status">Abstract</h2>
+<p about="http://eurocris.org/ontology/cerif#" property="dc:description">
+The <em>Common European Research Information Format (CERIF) Ontology Specification</em> provides basic concepts and properties 
+for describing research information as semantic data. This document contains a RDFa description of the <em>Common European Research Information Format (CERIF) Ontology</em> developed by EuroCRIS.
+</p>
+
+
+  <h2 id="sec-toc">Table of Contents</h2>
+
+  <ul>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-status">Status of This Document</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-glance">The CERIF Ontology at a glance</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-intro">Introduction</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-example">Examples</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-crossref">The CERIF Ontology cross-reference: Listing the Ontology Classes and Properties</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-extrefs">External Vocabulary References</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-datasets">List of datasets publishing CERIF linked data</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-evolution">Evolution and Extension of the CERIF Ontology</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-ack">Acknowledgments</a></li>
+    <li><a href="https://www.eurocris.org/ontologies/cerif/#sec-changes">Recent Changes</a></li>
+  </ul>
+
+    <a id="sec-status"></a>
+    <div class="status">
+        <h2>Status of This Document</h2>
+        
+        <p about="http://eurocris.org/ontology/index.html">The template of this specification is derived from the <a rel="rdfs:seeAlso" href="http://xmlns.com/foaf/spec/">FOAF
+            Vocabulary Specification</a>, which was created by <a rel="rdfs:seeAlso" href="http://danbri.org/">Dan Brickley</a> and <a rel="rdfs:seeAlso" href="http://nicecupoftea.org/">Libby Miller</a>,
+        and the <a rel="rdfs:seeAlso" href="http://musicontology.com/">Music Ontology Specification</a>, which was created by <a rel="rdfs:seeAlso" href="http://moustaki.org/">Yves Raimond</a>. Also, it was
+        customized for EuroCRIS by <a rel="rdfs:seeAlso" href="http://www.linkedin.com/pub/iv%C3%A1n-ruiz-rube/1a/33/97">Iván Ruiz-Rube</a>.</p>
+        
+        
+        <p> This document is created by combining the <a href="http://eurocris.org/ontology/cerif.rdf">RDFS</a> machine-readable
+        <em>Common European Research Information Format (CERIF) Ontology</em> with a human-readable <em>HTML</em> representation that includes RDFa annotations. The RDF/XML version of the specification is also available directly from the namespace URI.
+        </p>
+        
+        <p>This specification serves as the <em>CERIF Ontology</em> "namespace document". As
+        such it describes the <em>CERIF Ontology</em> and the terms (<a href="http://www.w3.org/RDF/">RDF</a> classes and properties) that
+        constitute it, so that <a href="http://www.w3.org/2001/sw/">Semantic Web</a> applications can
+        use those terms in a variety of RDF-compatible document formats
+        and applications.</p>
+        
+        
+  <a id="sec-glance"></a>
+  <h2 id="glance">The CERIF Ontology at a glance</h2>
+  
+  <p></p> A snapshot of the <em>Common European Research Information Format (CERIF) Ontology</em> is presented below. <p></p>
+        
+  <img src="./CERIF-ontology_files/cerifOntology0-2.png" title="The CERIF Ontology - snapshot" alt="The CERIF Ontology - snapshot">
+  
+  <p>An a-z index of <em>CERIF Ontology</em> terms, by class (categories or types) and by property.</p>
+ 
+ 
+ <div class="azlist">
+<p>Classes: | <a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">BaseEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Cite">Cite</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Classification">Classification</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#CurriculumVitae">CurriculumVitae</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#ElectronicAddress">ElectronicAddress</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Entity">Entity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Equipment">Equipment</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Event">Event</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#ExpSkill">ExpSkill</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Facility">Facility</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Funding">Funding</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Metrics">Metrics</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Patent">Patent</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#PostalAddress">PostalAddress</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#PriceAward">PriceAward</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Product">Product</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Project">Project</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Publication">Publication</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Qualification">Qualification</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Relationship">Relationship</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">ResultEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">SecondLevelEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Service">Service</a> | 
+</p>
+<p>Properties: | <a href="https://www.eurocris.org/ontologies/cerif/#abstract">abstract</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#acronym">acronym</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#addressLine">addressLine</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#agrovoc">agrovoc</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#approvalDate">approvalDate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#birthdate">birthdate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#cityTown">cityTown</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#classification">classification</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#code">code</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#country">country</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#countryCode">countryCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#currency">currency</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#currencyCode">currencyCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#digitalCV">digitalCV</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#endDate">endDate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#feeOrFree">feeOrFree</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#fraction">fraction</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#funding">funding</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#fundingCurrencyCode">fundingCurrencyCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#gender">gender</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#headcount">headcount</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#internalIdentifier">internalIdentifier</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#inventoryIdentifier">inventoryIdentifier</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isClassifiedBy">isClassifiedBy</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">isLinkedByEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByFunding">isLinkedByFunding</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByOrganisationUnit">isLinkedByOrganisationUnit</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByPerson">isLinkedByPerson</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByProject">isLinkedByProject</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByPublication">isLinkedByPublication</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#keyword">keyword</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#language">language</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#languageCode">languageCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#link">link</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">linksToEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToFunding">linksToFunding</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToOrganisationUnit">linksToOrganisationUnit</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToPerson">linksToPerson</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToPostalAddress">linksToPostalAddress</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToProject">linksToProject</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToPublication">linksToPublication</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#manufacturerIdentifier">manufacturerIdentifier</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#money">money</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#name">name</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#patentNumber">patentNumber</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#postCode">postCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#price">price</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#productNumber">productNumber</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#registrationDate">registrationDate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#researchActivities">researchActivities</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#researchInterests">researchInterests</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#role">role</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#startDate">startDate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#title">title</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#turnover">turnover</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#turnoverCurrencyCode">turnoverCurrencyCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#uri">uri</a> | 
+</p>
+</div>
+
+  <div style="clear: left;"></div>
+
+        
+        <h2 id="sec-intro">Introduction</h2>
+        
+        <p about="http://eurocris.org/ontology/index.html">Since the publication of the first version of the <a href="http://www.eurocris.org/Index.php?page=CERIFreleases&amp;t=1">CERIF model</a>, it has grown in quantity and quality of the concepts represented in it. The model became a recommendation of the European Commission in 1991 and 2000. Thanks to CERIF data model, it is possible to develop comprehensive research information systems (RIS) and at the same time, to allow further interoperability between different RIS. This specification is intended to adapt CERIF research information according to the Linked Data paradigm. This document is targeted to providers of research information systems based on CERIF, interested on publishing data according to the Linked Data approach.</p>
+        
+        <p about="http://eurocris.org/ontology/index.html">The current ontology resulted from a bottom-up approach of the transformation of a relational structure to an ontological structure. Entities and attributes of the extended relational CERIF model have been transformed into ontology axioms; the types and roles as defined in the CERIF Semantics have been translated into a vocabulary.</p>
+       
+        <p about="http://eurocris.org/ontology/index.html">The CERIF research entities have been transformed into RDF classes and their attributes into properties. For the class names we used conceptual names (e.g. person or project) instead of the physical CERIF table names (cfPers, cfProj), because there is no longer a limitation imposed by any database, and linked data are semantically inspired. The resulting properties and classes are described through common annotation properties like <em>rdfs:label</em> and <em>rdfs:comment</em> in the ontology. In addition to concrete RDF classes (person, project), we added a number of abstract classes to group the class concepts inline with CERIF specification documents, namely: <em>Base, Result, SecondLevel, and Infrastructure</em>; these share a <em>cerif:internalIdentier</em> property.</p>
+        
+        <p about="http://eurocris.org/ontology/index.html">In addition to the above ontology, we defined a <a href="https://www.eurocris.org/ontologies/semcerif/index.html">controlled vocabulary</a> to gather the relevant types and roles in the research context of the involved VOA3R entities. The vocabulary includes several RDF classes describing CERIF classification schemes, e.g. types of organizational units, as well as a number of RDF properties semantically enriching the relationships between CERIF entities, like roles of a person in a research project. </p>
+        
+        <div align="center"><img src="./CERIF-ontology_files/context.png" title="Context" alt="Context"></div>
+
+        
+        <!-- ================================================================== -->
+        
+
+        
+  <h2 id="sec-example">Example</h2>
+  
+    <p>A graphic of a simple example of an use case of the <em>Common European Research Information Format (CERIF) Ontology</em> - A given person is manager of a research project:</p>
+  
+    <div about="http://eurocris.org/ontology/index.html" rel="rdfs:seeAlso">
+<img src="./CERIF-ontology_files/relationship.png" title="The Common European Research Information Format (CERIF) Ontology - A given person is manager of a research project" alt="The Common European Research Information Format (CERIF) Ontology - A given person is manager of a research project"></div>
+
+    <p>A graphic of another example of an use case of the <em>Common European Research Information Format (CERIF) Ontology</em> - A given organization is classified as a university:</p>
+    <div about="http://eurocris.org/ontology/index.html" rel="rdfs:seeAlso">
+            <img src="./CERIF-ontology_files/classification.png" title="The Common European Research Information Format (CERIF) Ontology - A given organization is classified as a university" alt="The Common European Research Information Format (CERIF) Ontology - A given organization is classified as a university"></div>
+        
+  <p>RDF/N3 representation of a simple example of an use case of the <em>Common European Research Information Format (CERIF) Ontology</em> - a research project (see also <a about="http://eurocris.org/ontology/index.html" rel="rdfs:seeAlso" href="http://voa3r.cc.uah.es:8080/dataset/data/projects/VOA3R">N3</a> for complete and downloadable representation of this example):</p>
+
+  <div class="example">
+    <pre>@prefix cerif: &lt;http://eurocris.org/ontology/cerif/0.1#&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+
+&lt;http://example.org/resource/projects/VOA3R&gt;
+&nbsp;&nbsp;a cerif:Project ;
+&nbsp;&nbsp;cerif:title "Virtual Open Access Agriculture and Aquaculture Repository"@en ;
+&nbsp;&nbsp;cerif:uri &lt;http://voa3r.cc.uah.es&gt; ;
+&nbsp;&nbsp;cerif:startDate "2010-06-01"^^xsd:date ;
+&nbsp;&nbsp;cerif:endDate "2013-05-01"^^xsd:date ;
+&nbsp;&nbsp;cerif:abstract "The general objective of the VOA3R project is to improve the
+&nbsp;&nbsp;&nbsp;spread of European agriculture and aquaculture research results by using an innovative approach
+&nbsp;&nbsp;&nbsp;to sharing open access research products"@en ;
+&nbsp;&nbsp;cerif:acronym "VOA3R" ;
+&nbsp;&nbsp;cerif:internalIdentifier "cfProj-voa3r-ID" ;
+&nbsp;&nbsp;cerif:keyword "Agriculture", "Aquaculture", "Open Access", "Research"@en ;
+&nbsp;&nbsp;## Materialized inferred triples
+&nbsp;&nbsp;rdfs:label "Virtual Open Access Agriculture and Aquaculture Repository"@en ;
+&nbsp;&nbsp;dc:title "Virtual Open Access Agriculture and Aquaculture Repository"@en ;
+&nbsp;&nbsp;foaf:homepage &lt;http://voa3r.cc.uah.es&gt; .
+&nbsp;&nbsp;dcterms:abstract "The general objective of the VOA3R project is to improve the
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spread of European agriculture and aquaculture research results by using an innovative approach
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to sharing open access research products"@en ;
+&nbsp;&nbsp;dc:subject "Agriculture", "Aquaculture", "Open Access", "Research"@en .                        
+</pre>
+  </div>
+
+<div style="clear: left;"></div>
+
+
+ 
+
+  <h2 id="sec-crossref">Ontology Classes and Properties</h2>
+
+  <p>The <em>Common European Research Information Format (CERIF) Ontology</em> introduces the following classes and properties. There is a link at the 
+top of this document to the RDF/XML version.</p>
+
+  <!-- the following is the script-generated list of classes and properties -->
+ 
+
+<!-- this is the a-z listing -->
+<div class="azlist">
+<p>Classes: | <a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">BaseEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Cite">Cite</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Classification">Classification</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#CurriculumVitae">CurriculumVitae</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#ElectronicAddress">ElectronicAddress</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Entity">Entity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Equipment">Equipment</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Event">Event</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#ExpSkill">ExpSkill</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Facility">Facility</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Funding">Funding</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Metrics">Metrics</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Patent">Patent</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#PostalAddress">PostalAddress</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#PriceAward">PriceAward</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Product">Product</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Project">Project</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Publication">Publication</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Qualification">Qualification</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Relationship">Relationship</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">ResultEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">SecondLevelEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#Service">Service</a> | 
+</p>
+<p>Properties: | <a href="https://www.eurocris.org/ontologies/cerif/#abstract">abstract</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#acronym">acronym</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#addressLine">addressLine</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#agrovoc">agrovoc</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#approvalDate">approvalDate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#birthdate">birthdate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#cityTown">cityTown</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#classification">classification</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#code">code</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#country">country</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#countryCode">countryCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#currency">currency</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#currencyCode">currencyCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#digitalCV">digitalCV</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#endDate">endDate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#feeOrFree">feeOrFree</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#fraction">fraction</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#funding">funding</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#fundingCurrencyCode">fundingCurrencyCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#gender">gender</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#headcount">headcount</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#internalIdentifier">internalIdentifier</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#inventoryIdentifier">inventoryIdentifier</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isClassifiedBy">isClassifiedBy</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">isLinkedByEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByFunding">isLinkedByFunding</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByOrganisationUnit">isLinkedByOrganisationUnit</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByPerson">isLinkedByPerson</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByProject">isLinkedByProject</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByPublication">isLinkedByPublication</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#keyword">keyword</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#language">language</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#languageCode">languageCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#link">link</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">linksToEntity</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToFunding">linksToFunding</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToOrganisationUnit">linksToOrganisationUnit</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToPerson">linksToPerson</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToPostalAddress">linksToPostalAddress</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToProject">linksToProject</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#linksToPublication">linksToPublication</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#manufacturerIdentifier">manufacturerIdentifier</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#money">money</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#name">name</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#patentNumber">patentNumber</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#postCode">postCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#price">price</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#productNumber">productNumber</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#registrationDate">registrationDate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#researchActivities">researchActivities</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#researchInterests">researchInterests</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#role">role</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#startDate">startDate</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#title">title</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#turnover">turnover</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#turnoverCurrencyCode">turnoverCurrencyCode</a> |  <a href="https://www.eurocris.org/ontologies/cerif/#uri">uri</a> | 
+</p>
+</div>
+
+<!-- and this is the bulk of the vocab descriptions -->
+<div class="termlist"><h3>Classes and Properties (full detail)</h3>
+<div class="termdetails"><br>
+
+<h2>Classes</h2>
+ 
+
+
+<div class="specterm" id="BaseEntity" about="http://eurocris.org/ontology/cerif#BaseEntity" typeof="owl:Class">
+  			<h3>Class: cerif:BaseEntity</h3>
+  			<em property="rdfs:label">Base Entity</em> - <span property="rdfs:comment">This abstract class brings together the main entities of the CERIF model.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#internalIdentifier">internalIdentifier</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#uri">uri</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isClassifiedBy">isClassifiedBy</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">isLinkedByEntity</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#keyword">keyword</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">linksToEntity</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#Entity"><a href="https://www.eurocris.org/ontologies/cerif/#Entity">Entity</a></span>
+ </td></tr><tr><th>Has sub class</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#Person">Person (cfPers)</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#Project">Project</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#OrganizationalUnit">Organizational Unit (cfOrgUnit)</a>
+ <a href="http://eurocris.org/ontology/cerif#Person">cerif:Person</a>
+ <a href="http://eurocris.org/ontology/cerif#Project">cerif:Project</a>
+ <a href="http://eurocris.org/ontology/cerif#OrganizationalUnit">cerif:OrganizationalUnit</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">#</a>] <!-- BaseEntity --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Cite" about="http://eurocris.org/ontology/cerif#Cite" typeof="owl:Class">
+  			<h3>Class: cerif:Cite</h3>
+  			<em property="rdfs:label">Cite</em> - <span property="rdfs:comment">Cite</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Cite">#</a>] <!-- Cite --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Classification" about="http://eurocris.org/ontology/cerif#Classification" typeof="owl:Class">
+  			<h3>Class: cerif:Classification</h3>
+  			<em property="rdfs:label">Classification</em> - <span property="rdfs:comment">Represents the classification of a given entity</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#classification">classification</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#startDate">startDate</a>
+ </td></tr>
+  			<tr><th>Used with:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#isClassifiedBy">isClassifiedBy</a>
+</td></tr> 
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Classification">#</a>] <!-- Classification --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="CurriculumVitae" about="http://eurocris.org/ontology/cerif#CurriculumVitae" typeof="owl:Class">
+  			<h3>Class: cerif:CurriculumVitae</h3>
+  			<em property="rdfs:label">Curriculum Vitae</em> - <span property="rdfs:comment">Curriculum Vitae</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#digitalCV">digitalCV</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#CurriculumVitae">#</a>] <!-- CurriculumVitae --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="ElectronicAddress" about="http://eurocris.org/ontology/cerif#ElectronicAddress" typeof="owl:Class">
+  			<h3>Class: cerif:ElectronicAddress</h3>
+  			<em property="rdfs:label">Electronic Address</em> - <span property="rdfs:comment">ElectronicAddress</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#ElectronicAddress">#</a>] <!-- ElectronicAddress --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Entity" about="http://eurocris.org/ontology/cerif#Entity" typeof="owl:Class">
+  			<h3>Class: cerif:Entity</h3>
+  			<em property="rdfs:label">Entity</em> - <span property="rdfs:comment">Common superclass of all non-link entities, as an aid in querying.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Has sub class</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">Base Entity</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#InfrastructureEntity">Infrastructure Entity</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a>
+ <a href="http://eurocris.org/ontology/cerif#BaseEntity">cerif:BaseEntity</a>
+ <a href="http://eurocris.org/ontology/cerif#InfrastructureEntity">cerif:InfrastructureEntity</a>
+ <a href="http://eurocris.org/ontology/cerif#SecondLevelEntity">cerif:SecondLevelEntity</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Entity">#</a>] <!-- Entity --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Equipment" about="http://eurocris.org/ontology/cerif#Equipment" typeof="owl:Class">
+  			<h3>Class: cerif:Equipment</h3>
+  			<em property="rdfs:label">Equipment</em> - <span property="rdfs:comment">Equipment</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#inventoryIdentifier">inventoryIdentifier</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#manufacturerIdentifier">manufacturerIdentifier</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#InfrastructureEntity"><a href="https://www.eurocris.org/ontologies/cerif/#InfrastructureEntity">Infrastructure Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Equipment">#</a>] <!-- Equipment --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Event" about="http://eurocris.org/ontology/cerif#Event" typeof="owl:Class">
+  			<h3>Class: cerif:Event</h3>
+  			<em property="rdfs:label">Event</em> - <span property="rdfs:comment">Event</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#cityTown">cityTown</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#countryCode">countryCode</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#feeOrFree">feeOrFree</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#startDate">startDate</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#endDate">endDate</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Event">#</a>] <!-- Event --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="ExpSkill" about="http://eurocris.org/ontology/cerif#ExpSkill" typeof="owl:Class">
+  			<h3>Class: cerif:ExpSkill</h3>
+  			<em property="rdfs:label">Expertise and skills</em> - <span property="rdfs:comment">Expertise and skills</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#ExpSkill">#</a>] <!-- ExpSkill --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Facility" about="http://eurocris.org/ontology/cerif#Facility" typeof="owl:Class">
+  			<h3>Class: cerif:Facility</h3>
+  			<em property="rdfs:label">Facility</em> - <span property="rdfs:comment">Facility</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#InfrastructureEntity"><a href="https://www.eurocris.org/ontologies/cerif/#InfrastructureEntity">Infrastructure Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Facility">#</a>] <!-- Facility --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Funding" about="http://eurocris.org/ontology/cerif#Funding" typeof="owl:Class">
+  			<h3>Class: cerif:Funding</h3>
+  			<em property="rdfs:label">Funding</em> - <span property="rdfs:comment">Funding</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#funding">funding</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#startDate">startDate</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#endDate">endDate</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Funding">#</a>] <!-- Funding --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Metrics" about="http://eurocris.org/ontology/cerif#Metrics" typeof="owl:Class">
+  			<h3>Class: cerif:Metrics</h3>
+  			<em property="rdfs:label">Metrics</em> - <span property="rdfs:comment">Metrics</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Metrics">#</a>] <!-- Metrics --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Patent" about="http://eurocris.org/ontology/cerif#Patent" typeof="owl:Class">
+  			<h3>Class: cerif:Patent</h3>
+  			<em property="rdfs:label">Patent</em> - <span property="rdfs:comment">A registered patent as a research result</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#registrationDate">registrationDate</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#approvalDate">approvalDate</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#countryCode">countryCode</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:subClassOf" href="http://purl.org/ontology/bibo/Patent"><a href="http://purl.org/ontology/bibo/Patent">bibo:Patent</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Patent">#</a>] <!-- Patent --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="PostalAddress" about="http://eurocris.org/ontology/cerif#PostalAddress" typeof="owl:Class">
+  			<h3>Class: cerif:PostalAddress</h3>
+  			<em property="rdfs:label">Postal Address</em> - <span property="rdfs:comment">Postal Address</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#cityTown">cityTown</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#countryCode">countryCode</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#addressLine">addressLine</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#postCode">postCode</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#PostalAddress">#</a>] <!-- PostalAddress --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="PriceAward" about="http://eurocris.org/ontology/cerif#PriceAward" typeof="owl:Class">
+  			<h3>Class: cerif:PriceAward</h3>
+  			<em property="rdfs:label">Price Award</em> - <span property="rdfs:comment">Price Award</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#PriceAward">#</a>] <!-- PriceAward --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Product" about="http://eurocris.org/ontology/cerif#Product" typeof="owl:Class">
+  			<h3>Class: cerif:Product</h3>
+  			<em property="rdfs:label">Product</em> - <span property="rdfs:comment">A research result that is classified neither as a patent nor as a publication.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Product">#</a>] <!-- Product --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Project" about="http://eurocris.org/ontology/cerif#Project" typeof="owl:Class">
+  			<h3>Class: cerif:Project</h3>
+  			<em property="rdfs:label">Project</em> - <span property="rdfs:comment">A research project</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#abstract">abstract</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#acronym">acronym</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#name">name</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#startDate">startDate</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#endDate">endDate</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#BaseEntity"><a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">Base Entity</a></span>
+ <span rel="rdfs:subClassOf" href="http://xmlns.com/foaf/0.1/Project"><a href="http://xmlns.com/foaf/0.1/Project">foaf:Project</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Project">#</a>] <!-- Project --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Publication" about="http://eurocris.org/ontology/cerif#Publication" typeof="owl:Class">
+  			<h3>Class: cerif:Publication</h3>
+  			<em property="rdfs:label">Publication</em> - <span property="rdfs:comment">Represents a scientific or academic publication </span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:subClassOf" href="http://purl.org/ontology/bibo/Document"><a href="http://purl.org/ontology/bibo/Document">bibo:Document</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Publication">#</a>] <!-- Publication --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Qualification" about="http://eurocris.org/ontology/cerif#Qualification" typeof="owl:Class">
+  			<h3>Class: cerif:Qualification</h3>
+  			<em property="rdfs:label">Qualification</em> - <span property="rdfs:comment">Qualification</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Qualification">#</a>] <!-- Qualification --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Relationship" about="http://eurocris.org/ontology/cerif#Relationship" typeof="owl:Class">
+  			<h3>Class: cerif:Relationship</h3>
+  			<em property="rdfs:label">Relationship</em> - <span property="rdfs:comment">intermediate entity between two entities.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#role">role</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#startDate">startDate</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#endDate">endDate</a>
+ </td></tr>
+  			<tr><th>Used with:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">linksToEntity</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">isLinkedByEntity</a>
+</td></tr> 
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Relationship">#</a>] <!-- Relationship --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="ResultEntity" about="http://eurocris.org/ontology/cerif#ResultEntity" typeof="owl:Class">
+  			<h3>Class: cerif:ResultEntity</h3>
+  			<em property="rdfs:label">Result Entity</em> - <span property="rdfs:comment">Represents a research result</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#internalIdentifier">internalIdentifier</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#endDate">endDate</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#uri">uri</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isClassifiedBy">isClassifiedBy</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">isLinkedByEntity</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#keyword">keyword</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">linksToEntity</a>
+ </td></tr>
+  			<tr><th>Has sub class</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#Product">Product</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#Patent">Patent</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#Publication">Publication</a>
+ <a href="http://eurocris.org/ontology/cerif#Product">cerif:Product</a>
+ <a href="http://eurocris.org/ontology/cerif#Patent">cerif:Patent</a>
+ <a href="http://eurocris.org/ontology/cerif#Publication">cerif:Publication</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">#</a>] <!-- ResultEntity --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="SecondLevelEntity" about="http://eurocris.org/ontology/cerif#SecondLevelEntity" typeof="owl:Class">
+  			<h3>Class: cerif:SecondLevelEntity</h3>
+  			<em property="rdfs:label">Second-level Entity</em> - <span property="rdfs:comment">The 2nd level entities allow for the representation of the research context by linking to them from the base and result entities.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#internalIdentifier">internalIdentifier</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#uri">uri</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isClassifiedBy">isClassifiedBy</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">isLinkedByEntity</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#keyword">keyword</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">linksToEntity</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#Entity"><a href="https://www.eurocris.org/ontologies/cerif/#Entity">Entity</a></span>
+ </td></tr><tr><th>Has sub class</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#PostalAddress">Postal Address</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#Funding">Funding</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#CurriculumVitae">Curriculum Vitae</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#Metrics">Metrics</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#Event">Event</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#Cite">Cite</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#Qualification">Qualification</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#ElectronicAddress">Electronic Address</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#ExpSkill">Expertise and skills</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#PriceAward">Price Award</a>
+ <a href="http://eurocris.org/ontology/cerif#PostalAddress">cerif:PostalAddress</a>
+ <a href="http://eurocris.org/ontology/cerif#Funding">cerif:Funding</a>
+ <a href="http://eurocris.org/ontology/cerif#CurriculumVitae">cerif:CurriculumVitae</a>
+ <a href="http://eurocris.org/ontology/cerif#Metrics">cerif:Metrics</a>
+ <a href="http://eurocris.org/ontology/cerif#Event">cerif:Event</a>
+ <a href="http://eurocris.org/ontology/cerif#Cite">cerif:Cite</a>
+ <a href="http://eurocris.org/ontology/cerif#Qualification">cerif:Qualification</a>
+ <a href="http://eurocris.org/ontology/cerif#ElectronicAddress">cerif:ElectronicAddress</a>
+ <a href="http://eurocris.org/ontology/cerif#ExpSkill">cerif:ExpSkill</a>
+ <a href="http://eurocris.org/ontology/cerif#PriceAward">cerif:PriceAward</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">#</a>] <!-- SecondLevelEntity --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="Service" about="http://eurocris.org/ontology/cerif#Service" typeof="owl:Class">
+  			<h3>Class: cerif:Service</h3>
+  			<em property="rdfs:label">Service</em> - <span property="rdfs:comment">Service</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://eurocris.org/ontology/cerif#InfrastructureEntity"><a href="https://www.eurocris.org/ontologies/cerif/#InfrastructureEntity">Infrastructure Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#Service">#</a>] <!-- Service --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><h2>Properties</h2>
+ 
+
+
+<div class="specterm" id="abstract" about="http://eurocris.org/ontology/cerif#abstract" typeof="rdf:Property">
+  			<h3>Property: cerif:abstract</h3>
+  			<em property="rdfs:label">Abstract</em> - <span property="rdfs:comment">Abstract of a given Project</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Project"><a href="https://www.eurocris.org/ontologies/cerif/#Project">Project</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#abstract">#</a>] <!-- abstract --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="acronym" about="http://eurocris.org/ontology/cerif#acronym" typeof="rdf:Property">
+  			<h3>Property: cerif:acronym</h3>
+  			<em property="rdfs:label">Acronym</em> - <span property="rdfs:comment">Acronym of a given Project or an Organisation Unit</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Project"><a href="https://www.eurocris.org/ontologies/cerif/#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#OrganizationalUnit"><a href="https://www.eurocris.org/ontologies/cerif/#OrganizationalUnit">Organizational Unit (cfOrgUnit)</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#acronym">#</a>] <!-- acronym --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="addressLine" about="http://eurocris.org/ontology/cerif#addressLine" typeof="rdf:Property">
+  			<h3>Property: cerif:addressLine</h3>
+  			<em property="rdfs:label">Address Line</em> - <span property="rdfs:comment">Numbered line of a given postal address</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#PostalAddress"><a href="https://www.eurocris.org/ontologies/cerif/#PostalAddress">Postal Address</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#addressLine">#</a>] <!-- addressLine --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="agrovoc" about="http://eurocris.org/ontology/cerif#agrovoc" typeof="rdf:Property">
+  			<h3>Property: cerif:agrovoc</h3>
+  			<em property="rdfs:label">Agrovoc Classification</em> - <span property="rdfs:comment">External Classification Scheme according to Agrovoc Vocabulary</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/subject"><a href="http://purl.org/dc/elements/1.1/subject">dc:subject</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#agrovoc">#</a>] <!-- agrovoc --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="approvalDate" about="http://eurocris.org/ontology/cerif#approvalDate" typeof="rdf:Property">
+  			<h3>Property: cerif:approvalDate</h3>
+  			<em property="rdfs:label">Approval Date</em> - <span property="rdfs:comment">Approval Date of a patent</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Patent"><a href="https://www.eurocris.org/ontologies/cerif/#Patent">Patent</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/date"><a href="http://purl.org/dc/elements/1.1/date">dc:date</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#approvalDate">#</a>] <!-- approvalDate --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="birthdate" about="http://eurocris.org/ontology/cerif#birthdate" typeof="rdf:Property">
+  			<h3>Property: cerif:birthdate</h3>
+  			<em property="rdfs:label">Birthdate</em> - <span property="rdfs:comment">BirthDate of a Person</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Person"><a href="https://www.eurocris.org/ontologies/cerif/#Person">Person (cfPers)</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://xmlns.com/foaf/0.1/birthday"><a href="http://xmlns.com/foaf/0.1/birthday">foaf:birthday</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#birthdate">#</a>] <!-- birthdate --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="cityTown" about="http://eurocris.org/ontology/cerif#cityTown" typeof="rdf:Property">
+  			<h3>Property: cerif:cityTown</h3>
+  			<em property="rdfs:label">City Town</em> - <span property="rdfs:comment">City Town of an physical localisation</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#PostalAddress"><a href="https://www.eurocris.org/ontologies/cerif/#PostalAddress">Postal Address</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Event"><a href="https://www.eurocris.org/ontologies/cerif/#Event">Event</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#cityTown">#</a>] <!-- cityTown --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="classification" about="http://eurocris.org/ontology/cerif#classification" typeof="rdf:Property">
+  			<h3>Property: cerif:classification</h3>
+  			<em property="rdfs:label">Classification</em> - <span property="rdfs:comment">Indicates a classification for a entity according to a suitable external vocabulary</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Classification"><a href="https://www.eurocris.org/ontologies/cerif/#Classification">Classification</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Resource"><a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a></span>
+ </td></tr><tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#link"><a href="https://www.eurocris.org/ontologies/cerif/#link">Link</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#classification">#</a>] <!-- classification --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="code" about="http://eurocris.org/ontology/cerif#code" typeof="rdf:Property">
+  			<h3>Property: cerif:code</h3>
+  			<em property="rdfs:label">Code</em> - <span property="rdfs:comment">Generic property for represent international and shared codes</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Has sub property</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#countryCode">Country Code</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#languageCode">Language Code</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#postCode">Post Code</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#currencyCode">Currency Code</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#code">#</a>] <!-- code --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="country" about="http://eurocris.org/ontology/cerif#country" typeof="rdf:Property">
+  			<h3>Property: cerif:country</h3>
+  			<em property="rdfs:label">Country </em> - <span property="rdfs:comment">A given country - http://dbpedia.org/ontology/Country</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#country">#</a>] <!-- country --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="countryCode" about="http://eurocris.org/ontology/cerif#countryCode" typeof="rdf:Property">
+  			<h3>Property: cerif:countryCode</h3>
+  			<em property="rdfs:label">Country Code</em> - <span property="rdfs:comment">International code of a given country </span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#PostalAddress"><a href="https://www.eurocris.org/ontologies/cerif/#PostalAddress">Postal Address</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Patent"><a href="https://www.eurocris.org/ontologies/cerif/#Patent">Patent</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Event"><a href="https://www.eurocris.org/ontologies/cerif/#Event">Event</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#code"><a href="https://www.eurocris.org/ontologies/cerif/#code">Code</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#countryCode">#</a>] <!-- countryCode --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="currency" about="http://eurocris.org/ontology/cerif#currency" typeof="rdf:Property">
+  			<h3>Property: cerif:currency</h3>
+  			<em property="rdfs:label">Currency</em> - <span property="rdfs:comment">Specific currency used for denote amounts, prices and turnovers. Linking with http://dbpedia.org/ontology/Language</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#currency">#</a>] <!-- currency --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="currencyCode" about="http://eurocris.org/ontology/cerif#currencyCode" typeof="rdf:Property">
+  			<h3>Property: cerif:currencyCode</h3>
+  			<em property="rdfs:label">Currency Code</em> - <span property="rdfs:comment">Code of a specific currency used for denote amounts, prices and turnovers.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#code"><a href="https://www.eurocris.org/ontologies/cerif/#code">Code</a></span>
+ </td></tr><tr><th>Has sub property</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#turnoverCurrencyCode">Turnover Currency Code</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#fundingCurrencyCode">Funding Currency Code</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#priceCurrencyCode">Price Currency Code</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#currencyCode">#</a>] <!-- currencyCode --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="digitalCV" about="http://eurocris.org/ontology/cerif#digitalCV" typeof="rdf:Property">
+  			<h3>Property: cerif:digitalCV</h3>
+  			<em property="rdfs:label">Digital CV</em> - <span property="rdfs:comment">Digital CV</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#CurriculumVitae"><a href="https://www.eurocris.org/ontologies/cerif/#CurriculumVitae">Curriculum Vitae</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#digitalCV">#</a>] <!-- digitalCV --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="endDate" about="http://eurocris.org/ontology/cerif#endDate" typeof="rdf:Property">
+  			<h3>Property: cerif:endDate</h3>
+  			<em property="rdfs:label">End Date</em> - <span property="rdfs:comment">End of a period of time</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Relationship"><a href="https://www.eurocris.org/ontologies/cerif/#Relationship">Relationship</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Project"><a href="https://www.eurocris.org/ontologies/cerif/#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Funding"><a href="https://www.eurocris.org/ontologies/cerif/#Funding">Funding</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Event"><a href="https://www.eurocris.org/ontologies/cerif/#Event">Event</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/date"><a href="http://purl.org/dc/elements/1.1/date">dc:date</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#endDate">#</a>] <!-- endDate --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="feeOrFree" about="http://eurocris.org/ontology/cerif#feeOrFree" typeof="rdf:Property">
+  			<h3>Property: cerif:feeOrFree</h3>
+  			<em property="rdfs:label">Fee Or Free</em> - <span property="rdfs:comment">Flag indicating if the event is fee or free</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Event"><a href="https://www.eurocris.org/ontologies/cerif/#Event">Event</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#feeOrFree">#</a>] <!-- feeOrFree --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="fraction" about="http://eurocris.org/ontology/cerif#fraction" typeof="owl:DatatypeProperty">
+  			<h3>Property: cerif:fraction</h3>
+  			<em property="rdfs:label">Fraction</em> - <span property="rdfs:comment">Fractional value to indicate a classification reference or a % allocation in the relationship between entities.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#float"><a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#fraction">#</a>] <!-- fraction --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="funding" about="http://eurocris.org/ontology/cerif#funding" typeof="rdf:Property">
+  			<h3>Property: cerif:funding</h3>
+  			<em property="rdfs:label">Funding</em> - <span property="rdfs:comment">Amount of a given Funding (measured in a specific currency)</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Funding"><a href="https://www.eurocris.org/ontologies/cerif/#Funding">Funding</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#money"><a href="https://www.eurocris.org/ontologies/cerif/#money">Money</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#funding">#</a>] <!-- funding --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="fundingCurrencyCode" about="http://eurocris.org/ontology/cerif#fundingCurrencyCode" typeof="rdf:Property">
+  			<h3>Property: cerif:fundingCurrencyCode</h3>
+  			<em property="rdfs:label">Funding Currency Code</em> - <span property="rdfs:comment">Currency code used to denote the funding amount</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#currencyCode"><a href="https://www.eurocris.org/ontologies/cerif/#currencyCode">Currency Code</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#fundingCurrencyCode">#</a>] <!-- fundingCurrencyCode --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="gender" about="http://eurocris.org/ontology/cerif#gender" typeof="rdf:Property">
+  			<h3>Property: cerif:gender</h3>
+  			<em property="rdfs:label">Gender</em> - <span property="rdfs:comment">Gender of a CERIF person</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Person"><a href="https://www.eurocris.org/ontologies/cerif/#Person">Person (cfPers)</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://xmlns.com/foaf/0.1/gender"><a href="http://xmlns.com/foaf/0.1/gender">foaf:gender</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#gender">#</a>] <!-- gender --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="headcount" about="http://eurocris.org/ontology/cerif#headcount" typeof="rdf:Property">
+  			<h3>Property: cerif:headcount</h3>
+  			<em property="rdfs:label">Headcount</em> - <span property="rdfs:comment">Number of persons enrolled in a Organisation Unit</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#OrganizationalUnit"><a href="https://www.eurocris.org/ontologies/cerif/#OrganizationalUnit">Organizational Unit (cfOrgUnit)</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#headcount">#</a>] <!-- headcount --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="internalIdentifier" about="http://eurocris.org/ontology/cerif#internalIdentifier" typeof="rdf:Property">
+  			<h3>Property: cerif:internalIdentifier</h3>
+  			<em property="rdfs:label">Internal Identifier</em> - <span property="rdfs:comment">Internal Identifier for a research entity. It fits with the primary key in the corresponding table from the internal database</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#BaseEntity"><a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">Base Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/identifier"><a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#internalIdentifier">#</a>] <!-- internalIdentifier --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="inventoryIdentifier" about="http://eurocris.org/ontology/cerif#inventoryIdentifier" typeof="rdf:Property">
+  			<h3>Property: cerif:inventoryIdentifier</h3>
+  			<em property="rdfs:label">Inventory Identifier</em> - <span property="rdfs:comment">The equipment owner's inventory identifier.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Equipment"><a href="https://www.eurocris.org/ontologies/cerif/#Equipment">Equipment</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/identifier"><a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#inventoryIdentifier">#</a>] <!-- inventoryIdentifier --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="isClassifiedBy" about="http://eurocris.org/ontology/cerif#isClassifiedBy" typeof="rdf:Property">
+  			<h3>Property: cerif:isClassifiedBy</h3>
+  			<em property="rdfs:label">Is Classified By</em> - <span property="rdfs:comment">A entity is classified within a time interval according to CERIF Semantic Vocabulary.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#BaseEntity"><a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">Base Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#InfrastructureEntity"><a href="https://www.eurocris.org/ontologies/cerif/#InfrastructureEntity">Infrastructure Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://eurocris.org/ontology/cerif#Classification"><a href="https://www.eurocris.org/ontologies/cerif/#Classification">Classification</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#isClassifiedBy">#</a>] <!-- isClassifiedBy --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="isLinkedByEntity" about="http://eurocris.org/ontology/cerif#isLinkedByEntity" typeof="rdf:Property">
+  			<h3>Property: cerif:isLinkedByEntity</h3>
+  			<em property="rdfs:label">Is Linked by Entity</em> - <span property="rdfs:comment">This is an abstract property to group all properties that inversely relate a entity with other through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#BaseEntity"><a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">Base Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#InfrastructureEntity"><a href="https://www.eurocris.org/ontologies/cerif/#InfrastructureEntity">Infrastructure Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://eurocris.org/ontology/cerif#Relationship"><a href="https://www.eurocris.org/ontologies/cerif/#Relationship">Relationship</a></span>
+ </td></tr><tr><th>Has sub property</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByProject">is Linked By Project</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByPublication">is Linked By Publication</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByOrganisationUnit">Is Linked By a Organisation Unit</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByFunding">Is Linked By Funding</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByPerson">Is Linked By a Person</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">#</a>] <!-- isLinkedByEntity --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="isLinkedByFunding" about="http://eurocris.org/ontology/cerif#isLinkedByFunding" typeof="rdf:Property">
+  			<h3>Property: cerif:isLinkedByFunding</h3>
+  			<em property="rdfs:label">Is Linked By Funding</em> - <span property="rdfs:comment">A given Funding is related with a entity through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#isLinkedByEntity"><a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">Is Linked by Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByFunding">#</a>] <!-- isLinkedByFunding --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="isLinkedByOrganisationUnit" about="http://eurocris.org/ontology/cerif#isLinkedByOrganisationUnit" typeof="rdf:Property">
+  			<h3>Property: cerif:isLinkedByOrganisationUnit</h3>
+  			<em property="rdfs:label">Is Linked By a Organisation Unit</em> - <span property="rdfs:comment">A given Organisation Unit is related with a entity through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#isLinkedByEntity"><a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">Is Linked by Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByOrganisationUnit">#</a>] <!-- isLinkedByOrganisationUnit --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="isLinkedByPerson" about="http://eurocris.org/ontology/cerif#isLinkedByPerson" typeof="rdf:Property">
+  			<h3>Property: cerif:isLinkedByPerson</h3>
+  			<em property="rdfs:label">Is Linked By a Person</em> - <span property="rdfs:comment">A given Person is related with a entity through a time-stamped link. </span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#isLinkedByEntity"><a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">Is Linked by Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByPerson">#</a>] <!-- isLinkedByPerson --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="isLinkedByProject" about="http://eurocris.org/ontology/cerif#isLinkedByProject" typeof="rdf:Property">
+  			<h3>Property: cerif:isLinkedByProject</h3>
+  			<em property="rdfs:label">is Linked By Project</em> - <span property="rdfs:comment">A given Project is related with a entity through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#isLinkedByEntity"><a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">Is Linked by Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByProject">#</a>] <!-- isLinkedByProject --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="isLinkedByPublication" about="http://eurocris.org/ontology/cerif#isLinkedByPublication" typeof="rdf:Property">
+  			<h3>Property: cerif:isLinkedByPublication</h3>
+  			<em property="rdfs:label">is Linked By Publication</em> - <span property="rdfs:comment">A given Publication is related with a entity through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#isLinkedByEntity"><a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByEntity">Is Linked by Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#isLinkedByPublication">#</a>] <!-- isLinkedByPublication --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="keyword" about="http://eurocris.org/ontology/cerif#keyword" typeof="rdf:Property">
+  			<h3>Property: cerif:keyword</h3>
+  			<em property="rdfs:label">Keyword</em> - <span property="rdfs:comment">Keywords of a given entity</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#BaseEntity"><a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">Base Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/subject"><a href="http://purl.org/dc/elements/1.1/subject">dc:subject</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#keyword">#</a>] <!-- keyword --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="language" about="http://eurocris.org/ontology/cerif#language" typeof="rdf:Property">
+  			<h3>Property: cerif:language</h3>
+  			<em property="rdfs:label">Language</em> - <span property="rdfs:comment">A given language. Linking to http://dbpedia.org/ontology/Language</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#language">#</a>] <!-- language --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="languageCode" about="http://eurocris.org/ontology/cerif#languageCode" typeof="rdf:Property">
+  			<h3>Property: cerif:languageCode</h3>
+  			<em property="rdfs:label">Language Code</em> - <span property="rdfs:comment">International code of a given language</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#code"><a href="https://www.eurocris.org/ontologies/cerif/#code">Code</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#languageCode">#</a>] <!-- languageCode --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="link" about="http://eurocris.org/ontology/cerif#link" typeof="rdf:Property">
+  			<h3>Property: cerif:link</h3>
+  			<em property="rdfs:label">Link</em> - <span property="rdfs:comment">It is a generalisation for relationship and classification properties</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Has sub property</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#role">Role</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#classification">Classification</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#link">#</a>] <!-- link --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="linksToEntity" about="http://eurocris.org/ontology/cerif#linksToEntity" typeof="rdf:Property">
+  			<h3>Property: cerif:linksToEntity</h3>
+  			<em property="rdfs:label">Links to Entity</em> - <span property="rdfs:comment">This is an abstract property to group all properties that directly relate a entity with other through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#BaseEntity"><a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">Base Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#InfrastructureEntity"><a href="https://www.eurocris.org/ontologies/cerif/#InfrastructureEntity">Infrastructure Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://eurocris.org/ontology/cerif#Relationship"><a href="https://www.eurocris.org/ontologies/cerif/#Relationship">Relationship</a></span>
+ </td></tr><tr><th>Has sub property</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#linksToProject">Links To a Project</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#linksToPublication">Links To a Publication</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#linksToOrganisationUnit">Links To a Organisation Unit</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#linksToPerson">Is Linked By a Person</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#linksToFunding">Links to Funding</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#linksToPostalAddress">Links to a Postal Address</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">#</a>] <!-- linksToEntity --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="linksToFunding" about="http://eurocris.org/ontology/cerif#linksToFunding" typeof="rdf:Property">
+  			<h3>Property: cerif:linksToFunding</h3>
+  			<em property="rdfs:label">Links to Funding</em> - <span property="rdfs:comment">It relates a entity with a given Funding entity through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#linksToEntity"><a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">Links to Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#linksToFunding">#</a>] <!-- linksToFunding --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="linksToOrganisationUnit" about="http://eurocris.org/ontology/cerif#linksToOrganisationUnit" typeof="rdf:Property">
+  			<h3>Property: cerif:linksToOrganisationUnit</h3>
+  			<em property="rdfs:label">Links To a Organisation Unit</em> - <span property="rdfs:comment">It relates a entity with a given Organisation Unit through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#linksToEntity"><a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">Links to Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#linksToOrganisationUnit">#</a>] <!-- linksToOrganisationUnit --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="linksToPerson" about="http://eurocris.org/ontology/cerif#linksToPerson" typeof="rdf:Property">
+  			<h3>Property: cerif:linksToPerson</h3>
+  			<em property="rdfs:label">Is Linked By a Person</em> - <span property="rdfs:comment">It relates a entity with a given Person through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#linksToEntity"><a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">Links to Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#linksToPerson">#</a>] <!-- linksToPerson --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="linksToPostalAddress" about="http://eurocris.org/ontology/cerif#linksToPostalAddress" typeof="rdf:Property">
+  			<h3>Property: cerif:linksToPostalAddress</h3>
+  			<em property="rdfs:label">Links to a Postal Address</em> - <span property="rdfs:comment">It relates a entity with a given Postal Address through a time-stamped link. Used, for example, in Persons and Organisation Units</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#linksToEntity"><a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">Links to Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#linksToPostalAddress">#</a>] <!-- linksToPostalAddress --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="linksToProject" about="http://eurocris.org/ontology/cerif#linksToProject" typeof="rdf:Property">
+  			<h3>Property: cerif:linksToProject</h3>
+  			<em property="rdfs:label">Links To a Project</em> - <span property="rdfs:comment">It relates a  entity with a given Project through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#linksToEntity"><a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">Links to Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#linksToProject">#</a>] <!-- linksToProject --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="linksToPublication" about="http://eurocris.org/ontology/cerif#linksToPublication" typeof="rdf:Property">
+  			<h3>Property: cerif:linksToPublication</h3>
+  			<em property="rdfs:label">Links To a Publication</em> - <span property="rdfs:comment">It relates a entity with a given Publication through a time-stamped link.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#linksToEntity"><a href="https://www.eurocris.org/ontologies/cerif/#linksToEntity">Links to Entity</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#linksToPublication">#</a>] <!-- linksToPublication --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="manufacturerIdentifier" about="http://eurocris.org/ontology/cerif#manufacturerIdentifier" typeof="rdf:Property">
+  			<h3>Property: cerif:manufacturerIdentifier</h3>
+  			<em property="rdfs:label">Manufacturer Identifier</em> - <span property="rdfs:comment">The equipment manufacturer's ID.</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Equipment"><a href="https://www.eurocris.org/ontologies/cerif/#Equipment">Equipment</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/identifier"><a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#manufacturerIdentifier">#</a>] <!-- manufacturerIdentifier --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="money" about="http://eurocris.org/ontology/cerif#money" typeof="owl:DatatypeProperty">
+  			<h3>Property: cerif:money</h3>
+  			<em property="rdfs:label">Money</em> - <span property="rdfs:comment">This property embraces all Currency-dependent properties </span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#float"><a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a></span>
+ </td></tr><tr><th>Has sub property</th>
+ <td>  <a href="https://www.eurocris.org/ontologies/cerif/#price">Price</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#turnover">Turnover</a>
+ <a href="https://www.eurocris.org/ontologies/cerif/#funding">Funding</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#money">#</a>] <!-- money --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="name" about="http://eurocris.org/ontology/cerif#name" typeof="rdf:Property">
+  			<h3>Property: cerif:name</h3>
+  			<em property="rdfs:label">Name</em> - <span property="rdfs:comment">Name of a CERIF entity, e.g.: Person, or Organization Unit</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Project"><a href="https://www.eurocris.org/ontologies/cerif/#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Person"><a href="https://www.eurocris.org/ontologies/cerif/#Person">Person (cfPers)</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://xmlns.com/foaf/0.1/name"><a href="http://xmlns.com/foaf/0.1/name">foaf:name</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#name">#</a>] <!-- name --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="patentNumber" about="http://eurocris.org/ontology/cerif#patentNumber" typeof="rdf:Property">
+  			<h3>Property: cerif:patentNumber</h3>
+  			<em property="rdfs:label">Patent Number</em> - <span property="rdfs:comment">Number of a Registered Patent</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/identifier"><a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#patentNumber">#</a>] <!-- patentNumber --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="postCode" about="http://eurocris.org/ontology/cerif#postCode" typeof="rdf:Property">
+  			<h3>Property: cerif:postCode</h3>
+  			<em property="rdfs:label">Post Code</em> - <span property="rdfs:comment">Postal Code of a given Address</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#PostalAddress"><a href="https://www.eurocris.org/ontologies/cerif/#PostalAddress">Postal Address</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#code"><a href="https://www.eurocris.org/ontologies/cerif/#code">Code</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#postCode">#</a>] <!-- postCode --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="price" about="http://eurocris.org/ontology/cerif#price" typeof="rdf:Property">
+  			<h3>Property: cerif:price</h3>
+  			<em property="rdfs:label">Price</em> - <span property="rdfs:comment">Quantity of payment or compensation given by one party to another in return for goods or service (measured in a specific currency)</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#money"><a href="https://www.eurocris.org/ontologies/cerif/#money">Money</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#price">#</a>] <!-- price --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="productNumber" about="http://eurocris.org/ontology/cerif#productNumber" typeof="rdf:Property">
+  			<h3>Property: cerif:productNumber</h3>
+  			<em property="rdfs:label">Product Number</em> - <span property="rdfs:comment">Number of a Product</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/identifier"><a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#productNumber">#</a>] <!-- productNumber --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="registrationDate" about="http://eurocris.org/ontology/cerif#registrationDate" typeof="rdf:Property">
+  			<h3>Property: cerif:registrationDate</h3>
+  			<em property="rdfs:label">Registration Date</em> - <span property="rdfs:comment">Registration Date of a patent</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Patent"><a href="https://www.eurocris.org/ontologies/cerif/#Patent">Patent</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/date"><a href="http://purl.org/dc/elements/1.1/date">dc:date</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#registrationDate">#</a>] <!-- registrationDate --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="researchActivities" about="http://eurocris.org/ontology/cerif#researchActivities" typeof="rdf:Property">
+  			<h3>Property: cerif:researchActivities</h3>
+  			<em property="rdfs:label">Research Activities</em> - <span property="rdfs:comment">Research Activities</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#OrganizationalUnit"><a href="https://www.eurocris.org/ontologies/cerif/#OrganizationalUnit">Organizational Unit (cfOrgUnit)</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#researchActivities">#</a>] <!-- researchActivities --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="researchInterests" about="http://eurocris.org/ontology/cerif#researchInterests" typeof="rdf:Property">
+  			<h3>Property: cerif:researchInterests</h3>
+  			<em property="rdfs:label">Research Interests</em> - <span property="rdfs:comment">Research Interests</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Person"><a href="https://www.eurocris.org/ontologies/cerif/#Person">Person (cfPers)</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#researchInterests">#</a>] <!-- researchInterests --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="role" about="http://eurocris.org/ontology/cerif#role" typeof="rdf:Property">
+  			<h3>Property: cerif:role</h3>
+  			<em property="rdfs:label">Role</em> - <span property="rdfs:comment">Indicates a role for the association or composition between two CERIF entities indicated by a term from a suitable external vocabulary</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Relationship"><a href="https://www.eurocris.org/ontologies/cerif/#Relationship">Relationship</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Resource"><a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a></span>
+ </td></tr><tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#link"><a href="https://www.eurocris.org/ontologies/cerif/#link">Link</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#role">#</a>] <!-- role --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="startDate" about="http://eurocris.org/ontology/cerif#startDate" typeof="rdf:Property">
+  			<h3>Property: cerif:startDate</h3>
+  			<em property="rdfs:label">Start Date</em> - <span property="rdfs:comment">Beginning of a period of time</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Relationship"><a href="https://www.eurocris.org/ontologies/cerif/#Relationship">Relationship</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Project"><a href="https://www.eurocris.org/ontologies/cerif/#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Funding"><a href="https://www.eurocris.org/ontologies/cerif/#Funding">Funding</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Classification"><a href="https://www.eurocris.org/ontologies/cerif/#Classification">Classification</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#Event"><a href="https://www.eurocris.org/ontologies/cerif/#Event">Event</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/date"><a href="http://purl.org/dc/elements/1.1/date">dc:date</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#startDate">#</a>] <!-- startDate --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="title" about="http://eurocris.org/ontology/cerif#title" typeof="rdf:Property">
+  			<h3>Property: cerif:title</h3>
+  			<em property="rdfs:label">Title</em> - <span property="rdfs:comment">Title of a given CERIF entity</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/elements/1.1/title"><a href="http://purl.org/dc/elements/1.1/title">dc:title</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#title">#</a>] <!-- title --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="turnover" about="http://eurocris.org/ontology/cerif#turnover" typeof="rdf:Property">
+  			<h3>Property: cerif:turnover</h3>
+  			<em property="rdfs:label">Turnover</em> - <span property="rdfs:comment">Turnover of a Organisation Unit (measured in a specific currency)</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#OrganizationalUnit"><a href="https://www.eurocris.org/ontologies/cerif/#OrganizationalUnit">Organizational Unit (cfOrgUnit)</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#money"><a href="https://www.eurocris.org/ontologies/cerif/#money">Money</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#turnover">#</a>] <!-- turnover --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="turnoverCurrencyCode" about="http://eurocris.org/ontology/cerif#turnoverCurrencyCode" typeof="rdf:Property">
+  			<h3>Property: cerif:turnoverCurrencyCode</h3>
+  			<em property="rdfs:label">Turnover Currency Code</em> - <span property="rdfs:comment">Currency Code used to denote turnovers</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://eurocris.org/ontology/cerif#currencyCode"><a href="https://www.eurocris.org/ontologies/cerif/#currencyCode">Currency Code</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#turnoverCurrencyCode">#</a>] <!-- turnoverCurrencyCode --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div><div class="specterm" id="uri" about="http://eurocris.org/ontology/cerif#uri" typeof="rdf:Property">
+  			<h3>Property: cerif:uri</h3>
+  			<em property="rdfs:label">URI</em> - <span property="rdfs:comment">Uniform Resource Identifier related with a given CERIF entity</span> <br><table style="th { float: top; }">
+  			<tbody><tr><th>Status:</th>
+  			<td><span property="vs:status">unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#ResultEntity"><a href="https://www.eurocris.org/ontologies/cerif/#ResultEntity">Result Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#BaseEntity"><a href="https://www.eurocris.org/ontologies/cerif/#BaseEntity">Base Entity</a></span>
+ <span rel="rdfs:domain" href="http://eurocris.org/ontology/cerif#SecondLevelEntity"><a href="https://www.eurocris.org/ontologies/cerif/#SecondLevelEntity">Second-level Entity</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://xmlns.com/foaf/0.1/homepage"><a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://eurocris.org/cerif"></span>
+ </td></tr>
+  			</tbody></table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="https://www.eurocris.org/ontologies/cerif/#uri">#</a>] <!-- uri --> [<a href="https://www.eurocris.org/ontologies/cerif/#glance">back to top</a>]</p>
+  			<br>
+  			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+        
+
+<h2 id="sec-extrefs">External Vocabulary References</h2>
+
+<p>
+The description of the terms in the <em>CERIF Ontology</em> 'dictionary' make reference to classes and properties elsewhere. This section of the <em>CERIF Ontology</em> 
+specification provides a placeholder reference for any <em>CERIF Ontology</em> mention of externally defined terms. For example, sometimes we might say that <em>CERIF Ontology</em> property has 
+a domain or range of an externally defined class, or that a <em>CERIF Ontology</em> class is a sub-class of an external class, or 'disjoint with' such a class (ie. has no 
+common members). Such claims help fix the intended meaning of <em>CERIF Ontology</em> terms in relationship to other 'peer' vocabularies.
+Currently, the <em>CERIF Ontology</em> makes reference to the following vocabularies:</p>
+<ul>
+<li><a href="http://xmlns.com/foaf/spec/">Friend of a Friend Vocabulary</a></li>
+<li><a href="http://bibliontology.com/specification">Bibliographic Ontology</a></li>
+<li><a href="http://dublincore.org/documents/2012/06/14/dcmi-terms/">DCMI Metadata Terms</a></li>
+</ul>
+
+<h2 id="sec-datasets">List of datasets publishing CERIF linked data</h2>
+        
+        <ul>
+            <li><a href="http://voa3r.cc.uah.es:8080/dataset/">Virtual Open Access Agriculture and Aquaculture Repository</a></li>
+        </ul>
+        
+
+        
+        <h2 id="sec-evolution">Evolution and Extension of the CERIF Ontology</h2>
+        
+        <p>The <em>Common European Research Information Format (CERIF) Ontology</em> is identified by the namespace URI
+        '<code about="http://eurocris.org/ontology/cerif#" property="vann:preferredNamespaceUri" datatype="xsd:anyURI">http://eurocris.org/ontology/cerif#</code>'. Revisions and
+        extensions of the <em>Common European Research Information Format (CERIF) Ontology</em> are conducted through edits to this document,
+        which by convention is accessible in the Web via the namespace URI.
+        For practical and deployment reasons, note that <b>we do not
+            update the namespace URI as the vocabulary matures</b>.
+        </p>
+        
+        <p>
+        The evolution of the <em>Common European Research Information Format (CERIF) Ontology</em> is best considered in terms of the
+        stability of individual vocabulary terms, rather than the
+        specification as a whole. As terms stabilise in usage and
+        documentation, they progress through the categories
+        '<strong>unstable</strong>', '<strong>testing</strong>' and
+        '<strong>stable</strong>'. Older terms are marked '<strong>archaic</strong>' which allows the possibility of older forms to become modern again.</p><!--STATUSINFO-->
+    </div>
+
+  <h2 id="sec-ack">Acknowledgments</h2>
+
+  <p>This work was supported by EC Funding under the VOA3R project through the grant agreement no. 250525, and META-NET through grant agreement no. 249119.</p>
+
+<h2 id="sec-changes">Recent Changes</h2>
+
+<pre>=========================
+Version 0.2 (February 2013)
+=========================
+* ADDED: New CERIF Base Entity
+* CHANGED: Ontology location in EuroCRIS domain
+    
+=========================
+Version 0.1 (January 2012)
+=========================
+    
+* ADDED: Initial version of the ontology
+    
+</pre>
+
+
+
+         </td>
+    </tr></tbody></table><table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" height="40" bgcolor="#E0EAF3">
+        <tbody><tr> 
+          <td><img src="./CERIF-ontology_files/Bottom_left.gif" border="0"></td>
+          <td align="right" class="bottomtext">JAVASCRIPT and FLASH must be activated 
+            to view this site.<img src="./CERIF-ontology_files/trans.gif" width="10" height="0" border="0">-<img src="./CERIF-ontology_files/trans.gif" width="10" height="0" border="0">� euroCRIS 2010<a href="https://www.eurocris.org/ontologies/cerif/?page=disclaimer&amp;t=1" target="_blank"><img src="./CERIF-ontology_files/trans.gif" width="10" height="0" border="0">-<img src="./CERIF-ontology_files/trans.gif" width="10" height="0" border="0">DISCLAIMER</a></td>
+          <td><img src="./CERIF-ontology_files/trans.gif" border="0" width="10"></td>
+        </tr>
+      </tbody></table>
+      <!-- Below end of the all-encompasing table -->
+    </td>
+  </tr>
+</tbody></table>
+
+
+</body></html>

@@ -1,0 +1,961 @@
+@prefix : <http://lod.nik.uni-obuda.hu/oloud-base#> .
+@prefix ta: <http://ontology.ihmc.us/temporalAggregates.owl#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix loc: <http://lod.nik.uni-obuda.hu/oloud-indoor#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix part: <http://purl.org/vocab/participation/schema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix oloud: <http://lod.nik.uni-obuda.hu/oloud-base#> .
+@prefix teach: <http://linkedscience.org/teach/ns#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix aiiso-r: <http://purl.org/vocab/aiiso-roles/schema#> .
+@base <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+<http://lod.nik.uni-obuda.hu/oloud-base#> rdf:type owl:Ontology ;
+                                              
+dcterm:identifier "http://lod.nik.uni-obuda.hu/oloud-base-20150701" ;
+                                                                                           
+dcterm:isVersionOf "http://lod.nik.uni-obuda.hu/oloud-base#" ;
+                                              
+dcterm:date "2015-07-01"^^xsd:date ;
+                                              
+dcterm:issued "2015-07-01"^^xsd:date ;                                                                               
+
+dcterm:title "OLOUD: Ontology for Linked Open University Data" ;
+                                            
+dcterm:description "The objectives of the OLOUD ontology is to support the development and publishing of Linked Open University Datasets and the applications built on the top of these Open Datasets. OLOUD contains classes and properties to describe Organizations, People, their Roles and Publications, Subjects, Courses and other Events and their temporal and spatial description. The ontology is divided into two connected modules: 1. OLOUD-BASE is the main module describing all the university related concepts and uses the prefix oloud, 2. OLOUD-LOC module provides the indoor location and navigation features and uses the prefix loc."@en ;
+                                                                                            vann:preferredNamespaceUri "http://lod.nik.uni-obuda.hu/oloud-base#" ;
+                                              vann:preferredNamespacePrefix "oloud" ;
+
+dcterm:creator <http://lod.nik.uni-obuda.hu/data/Andras_Micsik> ,
+                                                             <http://lod.nik.uni-obuda.hu/data/Barnabas_Szasz> ,
+                                                             <http://lod.nik.uni-obuda.hu/data/Rita_Fleiner> ;
+
+<http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/3.0/> ;                                             
+                                                                                                                                        
+owl:imports loc: ,
+                                                          <http://lod.nik.uni-obuda.hu/teach-fixed.owl> ,
+
+<http://ontology.ihmc.us/temporalAggregates.owl> ,
+                                                          <http://purl.org/NET/c4dm/event.owl> ,
+                                                          <http://purl.org/vocab/aiiso-roles/schema> ,
+                                                          <http://purl.org/vocab/aiiso/schema-20080925.rdf> ,
+                                                          <http://purl.org/vocab/participation/schema> ,
+                                                          <http://www.w3.org/2006/time> ,
+                                                          <http://www.w3.org/2006/vcard/ns> ,
+                                                          <http://xmlns.com/foaf/spec/20140114.rdf> .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#courseSubject
+
+:courseSubject rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "course subject"@en ;
+               
+               rdfs:comment "This property connects the spesific course with its subject ."@en ;
+               
+               vs:term_status "stable"@en ;
+               
+               rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+               
+               rdfs:domain :Course ;
+               
+               rdfs:range :Subject .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#courseTeacher
+
+:courseTeacher rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "course teacher"@en ;
+               
+               rdfs:comment "This property connects the spesific course with its teacher."@en ;
+               
+               vs:term_status "stable"@en ;
+               
+               rdfs:subPropertyOf teach:teacher ;
+               
+               rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+               
+               rdfs:domain :Course ;
+               
+               rdfs:range :Person .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#courseTerm
+
+:courseTerm rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "course term"@en ;
+            
+            rdfs:comment "This property shows the course term when the specific course is hold."@en ;
+            
+            vs:term_status "stable"@en ;
+            
+            rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+            
+            rdfs:domain :Course ;
+            
+            rdfs:range :CourseTerm .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#courseTime
+
+:courseTime rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "course time"@en ;
+            
+            rdfs:comment "This property links a specific course to a temporal sequence of individual course events."@en ;
+            
+            vs:term_status "stable"@en ;
+            
+            rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+            
+            rdfs:domain :Course ;
+            
+            rdfs:subPropertyOf :hasTemporalSeq ;
+            
+            rdfs:range ta:TemporalSeq .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#courseType
+
+:courseType rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "course type"@en ;
+            
+            rdfs:comment "This property connects the spesific course with its course type."@en ;
+            
+            vs:term_status "stable"@en ;
+            
+            rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+            
+            rdfs:domain :Course ;
+            
+            rdfs:range :CourseType .
+
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#hasTemporalSeq
+
+:hasTemporalSeq rdf:type owl:ObjectProperty ;
+                
+                rdfs:label "has Temporal Sequence"@en ;
+                
+                rdfs:comment "This property links a recurring event to a temporal sequence of individual events."@en ;
+                
+                vs:term_status "stable"@en ;
+                
+                rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                
+                rdfs:range ta:TemporalSeq .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#holder
+
+:holder rdf:type owl:ObjectProperty ;
+        
+        rdfs:label "holder"@en ;
+        
+        rdfs:comment "This property shows the holder of a specific role."@en ;
+        
+        vs:term_status "stable"@en ;
+        
+        rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+        
+        rdfs:range :Person ;
+        
+        rdfs:domain :Role ;
+        
+        owl:inverseOf :holderOf;
+        
+        rdfs:subPropertyOf part:holder .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#holderOf
+
+:holderOf rdf:type owl:ObjectProperty ;
+          
+          rdfs:label "holder of"@en ;
+          
+          rdfs:comment "This property shows the role that a specific person holds."@en ;
+          
+          vs:term_status "stable"@en ;
+          
+          rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+          
+          rdfs:domain :Person ;
+          
+          rdfs:range :Role ;
+          
+          owl:inverseOf :holder;
+          
+          rdfs:subPropertyOf part:holder_of .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#locatedAt
+
+:locatedAt rdf:type owl:ObjectProperty ;
+           
+           rdfs:label "located at"@en ;
+           
+           rdfs:comment "This property shows the location of the event or the course."@en ;
+           
+           vs:term_status "stable"@en ;
+           
+           rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+           
+           rdfs:range loc:Location ;
+           
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Course
+                                       :Event
+                                     )
+                       ] .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#responsibilityOf
+
+:responsibilityOf rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "responsibility of"@en ;
+                  
+                  rdfs:comment "This property shows the person who is responsible for a specific subject or organization."@en ;
+                  
+                  vs:term_status "stable"@en ;
+                  
+                  rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                  
+                  rdfs:range :Person ;
+                  
+                  owl:inverseOf :responsibleFor;
+                  
+                  rdfs:subPropertyOf aiiso:responsibilityOf ;
+                  
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :Organization
+                                              :Subject
+                                            )
+                              ] .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#responsibleFor
+
+:responsibleFor rdf:type owl:ObjectProperty ;
+                
+                rdfs:label "responsible for"@en ;
+                
+                rdfs:comment "This property shows the subject or the organization that a specific person is responsible for  ."@en ;
+                
+                vs:term_status "stable"@en ;
+                
+                rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                
+                rdfs:domain :Person ;
+                
+                rdfs:subPropertyOf aiiso:responsibleFor ;
+                  
+                owl:inverseOf :responsibilityOf;
+                
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( :Organization
+                                           :Subject
+                                         )
+                           ] .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#role
+
+:role rdf:type owl:ObjectProperty ;
+      
+      rdfs:label "role"@en ;
+      
+      rdfs:comment "This property shows the role that belongs to a spesific organization."@en ;
+      
+      vs:term_status "stable"@en ;
+      
+      rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+      
+      rdfs:domain :Organization ;
+      
+      rdfs:range :Role ;
+      
+      rdfs:subPropertyOf part:role .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#roleAt
+
+:roleAt rdf:type owl:ObjectProperty ;
+        
+        rdfs:label "role at"@en ;
+        
+        rdfs:comment "This property shows the organization where the spesific role belongs to."@en ;
+        
+        vs:term_status "stable"@en ;
+        
+        rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+        
+        rdfs:range :Organization ;
+        
+        rdfs:domain :Role ;
+        
+        rdfs:subPropertyOf part:role_at .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#roleEndDate
+
+:roleEndDate rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "role end date"@en ;
+             
+             rdfs:comment "This property shows the end date of the specific role."@en ;
+             
+             vs:term_status "stable"@en ;
+             
+             rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+             
+             rdfs:domain :Role ;
+             
+             rdfs:subPropertyOf part:endDate ;
+             
+             rdfs:range time:Instant .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#roleStartDate
+
+:roleStartDate rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "role start date"@en ;
+               
+               rdfs:comment "This property shows the start date of the specific role."@en ;
+               
+               vs:term_status "stable"@en ;
+               
+               rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+               
+               rdfs:domain :Role ;
+               
+               rdfs:subPropertyOf part:startDate ;
+               
+               rdfs:range time:Instant .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectDegree
+
+:subjectDegree rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "subject degree"@en ;
+               
+               rdfs:comment "This property shows the degree of the subject."@en ;
+               
+               vs:term_status "stable"@en ;
+               
+               rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+               
+               rdfs:range :Degree ;
+               
+               rdfs:domain :Subject .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectLanguage
+
+:subjectLanguage rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:label "subject language"@en ;
+                 
+                 rdfs:comment "This property shows the language of the subject."@en ;
+                 
+                 vs:term_status "stable"@en ;
+                 
+                 rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                 
+                 rdfs:range :Language ;
+                 
+                 rdfs:domain :Subject .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectMajor
+
+:subjectMajor rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "subject major"@en ;
+              
+              rdfs:comment "This property shows the major that the certain subject belongs to."@en ;
+              
+              vs:term_status "stable"@en ;
+              
+              rdfs:subPropertyOf teach:studyProgram ;
+              
+              rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+              
+              rdfs:range :Major ;
+              
+              rdfs:domain :Subject .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectOrganization
+
+:subjectOrganization rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "subject organization"@en ;
+                     
+                     rdfs:comment "This property shows the organization of the university that is responsible for the specific subject."@en ;
+                     
+                     vs:term_status "stable"@en ;
+                     
+                     rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                     
+                     rdfs:range :Organization ;
+                     
+                     rdfs:domain :Subject ;
+                     
+                     rdfs:subPropertyOf aiiso:teaches .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectProgramType
+
+:subjectProgramType rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "subject programtype"@en ;
+                    
+                    rdfs:comment "This property shows the program type of the subject."@en ;
+                    
+                    vs:term_status "stable"@en ;
+                    
+                    rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                    
+                    rdfs:range :ProgramType ;
+                    
+                    rdfs:domain :Subject .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectSpecialization
+
+:subjectSpecialization rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:label "subject specialization"@en ;
+                       
+                       rdfs:comment "This property shows the specialization of the subject."@en ;
+                       
+                       vs:term_status "stable"@en ;
+                       
+                       rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                       
+                       rdfs:range :Specialization ;
+                       
+                       rdfs:domain :Subject .
+
+
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#courseCode
+
+:courseCode rdf:type owl:DatatypeProperty ;
+            
+            rdfs:label "course code"@en ;
+            
+            rdfs:comment "The code used by the university to refer to the course."@en ;
+            
+            vs:term_status "stable"@en ;
+            
+            rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+            
+            rdfs:domain :Course ;
+            
+            rdfs:subPropertyOf aiiso:code ;
+            
+            rdfs:range xsd:string .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#courseName
+
+:courseName rdf:type owl:DatatypeProperty ;
+            
+            rdfs:label "course name"@en ;
+            
+            rdfs:comment "The name given to the course by the university."@en ;
+            
+            vs:term_status "stable"@en ;
+            
+            rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+            
+            rdfs:domain :Course ;
+            
+            rdfs:range xsd:string ;
+            
+            rdfs:subPropertyOf foaf:name .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectCode
+
+:subjectCode rdf:type owl:DatatypeProperty ;
+             
+             rdfs:label "subject code"@en ;
+             
+             rdfs:comment "The code used by the university to refer to the subject."@en ;
+             
+             vs:term_status "stable"@en ;
+             
+             rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+             
+             rdfs:domain :Subject ;
+             
+             rdfs:subPropertyOf aiiso:code ;
+             
+             rdfs:range xsd:string .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectCredit
+
+:subjectCredit rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "subject credit"@en ;
+               
+               rdfs:comment "Subject credit is a unit that gives weight to the value, level or time requirements of the subject taken at the university."@en ;
+               
+               vs:term_status "stable"@en ;
+               
+               rdfs:subPropertyOf teach:ects ;
+               
+               rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+               
+               rdfs:domain :Subject ;
+               
+               rdfs:range xsd:int .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectDescription
+
+:subjectDescription rdf:type owl:DatatypeProperty ;
+                    
+                    rdfs:label "subject description"@en ;
+                    
+                    rdfs:comment "Description of the subject."@en ;
+                    
+                    vs:term_status "stable"@en ;
+                    
+                    rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                    
+                    rdfs:domain :Subject ;
+                    
+                    rdfs:subPropertyOf aiiso:description ;
+                    
+                    rdfs:range xsd:string .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectName
+
+:subjectName rdf:type owl:DatatypeProperty ;
+             
+             rdfs:label "subject name"@en ;
+             
+             rdfs:comment "Name given to the subject by the university."@en ;
+             
+             vs:term_status "stable"@en ;
+             
+             rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+             
+             rdfs:domain :Subject ;
+             
+             rdfs:range xsd:string ;
+             
+             rdfs:subPropertyOf foaf:name .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectRequires
+
+:subjectRequires rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "subject requires"@en ;
+                 
+                 rdfs:comment "This property shows the name of the subject which completion is necessary in order to start a course of the certain subject."@en ;
+                 
+                 vs:term_status "stable"@en ;
+                 
+                 rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                 
+                 rdfs:domain :Subject ;
+                 
+                 rdfs:range xsd:string .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectTotalHours
+
+:subjectTotalHours rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:label "subject total hours"@en ;
+                   
+                   rdfs:comment "This property shows the total hours of the specific subject."@en ;
+                   
+                   vs:term_status "stable"@en ;
+                   
+                   rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                   
+                   rdfs:domain :Subject ;
+                   
+                   rdfs:range xsd:string .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#subjectWeekHours
+
+:subjectWeekHours rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "subject weekly hours"@en ;
+                  
+                  rdfs:comment "This property shows the weekly hours of the specific subject."@en ;
+                  
+                  vs:term_status "stable"@en ;
+                  
+                  rdfs:subPropertyOf teach:weeklyHours ;
+                  
+                  rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> ;
+                  
+                  rdfs:domain :Subject ;
+                  
+                  rdfs:range xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Course
+
+:Course rdf:type owl:Class ;
+        
+        rdfs:label "Course"@en ;
+        
+        owl:equivalentClass aiiso:Course ;
+        
+        rdfs:subClassOf :OLOUDThing ;
+        
+        rdfs:comment "In higher education a course is a unit of teaching that typically lasts one academic term, is led by one or more instructors (teachers or professors), and has a fixed roster of students. Students may receive a grade and academic credit after completion of the course. "@en ;
+        
+        vs:term_status "stable"@en ;
+        
+        rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#CourseTerm
+
+:CourseTerm rdf:type owl:Class ;
+            
+            rdfs:label "Course term"@en ;
+            
+            rdfs:subClassOf :OLOUDThing ;
+            
+            rdfs:comment "Course term is a portion of the academic year, the time during which an educational institution holds classes."@en ;
+            
+            vs:term_status "stable"@en ;
+            
+            rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#CourseType
+
+:CourseType rdf:type owl:Class ;
+            
+            rdfs:label "Course type"@en ;
+            
+            rdfs:subClassOf :OLOUDThing ;
+            
+            rdfs:comment "Course type represents the different formats (e.g. lecture, seminar, laboratory or practice) of courses at universities."@en ;
+            
+            vs:term_status "stable"@en ;
+            
+            rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Degree
+
+:Degree rdf:type owl:Class ;
+        
+        rdfs:label "Degree"@en ;
+        
+        rdfs:subClassOf :OLOUDThing ;
+        
+        rdfs:comment "An academic degree is the state of recognized completion of studies at a college or university. The most common degrees awarded today are bachelor's, master's and doctoral degrees."@en ;
+        
+        vs:term_status "stable"@en ;
+        
+        rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Event
+
+:Event rdf:type owl:Class ;
+       
+       rdfs:label "Event"@en ;
+       
+       rdfs:subClassOf :OLOUDThing ,
+                       event:Event ;
+       
+       rdfs:comment "Events are objects in time and space, like a conference, an exhibition opening or a lecture."@en ;
+       
+       vs:term_status "stable"@en ;
+       
+       rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Language
+
+:Language rdf:type owl:Class ;
+          
+          rdfs:label "Language"@en ;
+          
+          rdfs:subClassOf :OLOUDThing ;
+          
+          rdfs:comment "The spesific form of the communication system, e.g. English, Hungarian, German."@en ;
+          
+          vs:term_status "stable"@en ;
+          
+          rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Major
+
+:Major rdf:type owl:Class ;
+       
+       rdfs:label "Major"@en ;
+       
+       owl:equivalentClass aiiso:Programme ;
+       
+       rdfs:subClassOf :OLOUDThing ;
+       
+       rdfs:comment "An approved training program at a university that gives a certain qualification."@en ;
+       
+       vs:term_status "stable"@en ;
+       
+       rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#OLOUDThing
+
+:OLOUDThing rdf:type owl:Class ;
+            
+            rdfs:label "OLOUDThing"@en ;
+            
+            rdfs:comment "The superclass of all classes in the OLOUD ontology."@en ;
+            
+            vs:term_status "stable"@en ;
+            
+            rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Organization
+
+:Organization rdf:type owl:Class ;
+              
+              rdfs:label "Organization"@en ;
+              
+              rdfs:subClassOf :OLOUDThing ,
+                              foaf:Organization ;
+              
+              rdfs:comment "This class comprises organizations of the university."@en ;
+              
+              vs:term_status "stable"@en ;
+              
+              rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Person
+
+:Person rdf:type owl:Class ;
+        
+        rdfs:label "Person"@en ;
+        
+        rdfs:subClassOf :OLOUDThing ,
+                        foaf:Person ;
+        
+        rdfs:comment "This class comprises people who are in some way linked to the university."@en ;
+        
+        vs:term_status "stable"@en ;
+        
+        rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#ProgramType
+
+:ProgramType rdf:type owl:Class ;
+             
+             rdfs:label "Program type"@en ;
+             
+             rdfs:subClassOf :OLOUDThing ;
+             
+             rdfs:comment "Type of the training, which can be full-time, part-time (at the evenings) or correspondence (at the weekends)."@en ;
+             
+             vs:term_status "stable"@en ;
+             
+             rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Publication
+
+:Publication rdf:type owl:Class ;
+             
+             rdfs:label "Publication"@en ;
+             
+             rdfs:subClassOf :OLOUDThing ;
+             
+             rdfs:comment "This class comprises publications that are in some way linked to the university."@en ;
+             
+             vs:term_status "stable"@en ;
+             
+             rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Role
+
+:Role rdf:type owl:Class ;
+      
+      rdfs:label "Role"@en ;
+      
+      owl:equivalentClass part:Role ;
+      
+      rdfs:subClassOf :OLOUDThing ;
+      
+      rdfs:comment "Roles describe the positions or functions that can be taken up when participating in a group."@en ;
+      
+      vs:term_status "stable"@en ;
+      
+      rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Specialization
+
+:Specialization rdf:type owl:Class ;
+                
+                rdfs:label "Specialization"@en ;
+                
+                owl:equivalentClass aiiso:Module ;
+                
+                rdfs:subClassOf :OLOUDThing ;
+                
+                rdfs:comment "The specialization can be acquired as part of the qualification, providing special expertise in training, which is indicated on the proof of successful completion of the university diploma."@en ;
+                
+                vs:term_status "stable"@en ;
+                
+                rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base#Subject
+
+:Subject rdf:type owl:Class ;
+         
+         rdfs:label "Subject"@en ;
+         
+         owl:equivalentClass aiiso:Subject ;
+         
+         rdfs:subClassOf :OLOUDThing ;
+         
+         rdfs:comment "Subject is the basic unit of teaching contained in the curriculum of the education. In order to fulfill a subject it is necessary to complete one or more courses (e.g. a lecture and a lab) determined in the curriculum. A subject is a general category for different types of courses. A course is a specific class (can be a lecture, a practise, a seminar), with a specific teacher. "@en ;
+         
+         vs:term_status "stable"@en ;
+         
+         rdfs:isDefinedBy <http://lod.nik.uni-obuda.hu/oloud-base#> .
+
+
+
+###  http://purl.org/vocab/aiiso/schema#Course
+
+
+
+
+###  http://purl.org/vocab/aiiso/schema#Module
+
+
+
+
+###  http://purl.org/vocab/aiiso/schema#Programme
+
+
+
+
+###  http://purl.org/vocab/aiiso/schema#Subject
+
+
+
+
+###  http://purl.org/vocab/participation/schema#Role
+
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

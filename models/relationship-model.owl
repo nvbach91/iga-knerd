@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontology.ethereal.cz/example#"
+     xml:base="http://ontology.ethereal.cz/example"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fs="http://ontology.ethereal.cz/financialstatement/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://ontology.ethereal.cz/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:policy="http://ontology.ethereal.cz/policy/"
+     xmlns:example="http://ontology.ethereal.cz/example/"
+     xmlns:auditremarkcode="http://ontology.ethereal.cz/auditremarkcode#"
+     xmlns:auditinglevelcode="http://ontology.ethereal.cz/auditinglevelcode#">
+    <owl:Ontology rdf:about="http://ontology.ethereal.cz/example">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-13T00:00:00</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">danbjo</dc:creator>
+        <rdfs:comment xml:lang="en">Ontology of audit reports on financial statements.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bisnode Group audit report ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op01">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Position"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op02">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Topic"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op03">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Event"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op04">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Project"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op05">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Assessment"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op06">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op07">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/FundingProgram"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op08">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Researcher"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Organization"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op09">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Researcher"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Position"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op10">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Researcher"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Event"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op11">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Researcher"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Researcher"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op12">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Researcher"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Project"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op13">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Researcher"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Publication"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op14">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Researcher"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Assessment"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op15">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Position"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Project"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op16">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Event"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Topic"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op18">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Event"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/PublicationVenue"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op19">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Publication"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Event"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op20">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Publication"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/PublicationVenue"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op21">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/PublicationVenue"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Assessment"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op22">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Publication"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Publication"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op23">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Publication"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Project"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op24">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Publication"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Assessment"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op25">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Project"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Assessment"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op26">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Project"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Topic"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op27">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Project"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/FundingProgram"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op28">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/FundingProgram"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/FundingProgram"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op29">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/FundingProgram"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Topic"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/example/op30">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/example/Topic"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/example/Topic"/>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en"></rdfs:label>
+    </owl:ObjectProperty>
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/Position">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">Position</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/Organization">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/Topic">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">Topic</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/FundingProgram">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">FundingProgram</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/Researcher">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">Researcher</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/Assessment">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">Assessment</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/Project">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">Project</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/Event">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/PublicationVenue">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">PublicationVenue</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://ontology.ethereal.cz/example/Publication">
+        <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-01T13:14:53Z</dc:created>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patkom</dc:creator>
+        <rdfs:isDefinedBy rdf:resource="http://ontology.ethereal.cz/example"/>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+    </owl:Class>
+    
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

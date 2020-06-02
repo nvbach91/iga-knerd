@@ -1,0 +1,175 @@
+@prefix : <http://purl.org/spar/bido/> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+:CategorialBibliometricData a owl:Class ;
+    rdfs:label "categorial bibliometric data"@en ;
+    rdfs:comment "This class define all the possible categories that characterise publication-related entities from a bibliometric point of view."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> ;
+    rdfs:subClassOf :BibliometricData,
+        skos:Concept .
+
+:accordingTo a owl:ObjectProperty ;
+    rdfs:label "according to" ;
+    rdfs:comment "A property relating a bibliometric data in time situation to an agent who provided such data." ;
+    rdfs:domain :BibliometricDataInTime ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> ;
+    rdfs:range prov:Agent ;
+    rdfs:subPropertyOf tvc:withinContext,
+        prov:wasAttributedTo .
+
+:holdsBibliometricDataInTime a owl:ObjectProperty ;
+    rdfs:label "holds bibliometric data in time" ;
+    rdfs:comment "A property relating a person or any other publication-related entity to a bibliometric data that the entity holds. The ontology permits one to specify the time period over which a bibliometric data is held, and the other contextual entities responsible for having provided such bibliometric data." ;
+    rdfs:domain owl:Thing ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> ;
+    rdfs:range :BibliometricDataInTime ;
+    rdfs:subPropertyOf tvc:hasValue .
+
+:withBibliometricData a owl:ObjectProperty ;
+    rdfs:label "with bibliometric data" ;
+    rdfs:comment "An object property connecting an entity's bibliometric data in time to a definition of the type of bibliometric data held by this entity, specified as an instance of the class bido:BibliometricData or of one of its sub-classes." ;
+    rdfs:domain :BibliometricDataInTime ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> ;
+    rdfs:range :BibliometricData ;
+    rdfs:subPropertyOf tvc:withValue .
+
+rdf:PlainLiteral a rdfs:Datatype .
+
+rdfs:comment a owl:AnnotationProperty .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+:hasMeasure a owl:ObjectProperty ;
+    rdfs:label "has measure" ;
+    rdfs:comment "This object property allows one to specify the kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor)." ;
+    rdfs:domain :NumericBibliometricData ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> ;
+    rdfs:range :BibliometricMeasure .
+
+:hasNumericValue a owl:DatatypeProperty ;
+    rdfs:label "has numeric value" ;
+    rdfs:comment "This data property allows one to specify the actual value of the bibliometric data in consideration." ;
+    rdfs:domain :NumericBibliometricData ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:float xsd:integer ) ] .
+
+tvc:ValueInTime a owl:Class ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> .
+
+tvc:atTime a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> .
+
+tvc:hasValue a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> .
+
+tvc:withinContext a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> .
+
+xsd:float a rdfs:Datatype .
+
+xsd:integer a rdfs:Datatype .
+
+owl:Thing a owl:Class .
+
+skos:Concept a owl:Class .
+
+time:Interval a owl:Class ;
+    rdfs:isDefinedBy <http://www.w3.org/2006/time> .
+
+prov:Agent a owl:Class ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov> .
+
+prov:wasAttributedTo a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov> .
+
+:BibliometricMeasure a owl:Class ;
+    rdfs:label "bibliometric measure" ;
+    rdfs:comment "This class describes any kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor)." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> .
+
+:NumericBibliometricData a owl:Class ;
+    rdfs:label "numeric bibliometric data"@en ;
+    rdfs:comment "The class describing all the bibliometric data represented by numbers. Such numeric data are those characterised by a certain integer or float value related to a particular bibliometric measure."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :hasNumericValue ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :hasMeasure ],
+        :BibliometricData .
+
+tvc:withValue a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> .
+
+:BibliometricData a owl:Class ;
+    rdfs:label "bibliometric data" ;
+    rdfs:comment "The class defining any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> .
+
+:BibliometricDataInTime a owl:Class ;
+    rdfs:label "bibliometric data in time" ;
+    rdfs:comment "A particular situation that describe a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom :BibliometricMeasure ;
+            owl:onProperty tvc:withValue ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom time:Interval ;
+            owl:onProperty tvc:atTime ],
+        tvc:ValueInTime .
+
+<http://purl.org/spar/bido-core> a owl:Ontology ;
+    rdfs:label "BiDO Core module" ;
+    dc:creator "Enrico Motta",
+        "Francesco Osborne",
+        "Silvio Peroni" ;
+    dc:date "2018-07-13" ;
+    dc:description """The core module of BiDO allows us to describe any entity and the related bibliometric data (through the property holdsBibliometricDataInTime) at a certain time (i.e., tvc:atTime, a property defined by the imported TVC ontology for specifying temporal instants or intervals) and according to a certain agent (through the property accordingTo, which is a sub-property of prov:wasAttributedTo and allows us to indicate the agent responsible for such bibliometric data).
+
+Two alternative kinds of bibliometric data are specifiable (through the property withBibliometricData) in BiDO: numeric data and categorial data. Numeric data are those characterised by a certain integer or float value related to a particular bibliometric measure. Some of these measures – i.e., h-index, author citation count, e-index, and journal impact factor – are available in a particular module of BiDO responsible for describing the most common bibliometric measures.
+"""@en ;
+    dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)." ;
+    dc:title "BiDO Core Module" ;
+    rdfs:comment """The BiDO Core Module (BiDO-Core) allows the description of any entity and the related bibliometric data at a certain time and according to a certain agent responsible for such bibliometric data.
+
+**URL:** http://purl.org/spar/bido-core
+
+**Creators**: [Enrico Motta](https://orcid.org/0000-0003-0015-1952), [Francesco Osborne](https://orcid.org/0000-0001-6557-3131), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/bido
+
+**Cite as:** Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf""" ;
+    owl:imports <http://purl.org/spar/tvc> ;
+    owl:priorVersion <http://purl.org/spar/bido-core/2015-07-14> ;
+    owl:versionIRI <http://purl.org/spar/bido-core/2018-07-13> ;
+    owl:versionInfo "1.2"^^xsd:string .
+

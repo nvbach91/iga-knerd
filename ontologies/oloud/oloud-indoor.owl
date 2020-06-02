@@ -1,0 +1,435 @@
+@prefix : <http://lod.nik.uni-obuda.hu/oloud-indoor#> .
+@prefix oloud: <http://lod.nik.uni-obuda.hu/oloud-base#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix teach: <http://linkedscience.org/teach/ns#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@base <http://lod.nik.uni-obuda.hu/oloud-indoor#> .
+
+<http://lod.nik.uni-obuda.hu/oloud-indoor#> rdf:type owl:Ontology ;
+
+dcterm:identifier "http://lod.nik.uni-obuda.hu/oloud-indoor-20150701" ;
+
+dcterm:isVersionOf "http://lod.nik.uni-obuda.hu/oloud-indoor#" ;	
+
+dcterm:date "2015-07-01"^^xsd:date ;
+
+dcterm:issued "2015-07-01"^^xsd:date ;
+
+dcterm:title "Ontology for Indoor Navigation";  
+ 
+dcterm:description "This ontology provides indoor location and navigation features."@en ;
+
+vann:preferredNamespaceUri "http://lod.nik.uni-obuda.hu/oloud-indoor#" ;
+
+vann:preferredNamespacePrefix "loc" ;
+
+dcterm:creator <http://lod.nik.uni-obuda.hu/data/Andras_Micsik> ,
+
+              <http://lod.nik.uni-obuda.hu/data/Barnabas_Szasz> ,
+
+                <http://lod.nik.uni-obuda.hu/data/Rita_Fleiner> ;
+	
+<http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/3.0/> ;
+
+owl:imports <http://www.w3.org/2006/vcard/ns> ,
+            <http://www.w3.org/2003/01/geo/wgs84_pos> .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#belongsToRoom
+
+:belongsToRoom rdf:type owl:ObjectProperty ;
+               
+               rdfs:label "belongs to Room"@en ;
+               
+               rdfs:comment "This property states that a Point of Interest belongs to a Room. POIs can belong to multiple rooms: e.g. doors are part of both rooms." ;
+               
+               rdfs:domain :POI ;
+               
+               rdfs:range :Room;
+               
+               vs:term_status "stable"@en ;
+
+               owl:inverseOf :hasPOI  .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#connectsPOI
+
+:connectsPOI rdf:type owl:ObjectProperty ,
+                      owl:SymmetricProperty ;
+             
+             rdfs:label "connects to POI"@en ;
+             
+             rdfs:comment "This property is used to describe a direct walkable route between POIs."@en ;
+             
+             rdfs:range :POI ;
+               
+             vs:term_status "stable"@en ;
+             
+             rdfs:domain :POI .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#hasPOI
+
+:hasPOI rdf:type owl:ObjectProperty ;
+        
+        rdfs:label "has POI"@en ;
+        
+        rdfs:comment "This property states that there is a Point of Interest in a Room. Multiple rooms can include the same POI: e.g. doors are part of both rooms."@en ;
+        
+        rdfs:range :POI ;
+        
+        rdfs:domain :Room ;
+               
+        vs:term_status "stable"@en ;
+        
+        owl:inverseOf :belongsToRoom .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#isPartOf
+
+:isPartOf rdf:type owl:ObjectProperty ;
+          
+          rdfs:label "is part of"@en ;
+          
+          rdfs:comment "Object property to specify another Location which includes (is broader of) this Location."@en ;
+          
+          rdfs:range :Location ;
+               
+          vs:term_status "stable"@en ;
+          
+          rdfs:domain :Location .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-base.owl#OLOUDThing
+
+oloud:OLOUDThing rdf:type owl:Class .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Building
+
+:Building rdf:type owl:Class ;
+          
+          rdfs:label "Building"@en ;
+          
+          rdfs:subClassOf :Location ;
+               
+          vs:term_status "stable"@en ;
+          
+          rdfs:comment "Represents a whole building. It may have an address and spatial coordinates."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#BuildingEntrance
+
+:BuildingEntrance rdf:type owl:Class ;
+                  
+                  rdfs:label "Building Entrance"@en ;
+                  
+                  rdfs:subClassOf :Entrance ;
+               
+                  vs:term_status "stable"@en ;
+                  
+                  rdfs:comment "Represents the entrance where one can enter/leave the building."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#BuildingPart
+
+:BuildingPart rdf:type owl:Class ;
+              
+              rdfs:label "Building Part"@en ;
+              
+              rdfs:subClassOf :Location ;
+               
+              vs:term_status "stable"@en ;
+              
+              rdfs:comment "Superclass of every part of a building."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Cafeteria
+
+:Cafeteria rdf:type owl:Class ;
+           
+           rdfs:label "Cafeteria"@en ;
+           
+           rdfs:subClassOf :Room ;
+               
+           vs:term_status "stable"@en ;
+           
+           rdfs:comment "A restaurant in which customers serve themselves from a counter and pay before eating."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Elevator
+
+:Elevator rdf:type owl:Class ;
+          
+          rdfs:label "Elevator"@en ;
+          
+          rdfs:subClassOf :VerticalPassage ;
+               
+          vs:term_status "stable"@en ;
+          
+          rdfs:comment "Connects Rooms on different floors."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Entrance
+
+:Entrance rdf:type owl:Class ;
+          
+          rdfs:label "Entrance"@en ;
+          
+          rdfs:subClassOf :POI ;
+               
+          vs:term_status "stable"@en ;
+          
+          rdfs:comment "Represents any type of entrance"@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Floor
+
+:Floor rdf:type owl:Class ;
+       
+       rdfs:label "Floor"@en ;
+       
+       rdfs:subClassOf :BuildingPart ;
+               
+       vs:term_status "stable"@en ;
+       
+       rdfs:comment "It is part of a building. It may consist of Rooms."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Hallway
+
+:Hallway rdf:type owl:Class ;
+         
+         rdfs:label "Hallway"@en ;
+         
+         rdfs:subClassOf :Room ;
+               
+         vs:term_status "stable"@en ;
+         
+         rdfs:comment "An interior passage or corridor onto which rooms open."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Lab
+
+:Lab rdf:type owl:Class ;
+     
+     rdfs:label "Lab"@en ;
+     
+     rdfs:subClassOf :Room ;
+               
+     vs:term_status "stable"@en ;
+     
+     rdfs:comment "A room equipped for scientific experiments, research, or teaching."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#LectureHall
+
+:LectureHall rdf:type owl:Class ;
+             
+             rdfs:label "LectureHall"@en ;
+             
+             rdfs:subClassOf :Room ;
+               
+             vs:term_status "stable"@en ;
+             
+             rdfs:comment "A lecture hall is a large room used for instruction, typically at a college or university."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Location
+
+:Location rdf:type owl:Class ;
+          
+          rdfs:label "Location"@en ;
+          
+          rdfs:subClassOf geo:SpatialThing ,
+                          vcard:Location ;
+               
+          vs:term_status "stable"@en ;
+          
+          rdfs:comment "Superclass for all location."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Lounge
+
+:Lounge rdf:type owl:Class ;
+        
+        rdfs:label "Lounge"@en ;
+        
+        rdfs:subClassOf :Room ;
+               
+        vs:term_status "stable"@en ;
+        
+        rdfs:comment "A public waiting area provided with seating."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Office
+
+:Office rdf:type owl:Class ;
+        
+        rdfs:label "Office"@en ;
+        
+        rdfs:subClassOf :Room ;
+               
+        vs:term_status "stable"@en ;
+        
+        rdfs:comment "A room used as a place of non-manual work."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#POI
+
+:POI rdf:type owl:Class ;
+     
+     rdfs:label "Point of Interest"@en ;
+               
+     vs:term_status "stable"@en ;
+     
+     rdfs:subClassOf :Location ;
+        
+     rdfs:comment "An entity with Location. Can be used as part of a route."@en.
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Room
+
+:Room rdf:type owl:Class ;
+      
+      rdfs:label "Room"@en ;
+      
+      rdfs:subClassOf :BuildingPart ;
+
+      vs:term_status "stable"@en ;     
+      
+      rdfs:comment "Represents any type of room within a building."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#RoomEntrance
+
+:RoomEntrance rdf:type owl:Class ;
+              
+              rdfs:label "Room Entrance"@en ;
+              
+              rdfs:subClassOf :Entrance ;
+
+              vs:term_status "stable"@en ;
+              
+              rdfs:comment "Represents the entrance where one can enter/leave the room."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Stairway
+
+:Stairway rdf:type owl:Class ;
+          
+          rdfs:label "Stairway"@en ;
+          
+          rdfs:subClassOf :VerticalPassage ;
+
+	      vs:term_status "stable"@en ;
+         
+          rdfs:comment "Connects Rooms on different floors."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Toilet
+
+:Toilet rdf:type owl:Class ;
+        
+        rdfs:label "Toilet"@en ;
+        
+        rdfs:subClassOf :Room ;
+
+        vs:term_status "stable"@en ;
+             
+        rdfs:comment "A room containing a toilet or toilets"@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#VendingMachine
+
+:VendingMachine rdf:type owl:Class ;
+                
+                rdfs:label "Vending Machine"@en ;
+                
+                rdfs:subClassOf :POI ;
+
+                vs:term_status "stable"@en ;
+                
+                rdfs:comment "Any type of vending machine"@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#VerticalPassage
+
+:VerticalPassage rdf:type owl:Class ;
+                 
+                 rdfs:label "VerticalPassage"@en ;
+                 
+                 rdfs:subClassOf :Room ;
+
+                 vs:term_status "stable"@en ;
+                 
+                 rdfs:comment "Connects Rooms on different floors using any method."@en .
+
+
+
+###  http://lod.nik.uni-obuda.hu/oloud-indoor#Wardrobe
+
+:Wardrobe rdf:type owl:Class ;
+          
+          rdfs:label "Wardrobe"@en ;
+          
+          rdfs:subClassOf :Room ;
+          
+          vs:term_status "stable"@en ;
+     
+          rdfs:comment "A room in which clothes may be hung or stored."@en .
+
+
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+
