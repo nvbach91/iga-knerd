@@ -1,4 +1,4 @@
-# A repository to store research data
+# Project IGA KNERD
 
 The broader goal of this project is to contribute to the worldwide research effort in knowledge engineering for research data. The three threads to be followed by the student members of the team (who are the main workforce of the project) are integrated research knowledge graph construction from disparate portals, relying on a larger number of ontological types of entities (people, research artifacts, research areas, project, publications, events, etc.) in a balanced manner; modeling of the researcher (specifically, PhD student) research career progressing in time; and modeling aspects of the scholarly review process (focusing on review criteria and their polarity values). The connecting glue of the whole project will be a modular system of (both newly developed and reused) ontologies, populated with instance data so as to create a reusable knowledge graph.
 
@@ -7,8 +7,7 @@ The broader goal of this project is to contribute to the worldwide research effo
 
 ## What can you find in this repo
 
-A lot of links and structured survey data, aggregation tables, ontology source code, drafts, hierarchy, data models, etc. All of which are somehow described (hopefully) in our publications.
+A lot of links and structured survey data, aggregation tables, ontology source code, drafts, hierarchy, data models, etc. All of which are described in our publications.
 
 ## Publications
-TBD (hopefully)
-
+TBD
