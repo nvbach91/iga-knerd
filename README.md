@@ -9,5 +9,11 @@ The broader goal of this project is to contribute to the worldwide research effo
 
 A lot of links and structured survey data, aggregation tables, ontology source code, drafts, hierarchy, data models, etc. All of which are described in our publications.
 
+1. [Literature survey](https://github.com/nvbach91/iga-knerd/tree/master/survey)
+1. [Scholarly ontologies](https://github.com/nvbach91/iga-knerd/tree/master/ontologies)
+1. [Competency questions](https://github.com/nvbach91/iga-knerd/tree/master/competency-questions)
+1. [Holistic models](https://github.com/nvbach91/iga-knerd/tree/master/models)
+1. [Model-ontology coverage](https://github.com/nvbach91/iga-knerd/tree/master/coverage)
+
 ## Publications
 TBD
