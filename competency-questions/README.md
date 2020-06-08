@@ -1,4 +1,5 @@
 # Competency Questions - KNERD
+- See also [Holistic models](https://github.com/nvbach91/iga-knerd/tree/master/models)
 
 ### Researcher (researching + publishing on it) CQ
 - What has been researched / written on this topic/problem?
@@ -21,8 +22,8 @@
 - Where should I move for employment/internship
     - Which organizations and people worked on this topic/problem? What can I offer as complementary expertise that can be applied together with theirs?
         - ORGANIZATION/RESEARCHER - TOPIC/PROBLEM
-        POSITION - TOPIC/PROBLEM
-        POSITION - ORGANIZATION - TOPIC/PROBLEM
+        - POSITION - TOPIC/PROBLEM
+        - POSITION - ORGANIZATION - TOPIC/PROBLEM
     - Whom do I know in this organization
         - ORGANIZATION - RESEARCHER - RESEARCHER 
         
