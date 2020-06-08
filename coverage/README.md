@@ -1,3 +1,3 @@
-# Online version of coverage
+# Model ontology coverage table
 
-https://bit.ly/3eAWnuY
+- Online version: https://bit.ly/3eAWnuY
