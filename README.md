@@ -16,4 +16,4 @@ A lot of links and structured survey data, aggregation tables, ontology source c
 1. [Model-ontology coverage](https://github.com/nvbach91/iga-knerd/tree/master/coverage)
 
 ## Publications
-- Viet Bach Nguyen, Vojtěch Svátek, Gollam Rabby and Oscar Corcho. **[https://github.com/nvbach91/iga-knerd/tree/master/publications](Ontologies Supporting Research-related Information Foraging Using Knowledge Graphs: Literature Survey and Holistic Model Mapping)**. https://ekaw2020.inf.unibz.it/program/
+- Viet Bach Nguyen, Vojtěch Svátek, Gollam Rabby and Oscar Corcho. **[Ontologies Supporting Research-related Information Foraging Using Knowledge Graphs: Literature Survey and Holistic Model Mapping](https://github.com/nvbach91/iga-knerd/tree/master/publications)**. https://ekaw2020.inf.unibz.it/program/
